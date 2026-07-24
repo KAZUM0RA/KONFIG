@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Редактор меток зданий на картах</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Редактор міток будівель на картах</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="191">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="192"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="139">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="193"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="138">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="194"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСписокЗданий" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список зданий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Список будівель</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список зданий</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група список будівель</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаСписокЗданийРасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<Table name="СписокЗданий" id="126">
+									<Representation>List</Representation>
+									<SelectionMode>SingleRow</SelectionMode>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>СписокЗданий</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>Find</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокЗданийКонтекстноеМеню" id="127"/>
+									<AutoCommandBar name="СписокЗданийКоманднаяПанель" id="128">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="КнопкаСохранитьКоординаты" id="120">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.КомандаСохранитьКоординаты</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.SaveFile</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Сохранить координаты</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Зберегти координати</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="КнопкаСохранитьКоординатыРасширеннаяПодсказка" id="196"/>
+											</Button>
+											<Button name="КнопкаОпределитьКоординатыПоАдресу" id="155">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.КомандаОпределитьКоординатыПоАдресу</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.SyncContents</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="КнопкаОпределитьКоординатыПоАдресуРасширеннаяПодсказка" id="197"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокЗданийРасширеннаяПодсказка" id="198"/>
+									<SearchStringAddition name="СписокЗданийСтрокаПоиска" id="199">
+										<AdditionSource>
+											<Item>СписокЗданий</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокЗданийСтрокаПоискаКонтекстноеМеню" id="200"/>
+										<ExtendedTooltip name="СписокЗданийСтрокаПоискаРасширеннаяПодсказка" id="201"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокЗданийСостояниеПросмотра" id="202">
+										<AdditionSource>
+											<Item>СписокЗданий</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокЗданийСостояниеПросмотраКонтекстноеМеню" id="203"/>
+										<ExtendedTooltip name="СписокЗданийСостояниеПросмотраРасширеннаяПодсказка" id="204"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокЗданийУправлениеПоиском" id="205">
+										<AdditionSource>
+											<Item>СписокЗданий</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокЗданийУправлениеПоискомКонтекстноеМеню" id="206"/>
+										<ExtendedTooltip name="СписокЗданийУправлениеПоискомРасширеннаяПодсказка" id="207"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">СписокЗданийВыбор</Event>
+										<Event name="OnActivateRow">СписокЗданийПриАктивизацииСтроки</Event>
+									</Events>
+									<ChildItems>
+										<ColumnGroup name="Группа4" id="152">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="208"/>
+											<ChildItems>
+												<ColumnGroup name="ГруппаПартнерАдрес" id="150">
+													<ExtendedTooltip name="ГруппаПартнерАдресРасширеннаяПодсказка" id="209"/>
+													<ChildItems>
+														<ColumnGroup name="СписокПартнеровГруппа1" id="158">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="СписокПартнеровГруппа1РасширеннаяПодсказка" id="210"/>
+															<ChildItems>
+																<CheckBoxField name="СписокЗданийНовыеКоординатыНеЗаписаны" id="156">
+																	<DataPath>СписокЗданий.НовыеКоординатыНеЗаписаны</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="СписокЗданийНовыеКоординатыНеЗаписаныКонтекстноеМеню" id="157"/>
+																	<ExtendedTooltip name="СписокЗданийНовыеКоординатыНеЗаписаныРасширеннаяПодсказка" id="211"/>
+																</CheckBoxField>
+																<InputField name="СписокЗданийЗданиер" id="141">
+																	<DataPath>СписокЗданий.Здание</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<ChoiceListButton>false</ChoiceListButton>
+																	<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+																	<ContextMenu name="СписокЗданийЗданиерКонтекстноеМеню" id="142"/>
+																	<ExtendedTooltip name="СписокЗданийЗданиерРасширеннаяПодсказка" id="212"/>
+																</InputField>
+															</ChildItems>
+														</ColumnGroup>
+														<InputField name="СписокЗданийАдрес" id="147">
+															<DataPath>СписокЗданий.Адрес</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СписокЗданийАдресКонтекстноеМеню" id="148"/>
+															<ExtendedTooltip name="СписокЗданийАдресРасширеннаяПодсказка" id="213"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+												<ColumnGroup name="ГруппаКоординаты" id="149">
+													<ExtendedTooltip name="ГруппаКоординатыРасширеннаяПодсказка" id="214"/>
+													<ChildItems>
+														<InputField name="СписокЗданийШирота" id="143">
+															<DataPath>СписокЗданий.Широта</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СписокЗданийШиротаКонтекстноеМеню" id="144"/>
+															<ExtendedTooltip name="СписокЗданийШиротаРасширеннаяПодсказка" id="215"/>
+														</InputField>
+														<InputField name="СписокЗданийДолгота" id="145">
+															<DataPath>СписокЗданий.Долгота</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="СписокЗданийДолготаКонтекстноеМеню" id="146"/>
+															<ExtendedTooltip name="СписокЗданийДолготаРасширеннаяПодсказка" id="216"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Браузер" id="102">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="БраузерРасширеннаяПодсказка" id="217"/>
+					<ChildItems>
+						<HTMLDocumentField name="ПолеБраузера" id="20">
+							<DataPath>ТекстСкрипта</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>80</Width>
+							<Height>27</Height>
+							<ContextMenu name="ПолеБраузераКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ПолеБраузераРасширеннаяПодсказка" id="218"/>
+							<Events>
+								<Event name="DocumentComplete">ПолеБраузераДокументСформирован</Event>
+								<Event name="OnClick">ПолеБраузераПриНажатии</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТекстСкрипта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст скрипта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текст скрипта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КартаЗагружена" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Карта загружена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Карта завантажена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстМакета" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст макета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Текст макету</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МакетЗагружен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Макет загружен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Макет завантажений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИконкаЗдания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иконка здания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Іконка будівлі</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимРедактора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим редактора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Режим редактора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗданий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список зданий</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список будівель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Здание" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Здание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Будівля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЗданияИСооружения</v8:Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Широта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Широта</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Широта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>4</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Долгота" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Долгота</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довгота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>4</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НовыеКоординатыНеЗаписаны" id="5">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоТрековТрек</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоТреков.Значение</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:StandardBeginningDate">
+							<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+							<v8:date>0001-01-01T00:00:00</v8:date>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#A39C7A</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСохранитьКоординаты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить координаты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти координати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить новые координаты для всех партнеров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти нові координати для усіх партнерів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСохранитьКоординаты</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОпределитьКоординатыПоАдресу" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить по адресу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Визначити за адресою</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить координаты партнера по адресу из контактной информации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Визначити координати партнера за адресою з контактної інформації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОпределитьКоординатыПоАдресу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

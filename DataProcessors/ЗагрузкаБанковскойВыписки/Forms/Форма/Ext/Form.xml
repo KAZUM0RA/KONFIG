@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ДатаВыписки" id="318">
+			<ContextMenu name="ДатаВыпискиКонтекстноеМеню" id="319"/>
+			<ExtendedTooltip name="ДатаВыпискиРасширеннаяПодсказка" id="320"/>
+		</InputField>
+		<UsualGroup name="ФайлБанк" id="312">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл банк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл банк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ФайлБанкРасширеннаяПодсказка" id="313"/>
+			<ChildItems>
+				<InputField name="ДатаВыпискиДок" id="321">
+					<DataPath>Объект.ДатаВыпискиДок</DataPath>
+					<ContextMenu name="ДатаВыпискиДокКонтекстноеМеню" id="322"/>
+					<ExtendedTooltip name="ДатаВыпискиДокРасширеннаяПодсказка" id="323"/>
+				</InputField>
+				<InputField name="ФайлDBF" id="4">
+					<DataPath>Объект.ФайлDBF</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФайлDBFКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ФайлDBFРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="StartChoice">ФайлDBFНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Банк" id="1">
+					<DataPath>Объект.Банк</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БанкКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="БанкРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<Page name="ГруппаПриватБанк" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выписка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виписка</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПриватБанкРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="ПриватБанк" id="11">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПриватБанк</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПриватБанкКонтекстноеМеню" id="12"/>
+							<AutoCommandBar name="ПриватБанкКоманднаяПанель" id="13">
+								<ChildItems>
+									<Button name="ФормаЗагрузитьИзФайла" id="314">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.LevelDown</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ФормаЗагрузитьИзФайлаРасширеннаяПодсказка" id="315"/>
+									</Button>
+									<Button name="ФормаСохранитьВыписку" id="316">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СохранитьВыписку</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.SaveFile</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ФормаСохранитьВыпискуРасширеннаяПодсказка" id="317"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПриватБанкРасширеннаяПодсказка" id="14"/>
+							<SearchStringAddition name="ПриватБанкСтрокаПоиска" id="15">
+								<AdditionSource>
+									<Item>ПриватБанк</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриватБанкСтрокаПоискаКонтекстноеМеню" id="16"/>
+								<ExtendedTooltip name="ПриватБанкСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПриватБанкСостояниеПросмотра" id="18">
+								<AdditionSource>
+									<Item>ПриватБанк</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриватБанкСостояниеПросмотраКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ПриватБанкСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПриватБанкУправлениеПоиском" id="21">
+								<AdditionSource>
+									<Item>ПриватБанк</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриватБанкУправлениеПоискомКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ПриватБанкУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПриватБанкНомерСтроки" id="24">
+									<DataPath>Объект.ПриватБанк.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкНомерСтрокиКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПриватБанкНомерСтрокиРасширеннаяПодсказка" id="26"/>
+								</LabelField>
+								<InputField name="ПриватБанкЛицевойСчет" id="27">
+									<DataPath>Объект.ПриватБанк.ЛицевойСчет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкЛицевойСчетКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ПриватБанкЛицевойСчетРасширеннаяПодсказка" id="29"/>
+								</InputField>
+								<InputField name="ПриватБанкКодУслуги" id="30">
+									<DataPath>Объект.ПриватБанк.КодУслуги</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкКодУслугиКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ПриватБанкКодУслугиРасширеннаяПодсказка" id="32"/>
+								</InputField>
+								<InputField name="ПриватБанкФИО" id="33">
+									<DataPath>Объект.ПриватБанк.ФИО</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкФИОКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ПриватБанкФИОРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<InputField name="ПриватБанкГород" id="36">
+									<DataPath>Объект.ПриватБанк.Город</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкГородКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ПриватБанкГородРасширеннаяПодсказка" id="38"/>
+								</InputField>
+								<InputField name="ПриватБанкУлица" id="39">
+									<DataPath>Объект.ПриватБанк.Улица</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкУлицаКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ПриватБанкУлицаРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<InputField name="ПриватБанкДом" id="42">
+									<DataPath>Объект.ПриватБанк.Дом</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкДомКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ПриватБанкДомРасширеннаяПодсказка" id="44"/>
+								</InputField>
+								<InputField name="ПриватБанкКвартира" id="45">
+									<DataPath>Объект.ПриватБанк.Квартира</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкКвартираКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ПриватБанкКвартираРасширеннаяПодсказка" id="47"/>
+								</InputField>
+								<InputField name="ПриватБанкСчетчик1" id="48">
+									<DataPath>Объект.ПриватБанк.Счетчик1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкСчетчик1КонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ПриватБанкСчетчик1РасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеДо1" id="51">
+									<DataPath>Объект.ПриватБанк.ПоказаниеДо1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеДо1КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеДо1РасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеПосле1" id="54">
+									<DataPath>Объект.ПриватБанк.ПоказаниеПосле1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеПосле1КонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеПосле1РасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="ПриватБанкСчетчик2" id="57">
+									<DataPath>Объект.ПриватБанк.Счетчик2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкСчетчик2КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПриватБанкСчетчик2РасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеДо2" id="60">
+									<DataPath>Объект.ПриватБанк.ПоказаниеДо2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеДо2КонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеДо2РасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеПосле2" id="63">
+									<DataPath>Объект.ПриватБанк.ПоказаниеПосле2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеПосле2КонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеПосле2РасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="ПриватБанкСчетчик3" id="66">
+									<DataPath>Объект.ПриватБанк.Счетчик3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкСчетчик3КонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПриватБанкСчетчик3РасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеДо3" id="69">
+									<DataPath>Объект.ПриватБанк.ПоказаниеДо3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеДо3КонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеДо3РасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеПосле3" id="72">
+									<DataPath>Объект.ПриватБанк.ПоказаниеПосле3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеПосле3КонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеПосле3РасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="ПриватБанкСчетчик4" id="75">
+									<DataPath>Объект.ПриватБанк.Счетчик4</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкСчетчик4КонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ПриватБанкСчетчик4РасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеДо4" id="78">
+									<DataPath>Объект.ПриватБанк.ПоказаниеДо4</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеДо4КонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеДо4РасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеПосле4" id="81">
+									<DataPath>Объект.ПриватБанк.ПоказаниеПосле4</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеПосле4КонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеПосле4РасширеннаяПодсказка" id="83"/>
+								</InputField>
+								<InputField name="ПриватБанкСчетчик5" id="84">
+									<DataPath>Объект.ПриватБанк.Счетчик5</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкСчетчик5КонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ПриватБанкСчетчик5РасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеДо5" id="87">
+									<DataPath>Объект.ПриватБанк.ПоказаниеДо5</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеДо5КонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеДо5РасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ПриватБанкПоказаниеПосле5" id="90">
+									<DataPath>Объект.ПриватБанк.ПоказаниеПосле5</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкПоказаниеПосле5КонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ПриватБанкПоказаниеПосле5РасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ПриватБанкДатаПлатежа" id="93">
+									<DataPath>Объект.ПриватБанк.ДатаПлатежа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкДатаПлатежаКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ПриватБанкДатаПлатежаРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ПриватБанкНомерПлатежу" id="96">
+									<DataPath>Объект.ПриватБанк.НомерПлатежу</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкНомерПлатежуКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ПриватБанкНомерПлатежуРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ПриватБанкСуммаПлатежа" id="99">
+									<DataPath>Объект.ПриватБанк.СуммаПлатежа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ПриватБанк.TotalСуммаПлатежа</FooterDataPath>
+									<ContextMenu name="ПриватБанкСуммаПлатежаКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ПриватБанкСуммаПлатежаРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ПриватБанкНазначениеПлатежа" id="102">
+									<DataPath>Объект.ПриватБанк.НазначениеПлатежа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкНазначениеПлатежаКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ПриватБанкНазначениеПлатежаРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ПриватБанкМФО" id="105">
+									<DataPath>Объект.ПриватБанк.МФО</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриватБанкМФОКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ПриватБанкМФОРасширеннаяПодсказка" id="107"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПолтаваБанк" id="108">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полтава банк</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПолтаваБанкРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<Table name="ПолтаваБанк" id="110">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПолтаваБанкКонтекстноеМеню" id="111"/>
+							<AutoCommandBar name="ПолтаваБанкКоманднаяПанель" id="112"/>
+							<ExtendedTooltip name="ПолтаваБанкРасширеннаяПодсказка" id="113"/>
+							<SearchStringAddition name="ПолтаваБанкСтрокаПоиска" id="114">
+								<AdditionSource>
+									<Item>ПолтаваБанк</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолтаваБанкСтрокаПоискаКонтекстноеМеню" id="115"/>
+								<ExtendedTooltip name="ПолтаваБанкСтрокаПоискаРасширеннаяПодсказка" id="116"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПолтаваБанкСостояниеПросмотра" id="117">
+								<AdditionSource>
+									<Item>ПолтаваБанк</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолтаваБанкСостояниеПросмотраКонтекстноеМеню" id="118"/>
+								<ExtendedTooltip name="ПолтаваБанкСостояниеПросмотраРасширеннаяПодсказка" id="119"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПолтаваБанкУправлениеПоиском" id="120">
+								<AdditionSource>
+									<Item>ПолтаваБанк</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПолтаваБанкУправлениеПоискомКонтекстноеМеню" id="121"/>
+								<ExtendedTooltip name="ПолтаваБанкУправлениеПоискомРасширеннаяПодсказка" id="122"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПолтаваБанкНомерСтроки" id="123">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкНомерСтрокиКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ПолтаваБанкНомерСтрокиРасширеннаяПодсказка" id="125"/>
+								</LabelField>
+								<InputField name="ПолтаваБанкЛицевойСчет" id="126">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкЛицевойСчетКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ПолтаваБанкЛицевойСчетРасширеннаяПодсказка" id="128"/>
+								</InputField>
+								<InputField name="ПолтаваБанкID" id="129">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкIDКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ПолтаваБанкIDРасширеннаяПодсказка" id="131"/>
+								</InputField>
+								<InputField name="ПолтаваБанкФИО" id="132">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкФИОКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ПолтаваБанкФИОРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<InputField name="ПолтаваБанкГород" id="135">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкГородКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ПолтаваБанкГородРасширеннаяПодсказка" id="137"/>
+								</InputField>
+								<InputField name="ПолтаваБанкУлица" id="138">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкУлицаКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ПолтаваБанкУлицаРасширеннаяПодсказка" id="140"/>
+								</InputField>
+								<InputField name="ПолтаваБанкДом" id="141">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкДомКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ПолтаваБанкДомРасширеннаяПодсказка" id="143"/>
+								</InputField>
+								<InputField name="ПолтаваБанкКвартира" id="144">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкКвартираКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ПолтаваБанкКвартираРасширеннаяПодсказка" id="146"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСчетчик1" id="147">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСчетчик1КонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ПолтаваБанкСчетчик1РасширеннаяПодсказка" id="149"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеДо1" id="150">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеДо1КонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеДо1РасширеннаяПодсказка" id="152"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеПосле1" id="153">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеПосле1КонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеПосле1РасширеннаяПодсказка" id="155"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСчетчик2" id="156">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСчетчик2КонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ПолтаваБанкСчетчик2РасширеннаяПодсказка" id="158"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеДо2" id="159">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеДо2КонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеДо2РасширеннаяПодсказка" id="161"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеПосле2" id="162">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеПосле2КонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеПосле2РасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСчетчик3" id="165">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСчетчик3КонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ПолтаваБанкСчетчик3РасширеннаяПодсказка" id="167"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеДо3" id="168">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеДо3КонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеДо3РасширеннаяПодсказка" id="170"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеПосле3" id="171">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеПосле3КонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеПосле3РасширеннаяПодсказка" id="173"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСчетчик4" id="174">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСчетчик4КонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ПолтаваБанкСчетчик4РасширеннаяПодсказка" id="176"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеДо4" id="177">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеДо4КонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеДо4РасширеннаяПодсказка" id="179"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеПосле4" id="180">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеПосле4КонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеПосле4РасширеннаяПодсказка" id="182"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСчетчик5" id="183">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСчетчик5КонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="ПолтаваБанкСчетчик5РасширеннаяПодсказка" id="185"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеДо5" id="186">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеДо5КонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеДо5РасширеннаяПодсказка" id="188"/>
+								</InputField>
+								<InputField name="ПолтаваБанкПоказаниеПосле5" id="189">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкПоказаниеПосле5КонтекстноеМеню" id="190"/>
+									<ExtendedTooltip name="ПолтаваБанкПоказаниеПосле5РасширеннаяПодсказка" id="191"/>
+								</InputField>
+								<InputField name="ПолтаваБанкДатаПлатежа" id="192">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкДатаПлатежаКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="ПолтаваБанкДатаПлатежаРасширеннаяПодсказка" id="194"/>
+								</InputField>
+								<InputField name="ПолтаваБанкНомерПлатежу" id="195">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкНомерПлатежуКонтекстноеМеню" id="196"/>
+									<ExtendedTooltip name="ПолтаваБанкНомерПлатежуРасширеннаяПодсказка" id="197"/>
+								</InputField>
+								<InputField name="ПолтаваБанкСуммаПлатежа" id="198">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкСуммаПлатежаКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="ПолтаваБанкСуммаПлатежаРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ПолтаваБанкКодУслуги" id="201">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкКодУслугиКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ПолтаваБанкКодУслугиРасширеннаяПодсказка" id="203"/>
+								</InputField>
+								<InputField name="ПолтаваБанкНазначениеПлатежа" id="204">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкНазначениеПлатежаКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ПолтаваБанкНазначениеПлатежаРасширеннаяПодсказка" id="206"/>
+								</InputField>
+								<InputField name="ПолтаваБанкМФО" id="207">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПолтаваБанкМФОКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ПолтаваБанкМФОРасширеннаяПодсказка" id="209"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОщадБанк" id="210">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ощадбанк</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ощадбанк</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОщадБанкРасширеннаяПодсказка" id="211"/>
+					<ChildItems>
+						<Table name="ОщадБанк" id="388">
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОщадБанк</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОщадБанкКонтекстноеМеню" id="389"/>
+							<AutoCommandBar name="ОщадБанкКоманднаяПанель" id="390">
+								<ChildItems>
+									<Button name="ОщадБанкЗагрузитьОщад" id="437">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьОщад</CommandName>
+										<ExtendedTooltip name="ОщадБанкЗагрузитьОщадРасширеннаяПодсказка" id="438"/>
+									</Button>
+									<Button name="ОщадБанкСохранитьОщад" id="439">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СохранитьОщад</CommandName>
+										<ExtendedTooltip name="ОщадБанкСохранитьОщадРасширеннаяПодсказка" id="440"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОщадБанкРасширеннаяПодсказка" id="391"/>
+							<SearchStringAddition name="ОщадБанкСтрокаПоиска" id="392">
+								<AdditionSource>
+									<Item>ОщадБанк</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОщадБанкСтрокаПоискаКонтекстноеМеню" id="393"/>
+								<ExtendedTooltip name="ОщадБанкСтрокаПоискаРасширеннаяПодсказка" id="394"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОщадБанкСостояниеПросмотра" id="395">
+								<AdditionSource>
+									<Item>ОщадБанк</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОщадБанкСостояниеПросмотраКонтекстноеМеню" id="396"/>
+								<ExtendedTooltip name="ОщадБанкСостояниеПросмотраРасширеннаяПодсказка" id="397"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОщадБанкУправлениеПоиском" id="398">
+								<AdditionSource>
+									<Item>ОщадБанк</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОщадБанкУправлениеПоискомКонтекстноеМеню" id="399"/>
+								<ExtendedTooltip name="ОщадБанкУправлениеПоискомРасширеннаяПодсказка" id="400"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОщадБанкНомерСтроки" id="401">
+									<DataPath>Объект.ОщадБанк.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкНомерСтрокиКонтекстноеМеню" id="402"/>
+									<ExtendedTooltip name="ОщадБанкНомерСтрокиРасширеннаяПодсказка" id="403"/>
+								</LabelField>
+								<InputField name="ОщадБанкLS" id="404">
+									<DataPath>Объект.ОщадБанк.LS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкLSКонтекстноеМеню" id="405"/>
+									<ExtendedTooltip name="ОщадБанкLSРасширеннаяПодсказка" id="406"/>
+								</InputField>
+								<InputField name="ОщадБанкSUMM" id="428">
+									<DataPath>Объект.ОщадБанк.SUMM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ОщадБанк.TotalSUMM</FooterDataPath>
+									<ContextMenu name="ОщадБанкSUMMКонтекстноеМеню" id="429"/>
+									<ExtendedTooltip name="ОщадБанкSUMMРасширеннаяПодсказка" id="430"/>
+								</InputField>
+								<InputField name="ОщадБанкFIO" id="407">
+									<DataPath>Объект.ОщадБанк.FIO</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкFIOКонтекстноеМеню" id="408"/>
+									<ExtendedTooltip name="ОщадБанкFIOРасширеннаяПодсказка" id="409"/>
+								</InputField>
+								<InputField name="ОщадБанкTOWN" id="410">
+									<DataPath>Объект.ОщадБанк.TOWN</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкTOWNКонтекстноеМеню" id="411"/>
+									<ExtendedTooltip name="ОщадБанкTOWNРасширеннаяПодсказка" id="412"/>
+								</InputField>
+								<InputField name="ОщадБанкSTREET" id="413">
+									<DataPath>Объект.ОщадБанк.STREET</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкSTREETКонтекстноеМеню" id="414"/>
+									<ExtendedTooltip name="ОщадБанкSTREETРасширеннаяПодсказка" id="415"/>
+								</InputField>
+								<InputField name="ОщадБанкBUILDING" id="416">
+									<DataPath>Объект.ОщадБанк.BUILDING</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкBUILDINGКонтекстноеМеню" id="417"/>
+									<ExtendedTooltip name="ОщадБанкBUILDINGРасширеннаяПодсказка" id="418"/>
+								</InputField>
+								<InputField name="ОщадБанкFLAT" id="419">
+									<DataPath>Объект.ОщадБанк.FLAT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкFLATКонтекстноеМеню" id="420"/>
+									<ExtendedTooltip name="ОщадБанкFLATРасширеннаяПодсказка" id="421"/>
+								</InputField>
+								<InputField name="ОщадБанкD_PLAT" id="422">
+									<DataPath>Объект.ОщадБанк.D_PLAT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкD_PLATКонтекстноеМеню" id="423"/>
+									<ExtendedTooltip name="ОщадБанкD_PLATРасширеннаяПодсказка" id="424"/>
+								</InputField>
+								<InputField name="ОщадБанкN_PLAT" id="425">
+									<DataPath>Объект.ОщадБанк.N_PLAT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкN_PLATКонтекстноеМеню" id="426"/>
+									<ExtendedTooltip name="ОщадБанкN_PLATРасширеннаяПодсказка" id="427"/>
+								</InputField>
+								<InputField name="ОщадБанкSERVICECOD" id="431">
+									<DataPath>Объект.ОщадБанк.SERVICECOD</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкSERVICECODКонтекстноеМеню" id="432"/>
+									<ExtendedTooltip name="ОщадБанкSERVICECODРасширеннаяПодсказка" id="433"/>
+								</InputField>
+								<InputField name="ОщадБанкSERVICE" id="434">
+									<DataPath>Объект.ОщадБанк.SERVICE</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОщадБанкSERVICEКонтекстноеМеню" id="435"/>
+									<ExtendedTooltip name="ОщадБанкSERVICEРасширеннаяПодсказка" id="436"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаАБанк" id="324">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>А-Банк</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>А-Банк</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа а банк</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАБанкРасширеннаяПодсказка" id="325"/>
+					<ChildItems>
+						<Table name="АБанк" id="326">
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.АБанк</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="АБанкКонтекстноеМеню" id="327"/>
+							<AutoCommandBar name="АБанкКоманднаяПанель" id="328">
+								<ChildItems>
+									<Button name="АБанкЗагрузитьАБанк" id="384">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗагрузитьАБанк</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.LevelDown</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="АБанкЗагрузитьАБанкРасширеннаяПодсказка" id="385"/>
+									</Button>
+									<Button name="АБанкСохранитьАБанк" id="386">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СохранитьАБанк</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.СохранитьФайлКак</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="АБанкСохранитьАБанкРасширеннаяПодсказка" id="387"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="АБанкРасширеннаяПодсказка" id="329"/>
+							<SearchStringAddition name="АБанкСтрокаПоиска" id="330">
+								<AdditionSource>
+									<Item>АБанк</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АБанкСтрокаПоискаКонтекстноеМеню" id="331"/>
+								<ExtendedTooltip name="АБанкСтрокаПоискаРасширеннаяПодсказка" id="332"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="АБанкСостояниеПросмотра" id="333">
+								<AdditionSource>
+									<Item>АБанк</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="АБанкСостояниеПросмотраКонтекстноеМеню" id="334"/>
+								<ExtendedTooltip name="АБанкСостояниеПросмотраРасширеннаяПодсказка" id="335"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="АБанкУправлениеПоиском" id="336">
+								<AdditionSource>
+									<Item>АБанк</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="АБанкУправлениеПоискомКонтекстноеМеню" id="337"/>
+								<ExtendedTooltip name="АБанкУправлениеПоискомРасширеннаяПодсказка" id="338"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="АБанкНомерСтроки" id="339">
+									<DataPath>Объект.АБанк.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкНомерСтрокиКонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="АБанкНомерСтрокиРасширеннаяПодсказка" id="341"/>
+								</LabelField>
+								<InputField name="АБанкPAY_NUM" id="342">
+									<DataPath>Объект.АБанк.PAY_NUM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкPAY_NUMКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="АБанкPAY_NUMРасширеннаяПодсказка" id="344"/>
+								</InputField>
+								<InputField name="АБанкNUMBER" id="345">
+									<DataPath>Объект.АБанк.NUMBER</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкNUMBERКонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="АБанкNUMBERРасширеннаяПодсказка" id="347"/>
+								</InputField>
+								<InputField name="АБанкOPERDAY" id="348">
+									<DataPath>Объект.АБанк.OPERDAY</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкOPERDAYКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="АБанкOPERDAYРасширеннаяПодсказка" id="350"/>
+								</InputField>
+								<InputField name="АБанкLS" id="351">
+									<DataPath>Объект.АБанк.LS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкLSКонтекстноеМеню" id="352"/>
+									<ExtendedTooltip name="АБанкLSРасширеннаяПодсказка" id="353"/>
+								</InputField>
+								<InputField name="АБанкFIO" id="354">
+									<DataPath>Объект.АБанк.FIO</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкFIOКонтекстноеМеню" id="355"/>
+									<ExtendedTooltip name="АБанкFIOРасширеннаяПодсказка" id="356"/>
+								</InputField>
+								<InputField name="АБанкADDRESS" id="357">
+									<DataPath>Объект.АБанк.ADDRESS</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкADDRESSКонтекстноеМеню" id="358"/>
+									<ExtendedTooltip name="АБанкADDRESSРасширеннаяПодсказка" id="359"/>
+								</InputField>
+								<InputField name="АБанкPREV_COUNT" id="360">
+									<DataPath>Объект.АБанк.PREV_COUNT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкPREV_COUNTКонтекстноеМеню" id="361"/>
+									<ExtendedTooltip name="АБанкPREV_COUNTРасширеннаяПодсказка" id="362"/>
+								</InputField>
+								<InputField name="АБанкCURR_COUNT" id="363">
+									<DataPath>Объект.АБанк.CURR_COUNT</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкCURR_COUNTКонтекстноеМеню" id="364"/>
+									<ExtendedTooltip name="АБанкCURR_COUNTРасширеннаяПодсказка" id="365"/>
+								</InputField>
+								<InputField name="АБанкMONTH" id="366">
+									<DataPath>Объект.АБанк.MONTH</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкMONTHКонтекстноеМеню" id="367"/>
+									<ExtendedTooltip name="АБанкMONTHРасширеннаяПодсказка" id="368"/>
+								</InputField>
+								<InputField name="АБанкYEAR" id="369">
+									<DataPath>Объект.АБанк.YEAR</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкYEARКонтекстноеМеню" id="370"/>
+									<ExtendedTooltip name="АБанкYEARРасширеннаяПодсказка" id="371"/>
+								</InputField>
+								<InputField name="АБанкSUMM" id="372">
+									<DataPath>Объект.АБанк.SUMM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.АБанк.TotalSUMM</FooterDataPath>
+									<ContextMenu name="АБанкSUMMКонтекстноеМеню" id="373"/>
+									<ExtendedTooltip name="АБанкSUMMРасширеннаяПодсказка" id="374"/>
+								</InputField>
+								<InputField name="АБанкKOMISS_D" id="375">
+									<DataPath>Объект.АБанк.KOMISS_D</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкKOMISS_DКонтекстноеМеню" id="376"/>
+									<ExtendedTooltip name="АБанкKOMISS_DРасширеннаяПодсказка" id="377"/>
+								</InputField>
+								<InputField name="АБанкKOMISS_V" id="378">
+									<DataPath>Объект.АБанк.KOMISS_V</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкKOMISS_VКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="АБанкKOMISS_VРасширеннаяПодсказка" id="380"/>
+								</InputField>
+								<InputField name="АБанкKS_NAME" id="381">
+									<DataPath>Объект.АБанк.KS_NAME</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АБанкKS_NAMEКонтекстноеМеню" id="382"/>
+									<ExtendedTooltip name="АБанкKS_NAMEРасширеннаяПодсказка" id="383"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаБанковскойВыписки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="СохранитьВыписку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить выписку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти виписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить выписку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВыписку</Action>
+		</Command>
+		<Command name="ЗагрузитьАБанк" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить А-Банк</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити А-Банк</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить а банк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьАБанк</Action>
+		</Command>
+		<Command name="СохранитьАБанк" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить выписку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти виписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сохранить а банк</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьАБанк</Action>
+		</Command>
+		<Command name="ЗагрузитьОщад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завантажити виписку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити виписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить ощад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LevelDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьОщад</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьОщад" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зберегти виписку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти виписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сохранить ощад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьОщад</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

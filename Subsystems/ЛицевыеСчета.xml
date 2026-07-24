@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="e8dbe20e-229d-4024-9c5b-afd5bbb0830f">
+		<Properties>
+			<Name>ЛицевыеСчета</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лицевые счета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content> Особові рахунки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ЛСМикро</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НазначенныеСубсидии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗданияИСооружения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникПередачиПрав</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОткрытиеЛицевогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПлощадьОбъектовЛицевыхСчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Тарифы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеЛицевогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДокументыПоЛицевымСчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НазначенныеЛьготы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОПрописанныхЖильцах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НазначенныеУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОПроживающихЖильцах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаДанныхЛицевыхСчетовДляСайтаЖКХ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветственныйВладелецЛицевогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникСозданияЛицевогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ТарифыУслугПодробно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоЛицевымСчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеЛицевогоСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетСписокАбонентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьВыгрузкуНаСайт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТехПоддержкаПанельНавигации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МашиноМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоНазанченнымРегиональнымСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоПаркоместам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктСверки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УлицыГородов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОбъемаПотребленияГВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПокупателю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыСПотребителямиУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Котельни</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Услуги</Subsystem>
+			<Subsystem>ЛьготыИСубсидии</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

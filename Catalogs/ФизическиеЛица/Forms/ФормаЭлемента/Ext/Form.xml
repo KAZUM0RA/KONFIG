@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ФИОКод" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИОКод</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ПIБКод</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИОКод</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ПIБКод</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ФИОКодРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Наименование" id="1">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="Код" id="19">
+					<DataPath>Объект.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Родитель" id="3">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<UsualGroup name="ДатаПол" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата пол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата піл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата пол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата піл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДатаПолРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ДатаРождения" id="5">
+					<DataPath>Объект.ДатаРождения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<RadioButtonField name="Пол" id="7">
+					<DataPath>Объект.Пол</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Мужской</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Чоловіча</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПолФизическогоЛица.EnumValue.Мужской</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Женский</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Жіноча</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ПолФизическогоЛица.EnumValue.Женский</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПолКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="45"/>
+				</RadioButtonField>
+				<UsualGroup name="ГруппаПаспорт" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа паспорт</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа паспорт</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПаспортРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="Паспорт" id="55">
+							<DataPath>Объект.Паспорт</DataPath>
+							<ContextMenu name="ПаспортКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ПаспортРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<InputField name="ДатаВыдачиПаспорта" id="58">
+							<DataPath>Объект.ДатаВыдачиПаспорта</DataPath>
+							<ContextMenu name="ДатаВыдачиПаспортаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДатаВыдачиПаспортаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="МестоРождения" id="9">
+			<DataPath>Объект.МестоРождения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МестоРожденияКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="МестоРожденияРасширеннаяПодсказка" id="46"/>
+		</InputField>
+		<InputField name="ИНН" id="11">
+			<DataPath>Объект.ИНН</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИННКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="47"/>
+		</InputField>
+		<Pages name="Страницы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сторінки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<Page name="ГруппаКонтактнаяИнформация" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адреса, телефоны</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Адреси, телефони</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактная информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група контактна інформація</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКонтактнаяИнформацияРасширеннаяПодсказка" id="49"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Агент" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Агент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="АгентРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<CheckBoxField name="МобильныйАгент" id="32">
+					<DataPath>Объект.МобильныйАгент</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МобильныйАгентКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="МобильныйАгентРасширеннаяПодсказка" id="51"/>
+					<Events>
+						<Event name="OnChange">МобильныйАгентПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ПараметрыМобильногоАгента" id="37">
+					<DataPath>Объект.ПараметрыМобильногоАгента</DataPath>
+					<ContextMenu name="ПараметрыМобильногоАгентаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПараметрыМобильногоАгентаРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ИДЛьготы" id="61">
+					<DataPath>Объект.ИДЛьготы</DataPath>
+					<ContextMenu name="ИДЛьготыКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ИДЛьготыРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="ИДСубсидия" id="64">
+					<DataPath>Объект.ИДСубсидия</DataPath>
+					<ContextMenu name="ИДСубсидияКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ИДСубсидияРасширеннаяПодсказка" id="66"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ФизическиеЛица</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

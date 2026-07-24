@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обмен данными</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Обмін даними</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЖурналОбмена" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Журнал обміну</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа журнал обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група журнал обміну</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>14</Height>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаЖурналОбменаРасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<Table name="ЖурналОбмена" id="2">
+					<Representation>List</Representation>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ЖурналОбмена</DataPath>
+					<RowPictureDataPath>ЖурналОбмена.DefaultPicture</RowPictureDataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="ЖурналОбменаКонтекстноеМеню" id="3"/>
+					<AutoCommandBar name="ЖурналОбменаКоманднаяПанель" id="4">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ЖурналОбменаКнопкаНайти" id="15">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ЖурналОбмена.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="ЖурналОбменаКнопкаНайтиРасширеннаяПодсказка" id="88"/>
+							</Button>
+							<Button name="ЖурналОбменаКнопкаСортироватьВозрастание" id="16">
+								<Type>CommandBarButton</Type>
+								<CommandName>2:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
+								<ExtendedTooltip name="ЖурналОбменаКнопкаСортироватьВозрастаниеРасширеннаяПодсказка" id="89"/>
+							</Button>
+							<Button name="ЖурналОбменаКнопкаСортироватьУбывание" id="17">
+								<Type>CommandBarButton</Type>
+								<CommandName>2:58b2a785-23f6-4b0e-a324-9a1323285595</CommandName>
+								<ExtendedTooltip name="ЖурналОбменаКнопкаСортироватьУбываниеРасширеннаяПодсказка" id="90"/>
+							</Button>
+							<Button name="ЖурналОбменаКнопкаОбновить" id="18">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаОбновитьЖурналОбмена</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Обновить</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Оновити</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ЖурналОбменаКнопкаОбновитьРасширеннаяПодсказка" id="91"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ЖурналОбменаРасширеннаяПодсказка" id="92"/>
+					<SearchStringAddition name="ЖурналОбменаСтрокаПоиска" id="93">
+						<AdditionSource>
+							<Item>ЖурналОбмена</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОбменаСтрокаПоискаКонтекстноеМеню" id="94"/>
+						<ExtendedTooltip name="ЖурналОбменаСтрокаПоискаРасширеннаяПодсказка" id="95"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЖурналОбменаСостояниеПросмотра" id="96">
+						<AdditionSource>
+							<Item>ЖурналОбмена</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОбменаСостояниеПросмотраКонтекстноеМеню" id="97"/>
+						<ExtendedTooltip name="ЖурналОбменаСостояниеПросмотраРасширеннаяПодсказка" id="98"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЖурналОбменаУправлениеПоиском" id="99">
+						<AdditionSource>
+							<Item>ЖурналОбмена</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖурналОбменаУправлениеПоискомКонтекстноеМеню" id="100"/>
+						<ExtendedTooltip name="ЖурналОбменаУправлениеПоискомРасширеннаяПодсказка" id="101"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ЖурналОбменаВариантОбмена" id="65">
+							<DataPath>ЖурналОбмена.ВариантОбмена</DataPath>
+							<ContextMenu name="ЖурналОбменаВариантОбменаКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ЖурналОбменаВариантОбменаРасширеннаяПодсказка" id="102"/>
+						</LabelField>
+						<LabelField name="ЖурналОбменаВидОбмена" id="81">
+							<DataPath>ЖурналОбмена.ВидОбмена</DataPath>
+							<ContextMenu name="ЖурналОбменаВидОбменаКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ЖурналОбменаВидОбменаРасширеннаяПодсказка" id="103"/>
+						</LabelField>
+						<LabelField name="ЖурналОбменаДата" id="67">
+							<DataPath>ЖурналОбмена.Дата</DataPath>
+							<ContextMenu name="ЖурналОбменаДатаКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ЖурналОбменаДатаРасширеннаяПодсказка" id="104"/>
+						</LabelField>
+						<LabelField name="ЖурналОбменаСтатус" id="69">
+							<DataPath>ЖурналОбмена.Статус</DataPath>
+							<ContextMenu name="ЖурналОбменаСтатусКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ЖурналОбменаСтатусРасширеннаяПодсказка" id="105"/>
+						</LabelField>
+						<LabelField name="ЖурналОбменаОшибка" id="71">
+							<DataPath>ЖурналОбмена.Ошибка</DataPath>
+							<ContextMenu name="ЖурналОбменаОшибкаКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ЖурналОбменаОшибкаРасширеннаяПодсказка" id="106"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбменДанными" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види обміну</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обмен данными</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група обмін даними</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>8</Height>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОбменДаннымиРасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="85">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="108"/>
+					<ChildItems>
+						<InputField name="ОтображениеДатаОбмена" id="83">
+							<DataPath>ОтображениеДатаОбмена</DataPath>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<SpinButton>true</SpinButton>
+							<BackColor>web:Linen</BackColor>
+							<ContextMenu name="ОтображениеДатаОбменаКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ОтображениеДатаОбменаРасширеннаяПодсказка" id="109"/>
+							<Events>
+								<Event name="OnChange">ОтображениеДатаОбменаПриИзменении</Event>
+								<Event name="StartChoice">ОтображениеДатаОбменаНачалоВыбора</Event>
+								<Event name="Tuning">ОтображениеДатаОбменаРегулирование</Event>
+							</Events>
+						</InputField>
+						<InputField name="НастройкаДоступа" id="45">
+							<DataPath>Объект.НастройкаДоступа</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка доступа к сайту</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Налаштування доступу до сайту</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="НастройкаДоступаКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="НастройкаДоступаРасширеннаяПодсказка" id="110"/>
+							<Events>
+								<Event name="OnChange">НастройкаДоступаПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="86">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<Table name="ВариантыОбмена" id="21">
+							<Representation>List</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ВариантыОбмена</DataPath>
+							<RowPictureDataPath>ВариантыОбмена.DefaultPicture</RowPictureDataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="ВариантыОбменаКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="ВариантыОбменаКоманднаяПанель" id="23">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="РасписаниеОбменаИзменить" id="44">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ВариантыОбмена.StandardCommand.Change</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Изменить</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Змінити</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="РасписаниеОбменаИзменитьРасширеннаяПодсказка" id="112"/>
+									</Button>
+									<Button name="РасписаниеОбменаКнопкаВыполнитьСейчас" id="38">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаВыполнитьОбменСейчас</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выполнить обмен сейчас</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Виконати обмін зараз</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="РасписаниеОбменаКнопкаВыполнитьСейчасРасширеннаяПодсказка" id="113"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВариантыОбменаРасширеннаяПодсказка" id="114"/>
+							<SearchStringAddition name="ВариантыОбменаСтрокаПоиска" id="115">
+								<AdditionSource>
+									<Item>ВариантыОбмена</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОбменаСтрокаПоискаКонтекстноеМеню" id="116"/>
+								<ExtendedTooltip name="ВариантыОбменаСтрокаПоискаРасширеннаяПодсказка" id="117"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВариантыОбменаСостояниеПросмотра" id="118">
+								<AdditionSource>
+									<Item>ВариантыОбмена</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОбменаСостояниеПросмотраКонтекстноеМеню" id="119"/>
+								<ExtendedTooltip name="ВариантыОбменаСостояниеПросмотраРасширеннаяПодсказка" id="120"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВариантыОбменаУправлениеПоиском" id="121">
+								<AdditionSource>
+									<Item>ВариантыОбмена</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВариантыОбменаУправлениеПоискомКонтекстноеМеню" id="122"/>
+								<ExtendedTooltip name="ВариантыОбменаУправлениеПоискомРасширеннаяПодсказка" id="123"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВариантыОбменаНаименование" id="73">
+									<DataPath>ВариантыОбмена.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вариант обмена</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Варіант обміну</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВариантыОбменаНаименованиеКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ВариантыОбменаНаименованиеРасширеннаяПодсказка" id="124"/>
+								</LabelField>
+								<CheckBoxField name="ВариантыОбменаИспользуетсяРасписание" id="79">
+									<DataPath>ВариантыОбмена.ИспользуетсяРасписание</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исп. расписание</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вик. розклад</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВариантыОбменаИспользуетсяРасписаниеКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ВариантыОбменаИспользуетсяРасписаниеРасширеннаяПодсказка" id="125"/>
+								</CheckBoxField>
+								<LabelField name="ВариантыОбменаОписание" id="77">
+									<DataPath>ВариантыОбмена.Описание</DataPath>
+									<ContextMenu name="ВариантыОбменаОписаниеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ВариантыОбменаОписаниеРасширеннаяПодсказка" id="126"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнтеграцияССайтом</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВариантыОбмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Варианты обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Варіанти обміну</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникВариантыОбменаДаннымиССайтом.Ссылка,
+	СправочникВариантыОбменаДаннымиССайтом.ВерсияДанных,
+	СправочникВариантыОбменаДаннымиССайтом.ПометкаУдаления,
+	СправочникВариантыОбменаДаннымиССайтом.Предопределенный,
+	СправочникВариантыОбменаДаннымиССайтом.Код,
+	СправочникВариантыОбменаДаннымиССайтом.Наименование,
+	СправочникВариантыОбменаДаннымиССайтом.Описание,
+	СправочникВариантыОбменаДаннымиССайтом.РегламентноеЗадание,
+	СправочникВариантыОбменаДаннымиССайтом.НастройкаДоступа,
+	СправочникВариантыОбменаДаннымиССайтом.ВыгрузкаДанныхПоЛС,
+	СправочникВариантыОбменаДаннымиССайтом.ЗагрузкаПоказанийПУ,
+	СправочникВариантыОбменаДаннымиССайтом.ЗагрузкаРеестраПлатежей,
+	ВЫБОР
+		КОГДА СправочникВариантыОбменаДаннымиССайтом.ИспользоватьРегламентноеЗадание
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ИспользуетсяРасписание
+ИЗ
+	Справочник.ВариантыОбменаДаннымиССайтом КАК СправочникВариантыОбменаДаннымиССайтом</QueryText>
+				<MainTable>Catalog.ВариантыОбменаДаннымиССайтом</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЖурналОбмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Журнал обміну</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЖурналОбменаССайтом</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПараметрыПодключения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметри підключення</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ДатаОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата обміну</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображениеДатаОбмена" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місяць обміну</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыполнитьОбменСейчас" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выполнить обмен сейчас</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда виконати обмін зараз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выполнить обмен сейчас</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда виконати обмін зараз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыполнитьОбменСейчас</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОбновитьЖурналОбмена" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить журнал обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда оновити журнал обміну</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить журнал обмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда оновити журнал обміну</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОбновитьЖурналОбмена</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

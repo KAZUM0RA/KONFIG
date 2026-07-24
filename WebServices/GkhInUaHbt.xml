@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WebService uuid="2757f3bd-1705-4541-9f87-a9bc63a633f1">
+		<Properties>
+			<Name>GkhInUaHbt</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>gkh.in.ua/hbt</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Namespace>http://gkh.in.ua/hbt</Namespace>
+			<XDTOPackages>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="xr:MDObjectRef">XDTOPackage.GkhInUaHbt</xr:Value>
+				</xr:Item>
+			</XDTOPackages>
+			<DescriptorFileName>gkh.in.ua-hbt.1cws</DescriptorFileName>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>3600</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<Operation uuid="3dddd92b-0d6d-466c-a55e-c4e56f8afaf4">
+				<Properties>
+					<Name>getState</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get state</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:States</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getState</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
+			<Operation uuid="c7071846-465a-416b-a063-aa013e1fc1d0">
+				<Properties>
+					<Name>getAccounts</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get accounts</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Accounts</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getAccounts</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="5fdd9407-3654-4b6b-8c8e-58ef1396e7fe">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="142ecc74-87f2-4302-abb6-f2f884ab12c6">
+				<Properties>
+					<Name>getContacts</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get contacts</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Contacts</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getContacts</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="dfdcf77c-dd24-4dc4-aa4f-eccacda039c9">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="b3e3ce4b-9bcb-4310-b9bb-787cd3b5c66d">
+				<Properties>
+					<Name>getServices</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get services</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Services</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getServices</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="303624d7-878e-4c78-9205-ead887b39ed9">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="ac943b83-78ee-483d-a3b9-3a173608fb4c">
+				<Properties>
+					<Name>getFeatures</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get features</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Get features</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Features</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getFeatures</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="c15edf35-208c-47d9-ab21-dd69e9d3e2c5">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="28a0d139-e276-46a2-bec8-bf374a122021">
+				<Properties>
+					<Name>getNorms</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get norms</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Get norms</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Norms</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getNorms</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="6e90d827-a852-4f53-838e-bcbb912b7a76">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="5cbd4649-9b00-4f03-9dca-99154d174154">
+				<Properties>
+					<Name>getRates</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get rates</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Rates</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getRates</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="0bbb84f7-b2e9-46da-bd20-3605189997f5">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="279f7808-fbc3-4356-98f6-2878daed9e7c">
+				<Properties>
+					<Name>getBalances</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get balances</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Balances</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getBalances</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="7fed50db-b789-487a-a0ca-a6878b20034e">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="e719fc66-45f7-4093-b1f6-d69b882b6a99">
+				<Properties>
+					<Name>getConsumpts</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get consumpts</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Consumpts</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getConsumpts</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f4b585e6-f78d-4bb4-b110-36427dc4da26">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="cf105a3f-e119-4e63-820b-a366fb379408">
+				<Properties>
+					<Name>getPayments</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get payments</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Payments</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getPayments</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="d82f6534-218d-462a-a43e-c8c135dcd887">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="38c2f110-2899-492c-9d03-5449012779f0">
+				<Properties>
+					<Name>getFinances</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get finances</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Finances</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getFinances</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="10d30028-0e64-42b1-944a-f50c1eebabf6">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="62ae0f1d-3bc3-43fb-a880-2f1555fff485">
+				<Properties>
+					<Name>getMeters</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get meters</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Meters</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getMeters</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="f1cb6a5d-245d-4945-97ab-3a25c792c702">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="a915cd08-3129-42ff-9ca8-9ae04b9f6aec">
+				<Properties>
+					<Name>getSeals</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get seals</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Seals</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getSeals</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="b733fc75-8ed4-44ae-b208-767c54d9d0d7">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="58d8a86e-73d5-4952-803a-ecd3b08a577e">
+				<Properties>
+					<Name>getIndications</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get indications</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Indications</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getIndications</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="b979c844-a904-467c-967c-9e3a06b09ac3">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="3e2fbf27-0117-44c0-bbdc-9dee5e296762">
+				<Properties>
+					<Name>getISRels</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get ISRels</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:ISRels</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>getISRels</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="71be1645-d1f3-4961-9d4b-98db8aa41f9a">
+						<Properties>
+							<Name>CODE</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>CODE</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>xs:string</XDTOValueType>
+							<Nillable>true</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="76d15d33-19be-4da4-99f3-f7de70b326b7">
+				<Properties>
+					<Name>putCCEs</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Put CCEs</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Empties</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>putCCEs</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="e764c215-f53f-4384-8f90-b4c05e4fcb35">
+						<Properties>
+							<Name>DATA</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DATA</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://gkh.in.ua/hbt">d8p1:CCEs</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="7bdce06e-d534-4a1e-b238-f323a0cc0c28">
+				<Properties>
+					<Name>putIPEs</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Put IPEs</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:IPRs</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>putIPEs</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="46ab277e-4091-4ba2-a44c-74a2110dfa2f">
+						<Properties>
+							<Name>DATA</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DATA</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://gkh.in.ua/hbt">d8p1:IPEs</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="3144c2ea-0fac-4d2f-86e3-b5b27d9d55ea">
+				<Properties>
+					<Name>putNDEs</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Put NDEs</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Empties</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>putNDEs</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="c013ab6e-db3b-40a7-a17a-1c7415c1e3e3">
+						<Properties>
+							<Name>DATA</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DATA</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://gkh.in.ua/hbt">d8p1:NDEs</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+			<Operation uuid="60935825-7d9a-4b56-8c26-aa7285b7d902">
+				<Properties>
+					<Name>putMDFs</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Put MDFs</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://gkh.in.ua/hbt">d6p1:Empties</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>true</Transactioned>
+					<ProcedureName>putMDFs</ProcedureName>
+					<DataLockControlMode>Automatic</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="60d01b02-f82e-4fb6-bddf-efe49758daae">
+						<Properties>
+							<Name>DATA</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DATA</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType xmlns:d8p1="http://gkh.in.ua/hbt">d8p1:MDFs</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
+		</ChildObjects>
+	</WebService>
+</MetaDataObject>

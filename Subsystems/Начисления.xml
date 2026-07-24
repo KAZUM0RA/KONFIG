@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="87342941-2982-4378-a7fe-88b786e90172">
+		<Properties>
+			<Name>Начисления</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начисления и взаиморасчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нарахування й взаєморозрахунки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.НачисленияМикро</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТехПоддержкаПанельНавигации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийКорректировкаНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводНачальныхОстатков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыНачисленияУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийУправленияУслугами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДокументыПоОплатам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПотребителейУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеДополнительныхНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОснованияНормПотребления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыПоСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыПоЛьготам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РазовоеНачислениеУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоРайонах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиИДвиженияДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоЛьготам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоПерерасчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыНачисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеМесяца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДокументыПоНачислениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановкаТарифаИзФайлаXLSX</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыСПотребителямиУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКвитанций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоУслугамОСМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоРасчетамЛицевыхСчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаИзExcel</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РапортРуководителюПоРентабельностиПредоставляемыхУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыПоРегиональнымСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаДолга</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыМашиноМест</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланированиеАвансов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыПоЛьготам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГрупповоеЗакрытиеМесяца</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыПоСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасчетыПоСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоРегиональнымСубсидиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеНеиспользованнойСубсидии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаУслугМВК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НачислениеОплаты</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Банк</Subsystem>
+			<Subsystem>Касса</Subsystem>
+			<Subsystem>Затраты</Subsystem>
+			<Subsystem>ЮридическийОтдел</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

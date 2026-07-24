@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="33">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="ФайлЕксель" id="11">
+					<DataPath>Объект.ФайлЕксель</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФайлЕксельКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ФайлЕксельРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="StartChoice">ФайлЕксельНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="ЗагрузитьИзФайла" id="35">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+					<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="36"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="6">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="Услуга" id="1">
+					<DataPath>Объект.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УслугаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТабличнаяЧасть" id="14">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="15"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="16">
+				<ChildItems>
+					<Button name="Заменить" id="4">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заменить</CommandName>
+						<ExtendedTooltip name="ЗаменитьРасширеннаяПодсказка" id="5"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="17"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="18">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="21">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧастьНомерСтроки" id="27">
+					<DataPath>Объект.ТабличнаяЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерСтрокиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьЛицевойСчет" id="30">
+					<DataPath>Объект.ТабличнаяЧасть.ЛицевойСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьЛицевойСчетКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТабличнаяЧастьЛицевойСчетРасширеннаяПодсказка" id="32"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаменаУслугиВПриборах</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заменить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виконати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заменить</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завантажити з файлу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+	</Commands>
+</Form>

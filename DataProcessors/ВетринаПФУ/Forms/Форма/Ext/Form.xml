@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппаКнопок" id="146">
+				<Title>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Форма группа кнопок</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Форма группа кнопок</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="ФормаГруппаКнопокРасширеннаяПодсказка" id="147"/>
+				<ChildItems>
+					<Popup name="ФормаГруппаПдменю" id="150">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вивантажити</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Вивантажити</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Форма группа пдменю</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ФормаГруппаПдменюРасширеннаяПодсказка" id="151"/>
+						<ChildItems>
+							<Button name="ВыгрузитьВФайл" id="142">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыгрузитьВФайл</CommandName>
+								<ExtendedTooltip name="ВыгрузитьВФайлРасширеннаяПодсказка" id="143"/>
+							</Button>
+							<Button name="ФормаВыгрузитьВФайлЕксель" id="148">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыгрузитьВФайлЕксель</CommandName>
+								<ExtendedTooltip name="ФормаВыгрузитьВФайлЕксельРасширеннаяПодсказка" id="149"/>
+							</Button>
+							<Button name="ФормаВыгрузитьХМЛ" id="158">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ВыгрузитьХМЛ</CommandName>
+								<ExtendedTooltip name="ФормаВыгрузитьХМЛРасширеннаяПодсказка" id="159"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГрупаФайл" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГрупаФайлРасширеннаяПодсказка" id="141"/>
+			<ChildItems>
+				<InputField name="Файл" id="1">
+					<DataPath>Объект.Файл</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФайлКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ФайлНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="Ексель" id="152">
+					<DataPath>Объект.Ексель</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЕксельКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="ЕксельРасширеннаяПодсказка" id="154"/>
+					<Events>
+						<Event name="OnChange">ЕксельПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ХМЛ" id="155">
+					<DataPath>Объект.ХМЛ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ХМЛКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="ХМЛРасширеннаяПодсказка" id="157"/>
+					<Events>
+						<Event name="OnChange">ХМЛПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДанныеВетрины" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеВетрины</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеВетриныКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ДанныеВетриныКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ДанныеВетриныЗаполнитьДанными" id="144">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьДанными</CommandName>
+						<ExtendedTooltip name="ДанныеВетриныЗаполнитьДаннымиРасширеннаяПодсказка" id="145"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеВетриныРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ДанныеВетриныСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ДанныеВетрины</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеВетриныСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДанныеВетриныСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеВетриныСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ДанныеВетрины</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеВетриныСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДанныеВетриныСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеВетриныУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ДанныеВетрины</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеВетриныУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДанныеВетриныУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДанныеВетриныROW_NUM" id="20">
+					<DataPath>Объект.ДанныеВетрины.ROW_NUM</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныROW_NUMКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДанныеВетриныROW_NUMРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCDPR_BAS" id="23">
+					<DataPath>Объект.ДанныеВетрины.CDPR_Bas</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCDPR_BASКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДанныеВетриныCDPR_BASРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCDPR_SUB" id="26">
+					<DataPath>Объект.ДанныеВетрины.CDPR_Sub</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCDPR_SUBКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДанныеВетриныCDPR_SUBРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДанныеВетриныSERVICE_POINT" id="29">
+					<DataPath>Объект.ДанныеВетрины.SERVICE_POINT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныSERVICE_POINTКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДанныеВетриныSERVICE_POINTРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДанныеВетриныOSOB" id="32">
+					<DataPath>Объект.ДанныеВетрины.OSOB</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныOSOBКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДанныеВетриныOSOBРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДанныеВетриныDIV_PER_ACC" id="35">
+					<DataPath>Объект.ДанныеВетрины.DIV_PER_ACC</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныDIV_PER_ACCКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДанныеВетриныDIV_PER_ACCРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ДанныеВетриныEIC" id="38">
+					<DataPath>Объект.ДанныеВетрины.EIC</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныEICКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДанныеВетриныEICРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ДанныеВетриныLN_NAME" id="41">
+					<DataPath>Объект.ДанныеВетрины.LN_NAME</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныLN_NAMEКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДанныеВетриныLN_NAMEРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ДанныеВетриныFN_NAME" id="44">
+					<DataPath>Объект.ДанныеВетрины.FN_NAME</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныFN_NAMEКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДанныеВетриныFN_NAMEРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ДанныеВетриныSN_NAME" id="47">
+					<DataPath>Объект.ДанныеВетрины.SN_NAME</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныSN_NAMEКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДанныеВетриныSN_NAMEРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ДанныеВетриныIPN" id="50">
+					<DataPath>Объект.ДанныеВетрины.IPN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныIPNКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДанныеВетриныIPNРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPASS_SERIAL" id="53">
+					<DataPath>Объект.ДанныеВетрины.PASS_SERIAL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPASS_SERIALКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДанныеВетриныPASS_SERIALРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPASS_NUMBER" id="56">
+					<DataPath>Объект.ДанныеВетрины.PASS_NUMBER</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPASS_NUMBERКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ДанныеВетриныPASS_NUMBERРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДанныеВетриныKATOTTG" id="59">
+					<DataPath>Объект.ДанныеВетрины.KATOTTG</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныKATOTTGКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДанныеВетриныKATOTTGРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ДанныеВетриныREGION" id="62">
+					<DataPath>Объект.ДанныеВетрины.REGION</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныREGIONКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ДанныеВетриныREGIONРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ДанныеВетриныDISTRICT" id="65">
+					<DataPath>Объект.ДанныеВетрины.DISTRICT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныDISTRICTКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ДанныеВетриныDISTRICTРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ДанныеВетриныLOCAL_COMMUNITY" id="68">
+					<DataPath>Объект.ДанныеВетрины.LOCAL_COMMUNITY</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныLOCAL_COMMUNITYКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДанныеВетриныLOCAL_COMMUNITYРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ДанныеВетриныSETTLEMENT" id="71">
+					<DataPath>Объект.ДанныеВетрины.SETTLEMENT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныSETTLEMENTКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ДанныеВетриныSETTLEMENTРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ДанныеВетриныSTREET" id="74">
+					<DataPath>Объект.ДанныеВетрины.STREET</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныSTREETКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ДанныеВетриныSTREETРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ДанныеВетриныHOUSE" id="77">
+					<DataPath>Объект.ДанныеВетрины.HOUSE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныHOUSEКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ДанныеВетриныHOUSEРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCASE" id="80">
+					<DataPath>Объект.ДанныеВетрины.CASE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCASEКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДанныеВетриныCASEРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ДанныеВетриныAPT_NUM" id="83">
+					<DataPath>Объект.ДанныеВетрины.APT_NUM</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныAPT_NUMКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ДанныеВетриныAPT_NUMРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ДанныеВетриныAPT_FLOOR" id="86">
+					<DataPath>Объект.ДанныеВетрины.APT_FLOOR</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныAPT_FLOORКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ДанныеВетриныAPT_FLOORРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ДанныеВетриныHOUSE_FLOOR" id="89">
+					<DataPath>Объект.ДанныеВетрины.HOUSE_FLOOR</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныHOUSE_FLOORКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ДанныеВетриныHOUSE_FLOORРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPLZAG" id="92">
+					<DataPath>Объект.ДанныеВетрины.PLZAG</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPLZAGКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ДанныеВетриныPLZAGРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPLOPAL" id="95">
+					<DataPath>Объект.ДанныеВетрины.PLOPAL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPLOPALКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ДанныеВетриныPLOPALРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ДанныеВетриныZONE" id="98">
+					<DataPath>Объект.ДанныеВетрины.ZONE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныZONEКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ДанныеВетриныZONEРасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ДанныеВетриныZABORG" id="101">
+					<DataPath>Объект.ДанныеВетрины.ZABORG</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныZABORGКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ДанныеВетриныZABORGРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="ДанныеВетриныRESTRUC" id="104">
+					<DataPath>Объект.ДанныеВетрины.RESTRUC</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныRESTRUCКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ДанныеВетриныRESTRUCРасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCOD" id="107">
+					<DataPath>Объект.ДанныеВетрины.COD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCODКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ДанныеВетриныCODРасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="ДанныеВетриныTARIF" id="110">
+					<DataPath>Объект.ДанныеВетрины.TARIF</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныTARIFКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ДанныеВетриныTARIFРасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="ДанныеВетриныREASON" id="113">
+					<DataPath>Объект.ДанныеВетрины.REASON</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныREASONКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ДанныеВетриныREASONРасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<InputField name="ДанныеВетриныUNITS" id="116">
+					<DataPath>Объект.ДанныеВетрины.UNITS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныUNITSКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ДанныеВетриныUNITSРасширеннаяПодсказка" id="118"/>
+				</InputField>
+				<InputField name="ДанныеВетриныBENEFIT" id="119">
+					<DataPath>Объект.ДанныеВетрины.BENEFIT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныBENEFITКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ДанныеВетриныBENEFITРасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="ДанныеВетриныSUBSIDY" id="122">
+					<DataPath>Объект.ДанныеВетрины.SUBSIDY</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныSUBSIDYКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ДанныеВетриныSUBSIDYРасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCDPR_REP" id="125">
+					<DataPath>Объект.ДанныеВетрины.CDPR_Rep</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCDPR_REPКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ДанныеВетриныCDPR_REPРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="ДанныеВетриныCDPR_REC" id="128">
+					<DataPath>Объект.ДанныеВетрины.CDPR_Rec</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныCDPR_RECКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ДанныеВетриныCDPR_RECРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPERIN" id="131">
+					<DataPath>Объект.ДанныеВетрины.PERIN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPERINКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ДанныеВетриныPERINРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPEROFF" id="134">
+					<DataPath>Объект.ДанныеВетрины.PEROFF</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPEROFFКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ДанныеВетриныPEROFFРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ДанныеВетриныPOST_INDEX" id="137">
+					<DataPath>Объект.ДанныеВетрины.POST_INDEX</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныPOST_INDEXКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ДанныеВетриныPOST_INDEXРасширеннаяПодсказка" id="139"/>
+				</InputField>
+				<InputField name="ДанныеВетриныDEBT_START" id="160">
+					<DataPath>Объект.ДанныеВетрины.DEBT_START</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеВетриныDEBT_STARTКонтекстноеМеню" id="161"/>
+					<ExtendedTooltip name="ДанныеВетриныDEBT_STARTРасширеннаяПодсказка" id="162"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВетринаПФУ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьВФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вивантажити у файл CSV</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вивантажити у файл CSV</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВФайл</Action>
+		</Command>
+		<Command name="ЗаполнитьДанными" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить данными</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДанными</Action>
+		</Command>
+		<Command name="ВыгрузитьВФайлЕксель" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вивантажити у файл XLSX</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вивантажити у файл XLSX</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выгрузить в файл ексель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВФайлЕксель</Action>
+		</Command>
+		<Command name="ВыгрузитьХМЛ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вивантажити у файл XML</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вивантажити у файл XML</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выгрузить ХМЛ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьХМЛ</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<CommonCommand uuid="2baf6d7a-12ed-4f22-ad96-92bb31b747ff">
+		<Properties>
+			<Name>ДополнительныеОтчетыИОбработкиПечатныеФормы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные печатные формы...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Додаткові друковані форми...</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Group>CommandGroup.Печать</Group>
+			<Representation>Auto</Representation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к списку дополнительных печатных форм</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перейти до списку додаткових друкованих форм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture/>
+			<Shortcut/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<CommandParameterType>
+				<v8:Type>cfg:DocumentRef.ПриходныйОрдерНаЗапасы</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПеремещениеЗапасов</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+				<v8:Type>cfg:DocumentRef.РасходСоСчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.ОткрытиеЛицевогоСчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.НачислениеПениПоЛС</v8:Type>
+				<v8:Type>cfg:DocumentRef.УстановкаЦенНоменклатуры</v8:Type>
+				<v8:Type>cfg:DocumentRef.РазовоеНачислениеУслуг</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗаменаПриборовУчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.ОприходованиеЗапасов</v8:Type>
+				<v8:Type>cfg:DocumentRef.НачислениеПоЛС</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВводНачальныхОстатков</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПоступлениеВКассу</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеУслугамиПодробно</v8:Type>
+				<v8:Type>cfg:DocumentRef.РасходныйОрдерНаЗапасы</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПоступлениеЗапасовУслуг</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПриборыУчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗаявкаНаПроведениеРемонта</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеСубсидиями</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗакрытиеЛицевогоСчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеПриборамиУчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеТарифами</v8:Type>
+				<v8:Type>cfg:CatalogRef.ОбъектыЛицевыхСчетов</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПоступлениеНаСчет</v8:Type>
+				<v8:Type>cfg:DocumentRef.КорректировкаПоказанийПриборовУчета</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗданияИСооружения</v8:Type>
+				<v8:Type>cfg:DocumentRef.Голосование</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИнформационныйЛистДляГолосования</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПеремещениеДенежныхСредств</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеЛьготами</v8:Type>
+				<v8:Type>cfg:DocumentRef.СписаниеЗапасов</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВозвратПоставщику</v8:Type>
+				<v8:Type>cfg:DocumentRef.Претензия</v8:Type>
+				<v8:Type>cfg:DocumentRef.Предписание</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИнвентаризацияЗапасов</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВводПоказанийПриборовУчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеСоставомЖильцов</v8:Type>
+				<v8:Type>cfg:DocumentRef.УправлениеУслугами</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПредписаниеНаСнос</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПерерасчетПоЛС</v8:Type>
+				<v8:Type>cfg:DocumentRef.ИзменениеЛицевогоСчета</v8:Type>
+				<v8:Type>cfg:DocumentRef.Иск</v8:Type>
+			</CommandParameterType>
+			<ParameterUseMode>Multiple</ParameterUseMode>
+			<ModifiesData>false</ModifiesData>
+			<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+		</Properties>
+	</CommonCommand>
+</MetaDataObject>

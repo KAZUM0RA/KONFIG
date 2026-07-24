@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<UsualGroup name="НомерИДата" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер и дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номер і дата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер и дата</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номер і дата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="НомерИДатаРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<InputField name="Номер" id="3">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="Дата" id="5">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Организация" id="7">
+					<DataPath>Объект.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="Здание" id="9">
+					<DataPath>Объект.Здание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗданиеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="Директор" id="24">
+					<DataPath>Объект.Организация.ТекущийРуководитель</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ДиректорКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ДиректорРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Нарушение" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о нарушении</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Інформація про порушення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нарушение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Порушення</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НарушениеРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<UsualGroup name="СчетИКвартира" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет и квартира</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рахунок і квартира</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет и квартира</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рахунок і квартира</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СчетИКвартираРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<InputField name="ЛицевойСчет" id="14">
+							<DataPath>Объект.ЛицевойСчет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛицевойСчетКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="67"/>
+							<Events>
+								<Event name="OnChange">ЛицевойСчетПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЛицевойСчетОбъектЛицевогоСчета" id="39">
+							<DataPath>Объект.ЛицевойСчет.ОбъектЛицевогоСчета</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Квартира</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Квартира</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="ЛицевойСчетОбъектЛицевогоСчетаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ЛицевойСчетОбъектЛицевогоСчетаРасширеннаяПодсказка" id="68"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Должник" id="16">
+					<DataPath>Объект.Нарушитель</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДолжникКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДолжникРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<UsualGroup name="Период" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Період</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Період</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<InputField name="СуммаДолга" id="18">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СуммаДолгаКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="СуммаДолгаРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="НаДату" id="20">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>на дату</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>на дату</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаДатуКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="НаДатуРасширеннаяПодсказка" id="72"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ОплатитьДо" id="22">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОплатитьДоКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ОплатитьДоРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="КонечнаяДата" id="43">
+					<DataPath>Объект.КонечнаяДата</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправить нарушение до</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виправити порушення до</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КонечнаяДатаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="КонечнаяДатаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТекстНарушения" id="41">
+					<DataPath>Объект.ТекстНарушения</DataPath>
+					<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
+					<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ТекстНарушенияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТекстНарушенияРасширеннаяПодсказка" id="75"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнформация" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група інформація</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група інформація</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<PictureField name="КартинкаСостоянияДокумента" id="46">
+					<DataPath>КартинкаСостоянияДокумента</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа: новый, не проведен, проведен, записан.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа: новий, не проведений, проведений, записаний.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Zoomable>true</Zoomable>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыДокумента</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</Border>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаСостоянияДокументаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="КартинкаСостоянияДокументаРасширеннаяПодсказка" id="77"/>
+				</PictureField>
+				<LabelField name="СостояниеДокумента" id="48">
+					<DataPath>СостояниеДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа: новый, не проведен, проведен, записан.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа: новий, не проведений, проведений, записаний.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<TextColor>#993300</TextColor>
+					<ContextMenu name="СостояниеДокументаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="СостояниеДокументаРасширеннаяПодсказка" id="78"/>
+				</LabelField>
+				<PictureDecoration name="КартинкаАвторДокумента" id="50">
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор документу</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь, автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Користувач, автор документа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.User</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаАвторДокументаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="КартинкаАвторДокументаРасширеннаяПодсказка" id="79"/>
+				</PictureDecoration>
+				<LabelField name="АвторДокумента" id="52">
+					<DataPath>Объект.Автор</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор документу</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="АвторДокументаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="АвторДокументаРасширеннаяПодсказка" id="80"/>
+				</LabelField>
+				<PictureDecoration name="КартинкаАвторПоследнегоИзменения" id="54">
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор последненго изменения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор останньої зміни</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь, автор последнего изменения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Користувач, автор останньої зміни</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.АвторПоследнегоИзменения</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаАвторПоследнегоИзмененияКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="КартинкаАвторПоследнегоИзмененияРасширеннаяПодсказка" id="81"/>
+				</PictureDecoration>
+				<LabelField name="ПоследнееИзменение" id="56">
+					<DataPath>ПоследнееИзменение</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<ContextMenu name="ПоследнееИзменениеКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПоследнееИзменениеРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПредписаниеНаСнос</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КартинкаСостоянияДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка состояния документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка стану документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследнееИзменение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последнее изменение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остання зміна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрешеноПроведение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешено проведение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дозволене проведення</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стан документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,1252 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Помощник по выгрузке данных на web-сайт</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Помічник для вивантаження даних на web-сайт</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыМастера" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы мастера</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сторінки майстра</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы мастера</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сторінки майстра</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыМастераРасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<Page name="СтраницаМастераНачало" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра початок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера начало</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра початок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМастераНачалоРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаголовокНачало" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок початок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок початок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовокНачалоРасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокМастераНачало" id="32">
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вас приветствует помощник по выгрузке данных на web-сайт!</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вас вітає помічник для вивантаження даних на web-сайт!</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокМастераНачалоКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ЗаголовокМастераНачалоРасширеннаяПодсказка" id="106"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОписаниеМастераНачало" id="34">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помощник позволит Вам создать файл выгрузки на сайт.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Помічник дозволить Вам створити файл вивантадення на сайт.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОписаниеМастераНачалоКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ОписаниеМастераНачалоРасширеннаяПодсказка" id="107"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыбораОрганизацииИПериодаВыгрузки" id="36">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите организацию и период выгрузки.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вкажіть організацію і період вивантаження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбора организации и периода выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група вибору організації і періоду вивантаження</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВыбораОрганизацииИПериодаВыгрузкиРасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОрганизация" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа организация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група організація</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа организация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група організація</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>5</Height>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<InputField name="Организация" id="2">
+											<DataPath>Объект.Организация</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Организация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Організація</v8:content>
+												</v8:item>
+											</Title>
+											<QuickChoice>true</QuickChoice>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ОрганизацияКонтекстноеМеню" id="3"/>
+											<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="110"/>
+											<Events>
+												<Event name="OnChange">ОрганизацияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ПояснениеВыбораОрганизация" id="41">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбирается организация, по лицевым счетам которой будет проводиться выгрузка на сайт.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Виберіть організацію, по особовим рахункам якої буде проводитися вивантаження на сайт. </v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВыбораОрганизацияКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ПояснениеВыбораОрганизацияРасширеннаяПодсказка" id="111"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРасчетныйСчетОрганизации" id="93">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа расчетный счет организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група розрахунковий рахунок організації</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа расчетный счет организации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група розрахунковий рахунок організації</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>5</Height>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРасчетныйСчетОрганизацииРасширеннаяПодсказка" id="112"/>
+									<ChildItems>
+										<InputField name="РасчетныйСчет" id="94">
+											<DataPath>Объект.РасчетныйСчетОрганизации</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расчетный счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Розрахунковий рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="РасчетныйСчетКонтекстноеМеню" id="95"/>
+											<ExtendedTooltip name="РасчетныйСчетРасширеннаяПодсказка" id="113"/>
+										</InputField>
+										<LabelDecoration name="ПояснениеВыбораРасчетногоСчета" id="96">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указывается счет, на который будут производится оплаты за комунальные услуги.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вказується період, за який буде відбуватися відбір по нарахуванням для вивантаження на сайт.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВыбораРасчетногоСчетаКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="ПояснениеВыбораРасчетногоСчетаРасширеннаяПодсказка" id="114"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПериод" id="40">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група період</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група період</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>5</Height>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="115"/>
+									<ChildItems>
+										<InputField name="МесяцСтрока" id="27">
+											<DataPath>МесяцСтрока</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Період</v8:content>
+												</v8:item>
+											</Title>
+											<SpinButton>true</SpinButton>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ChoiceListButton>true</ChoiceListButton>
+											<ContextMenu name="МесяцСтрокаКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="МесяцСтрокаРасширеннаяПодсказка" id="116"/>
+											<Events>
+												<Event name="OnChange">МесяцСтрокаПриИзменении</Event>
+												<Event name="AutoComplete">МесяцСтрокаАвтоПодбор</Event>
+												<Event name="Tuning">МесяцСтрокаРегулирование</Event>
+												<Event name="StartListChoice">МесяцСтрокаНачалоВыбораИзСписка</Event>
+												<Event name="Clearing">МесяцСтрокаОчистка</Event>
+												<Event name="TextEditEnd">МесяцСтрокаОкончаниеВводаТекста</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ПояснениеВыбораПериода" id="43">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указывается период, за который будет производиться отбор по начислениям для выгрузки на сайт.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вказується період, за який буде відбуватися відбір по нарахуванням для вивантаження на сайт.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВыбораПериодаКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ПояснениеВыбораПериодаРасширеннаяПодсказка" id="117"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация1" id="45">
+									<Height>10</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="118"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМастераНастройкиВыборЛицевыхСчетов" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера настройки выбор лицевых счетов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра налаштування вибір особових рахунків</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера настройки выбор лицевых счетов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра налаштування вибір особових рахунків</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМастераНастройкиВыборЛицевыхСчетовРасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаголовокВыборЛицевыхСчетов" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок выбор лицевых счетов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок вибір особових рахунків</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок початок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовокВыборЛицевыхСчетовРасширеннаяПодсказка" id="120"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокМастераВыборЛицевыхСчетов" id="49">
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задайте перечень лицевых счетов, по которым нужно произвести выгрузку.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Задайте перелік особових рахунків, по яким потрібно здійснити вивантаження.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокМастераВыборЛицевыхСчетовКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ЗаголовокМастераВыборЛицевыхСчетовРасширеннаяПодсказка" id="121"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОписаниеМастераВыборЛицевыхСчетов" id="51">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помощник позволит Вам произвести подбор лицевых счетов, по которым необходимо произвести выгрузку данных на сайт.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Помічник дозволить Вам здійснити підбір особових рахунків, по яким необхідно здійснити вивантаження даних на сайт.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОписаниеМастераВыборЛицевыхСчетовКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ОписаниеМастераВыборЛицевыхСчетовРасширеннаяПодсказка" id="122"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыбораЛицевыхСчетов" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите лицевые счета для выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вкажіть особові рахунки для вивантаження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбора лицевых счетов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група вибору особових рахунків</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВыбораЛицевыхСчетовРасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<Table name="ЛицевыеСчета" id="6">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Объект.ЛицевыеСчета</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЛицевыеСчетаКонтекстноеМеню" id="7"/>
+									<AutoCommandBar name="ЛицевыеСчетаКоманднаяПанель" id="8">
+										<ChildItems>
+											<Button name="Заполнить" id="25">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Заполнить</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Заполнить</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Заповнити</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="124"/>
+											</Button>
+											<Button name="Очистить" id="26">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.Очистить</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Очистить</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>Очистити</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="125"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ЛицевыеСчетаРасширеннаяПодсказка" id="126"/>
+									<SearchStringAddition name="ЛицевыеСчетаСтрокаПоиска" id="127">
+										<AdditionSource>
+											<Item>ЛицевыеСчета</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЛицевыеСчетаСтрокаПоискаКонтекстноеМеню" id="128"/>
+										<ExtendedTooltip name="ЛицевыеСчетаСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЛицевыеСчетаСостояниеПросмотра" id="130">
+										<AdditionSource>
+											<Item>ЛицевыеСчета</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЛицевыеСчетаСостояниеПросмотраКонтекстноеМеню" id="131"/>
+										<ExtendedTooltip name="ЛицевыеСчетаСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЛицевыеСчетаУправлениеПоиском" id="133">
+										<AdditionSource>
+											<Item>ЛицевыеСчета</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЛицевыеСчетаУправлениеПоискомКонтекстноеМеню" id="134"/>
+										<ExtendedTooltip name="ЛицевыеСчетаУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ЛицевыеСчетаНомерСтроки" id="9">
+											<DataPath>Объект.ЛицевыеСчета.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЛицевыеСчетаНомерСтрокиКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="ЛицевыеСчетаНомерСтрокиРасширеннаяПодсказка" id="136"/>
+										</LabelField>
+										<InputField name="ЛицевыеСчетаЛицевойСчет" id="11">
+											<DataPath>Объект.ЛицевыеСчета.ЛицевойСчет</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Лицевой счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Особовий рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<OpenButton>true</OpenButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ЛицевыеСчетаЛицевойСчетКонтекстноеМеню" id="12"/>
+											<ExtendedTooltip name="ЛицевыеСчетаЛицевойСчетРасширеннаяПодсказка" id="137"/>
+											<Events>
+												<Event name="OnChange">ЛицевыеСчетаЛицевойСчетПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ЛицевыеСчетаВладелец" id="13">
+											<DataPath>Объект.ЛицевыеСчета.Владелец</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Владелец</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Власник</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>false</ChoiceButton>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ЛицевыеСчетаВладелецКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ЛицевыеСчетаВладелецРасширеннаяПодсказка" id="138"/>
+										</InputField>
+										<InputField name="ЛицевыеСчетаАдрес" id="15">
+											<DataPath>Объект.ЛицевыеСчета.Адрес</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Адреса</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ЛицевыеСчетаАдресКонтекстноеМеню" id="16"/>
+											<ExtendedTooltip name="ЛицевыеСчетаАдресРасширеннаяПодсказка" id="139"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="НадписьДалееВыборФайлаВыгрузки" id="53">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нажмите на кнопку "Далее" для перехода к настройкам выбора файла выгрузки.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Натисніть на кнопку "Далі" для переходу до настройок вибору файлу вивантаження.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьДалееВыборФайлаВыгрузкиКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="НадписьДалееВыборФайлаВыгрузкиРасширеннаяПодсказка" id="140"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМастераНастройкиВыбораКаталогаВыгрузки" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера настройки выбора каталога выгрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра налаштування вибору директорії вивантаження</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница мастера настройки выбора каталога выгрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка майстра налаштування вибору директорії вивантаження</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМастераНастройкиВыбораКаталогаВыгрузкиРасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаголовокВыборКаталогаВыгрузки" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок выбор каталога выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок вибору директорії вивантаження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заголовок начало</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група заголовок початок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовокВыборКаталогаВыгрузкиРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<LabelDecoration name="ЗаголовокМастераВыборКаталогаВыгрузки" id="57">
+									<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите каталог для выгрузки файда.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виберіть директорію для вивантаження файлу.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокМастераВыборКаталогаВыгрузкиКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ЗаголовокМастераВыборКаталогаВыгрузкиРасширеннаяПодсказка" id="143"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОписаниеМастераВыборКаталогаВыгрузки" id="59">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Помощник позволит Вам выбрать каталог и указать имя файла выгрузки.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Помічник дозволить Вам вибрати директорію і вказати ім’я файлу вивантаження.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОписаниеМастераВыборКаталогаВыгрузкиКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ОписаниеМастераВыборКаталогаВыгрузкиРасширеннаяПодсказка" id="144"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыбораФайлаВыгрузки" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите файл выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вкажіть файл вивантаження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбора файла выгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група вибору файлу вивантаження</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВыбораФайлаВыгрузкиРасширеннаяПодсказка" id="145"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВыбора" id="66">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выбора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група вибору</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выбора</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група вибору</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>6</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВыбораРасширеннаяПодсказка" id="146"/>
+									<ChildItems>
+										<InputField name="ИмяФайлаДанных" id="17">
+											<DataPath>Объект.ИмяФайлаДанных</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файл данных</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Файл даних</v8:content>
+												</v8:item>
+											</Title>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="ИмяФайлаДанныхКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ИмяФайлаДанныхРасширеннаяПодсказка" id="147"/>
+											<Events>
+												<Event name="StartChoice">ИмяФайлаДанныхНачалоВыбора</Event>
+												<Event name="Opening">ИмяФайлаДанныхОткрытие</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ПояснениеВыбораПериода1" id="91">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указывается каталог и имя файла выгрузки. Расширение файла выгрузки "xml".</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вказується директорія та ім’я файлу вивантаження. Розширення файлу вивантаження "xml".</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВыбораПериода1КонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ПояснениеВыбораПериода1РасширеннаяПодсказка" id="148"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПароль" id="98">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група пароль</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пароль</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група пароль</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>6</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="149"/>
+									<ChildItems>
+										<InputField name="Пароль" id="99">
+											<DataPath>Пароль</DataPath>
+											<ContextMenu name="ПарольКонтекстноеМеню" id="100"/>
+											<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="150"/>
+										</InputField>
+										<LabelDecoration name="ПояснениеВыбораПериода2" id="101">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Указывается пароль zip архива</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Вказується директорія та ім’я файлу вивантаження. Розширення файлу вивантаження "xml".</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВыбораПериода2КонтекстноеМеню" id="102"/>
+											<ExtendedTooltip name="ПояснениеВыбораПериода2РасширеннаяПодсказка" id="151"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГрупировакаКнопок" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групировака кнопок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групировака кнопок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГрупировакаКнопокРасширеннаяПодсказка" id="152"/>
+			<ChildItems>
+				<Pages name="КнопкиМастера" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки мастера</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кнопки майстра</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки мастера</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кнопки майстра</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="КнопкиМастераРасширеннаяПодсказка" id="153"/>
+					<ChildItems>
+						<Page name="КнопкиНачала" id="67">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки начала</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки початку</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки начала</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки початку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.Вернуться</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="КнопкиНачалаРасширеннаяПодсказка" id="154"/>
+							<ChildItems>
+								<LabelDecoration name="Растянуть" id="23">
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="РастянутьКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="РастянутьРасширеннаяПодсказка" id="155"/>
+								</LabelDecoration>
+								<Button name="КомандНазад" id="68">
+									<Type>UsualButton</Type>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.КомандаНазад</CommandName>
+									<ExtendedTooltip name="КомандНазадРасширеннаяПодсказка" id="156"/>
+								</Button>
+								<Button name="КомандаДалее" id="69">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаДалее</CommandName>
+									<ExtendedTooltip name="КомандаДалееРасширеннаяПодсказка" id="157"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="КнопкиПродолжения" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки продолжения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки продовження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки продолжения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки продовження</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КнопкиПродолженияРасширеннаяПодсказка" id="158"/>
+							<ChildItems>
+								<LabelDecoration name="Растянуть1" id="72">
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Растянуть1КонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="Растянуть1РасширеннаяПодсказка" id="159"/>
+								</LabelDecoration>
+								<Button name="КомандНазад1" id="76">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаНазад</CommandName>
+									<ExtendedTooltip name="КомандНазад1РасширеннаяПодсказка" id="160"/>
+								</Button>
+								<Button name="КомандаДалее1" id="77">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаДалее</CommandName>
+									<ExtendedTooltip name="КомандаДалее1РасширеннаяПодсказка" id="161"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="КнопкиВозврата" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки продолжения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки продовження</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки продолжения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки продовження</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КнопкиВозвратаРасширеннаяПодсказка" id="162"/>
+							<ChildItems>
+								<LabelDecoration name="Растянуть2" id="80">
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Растянуть2КонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="Растянуть2РасширеннаяПодсказка" id="163"/>
+								</LabelDecoration>
+								<Button name="КомандНазад2" id="82">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаНазад</CommandName>
+									<ExtendedTooltip name="КомандНазад2РасширеннаяПодсказка" id="164"/>
+								</Button>
+								<Button name="КомандаДалее2" id="83">
+									<Type>UsualButton</Type>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.КомандаДалее</CommandName>
+									<ExtendedTooltip name="КомандаДалее2РасширеннаяПодсказка" id="165"/>
+								</Button>
+							</ChildItems>
+						</Page>
+						<Page name="КнопкиОкончания" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки окончания</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки закінчення</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кнопки продолжения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кнопки продовження</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="КнопкиОкончанияРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<LabelDecoration name="Растянуть3" id="86">
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="Растянуть3КонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="Растянуть3РасширеннаяПодсказка" id="167"/>
+								</LabelDecoration>
+								<Button name="КомандНазад3" id="88">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаНазад</CommandName>
+									<ExtendedTooltip name="КомандНазад3РасширеннаяПодсказка" id="168"/>
+								</Button>
+								<Button name="КомандаГотово3" id="89">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаГотово</CommandName>
+									<ExtendedTooltip name="КомандаГотово3РасширеннаяПодсказка" id="169"/>
+								</Button>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаДанныхЛицевыхСчетовДляСайтаЖКХ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ИмяФайлаДанных</Field>
+				<Field>Объект.Организация</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="МесяцСтрока" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пароль" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаГотово" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готово</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Готове</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда готово</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда готово</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаГотово</Action>
+		</Command>
+		<Command name="Заполнить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="Очистить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистить</Action>
+		</Command>
+		<Command name="КомандаДалее" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Далі</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда далее</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда далі</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Продолжить</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаДалее</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаНазад" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда назад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Вернуться</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаНазад</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

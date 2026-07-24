@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="58">
+			<DataPath>Объект.Description</DataPath>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<InputField name="ВладелецУстройства" id="27">
+			<DataPath>Объект.ВладелецУстройства</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Власник</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ВладелецУстройстваКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ВладелецУстройстваРасширеннаяПодсказка" id="61"/>
+		</InputField>
+		<UsualGroup name="ГруппаИнформация" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об устройстве</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Інформація про пристрій</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група інформація</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="Железо" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация об устройстве</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інформація про пристрій</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Железо</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Залізо</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ЖелезоРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<LabelField name="Процессор" id="38">
+							<DataPath>Объект.Процессор</DataPath>
+							<Width>20</Width>
+							<ContextMenu name="ПроцессорКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ПроцессорРасширеннаяПодсказка" id="64"/>
+						</LabelField>
+						<LabelField name="ОперативнаяПамять" id="36">
+							<DataPath>Объект.ОперативнаяПамять</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Width>20</Width>
+							<ContextMenu name="ОперативнаяПамятьКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ОперативнаяПамятьРасширеннаяПодсказка" id="65"/>
+						</LabelField>
+						<LabelField name="ВерсияОС" id="32">
+							<DataPath>Объект.ВерсияОС</DataPath>
+							<Width>20</Width>
+							<ContextMenu name="ВерсияОСКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ВерсияОСРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+						<LabelField name="ВерсияПриложения" id="34">
+							<DataPath>Объект.ВерсияПриложения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Версия 1С</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Версія 1С</v8:content>
+								</v8:item>
+							</Title>
+							<Width>20</Width>
+							<ContextMenu name="ВерсияПриложенияКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВерсияПриложенияРасширеннаяПодсказка" id="67"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЭкран" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экран</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Екран</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група інформація</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаЭкранРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<LabelField name="ВысотаЭкрана" id="49">
+							<DataPath>Объект.ВысотаЭкрана</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Высота</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Висота</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="ВысотаЭкранаКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ВысотаЭкранаРасширеннаяПодсказка" id="69"/>
+						</LabelField>
+						<LabelField name="ШиринаЭкрана" id="51">
+							<DataPath>Объект.ШиринаЭкрана</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ширина</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ширина</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="ШиринаЭкранаКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ШиринаЭкранаРасширеннаяПодсказка" id="70"/>
+						</LabelField>
+						<LabelField name="ДиагональЭкрана" id="53">
+							<DataPath>Объект.ДиагональЭкрана</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Диагональ</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Діагональ</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="ДиагональЭкранаКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ДиагональЭкранаРасширеннаяПодсказка" id="71"/>
+						</LabelField>
+						<LabelField name="РазрешениеЭкрана" id="55">
+							<DataPath>Объект.РазрешениеЭкрана</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Разрешение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дозвіл</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="РазрешениеЭкранаКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="РазрешениеЭкранаРасширеннаяПодсказка" id="72"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ОбменСМобильнымиУстройствами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

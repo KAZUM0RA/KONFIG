@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ліва колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="Номер" id="5">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="7"/>
+						</InputField>
+						<InputField name="Дата" id="8">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="10"/>
+						</InputField>
+						<InputField name="ПериодНачисления" id="22">
+							<DataPath>Объект.ПериодНачисления</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПериодНачисленияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПериодНачисленияРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Права колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<InputField name="Организация" id="11">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="13"/>
+						</InputField>
+						<InputField name="Здание" id="19">
+							<DataPath>Объект.Здание</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ЗданиеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="Услуга" id="70">
+							<DataPath>Объект.Услуга</DataPath>
+							<ContextMenu name="УслугаКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<InputField name="ЛицевойСчет" id="14">
+							<DataPath>Объект.ЛицевойСчет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ЛицевойСчетКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="16"/>
+							<Events>
+								<Event name="OnChange">ЛицевойСчетПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ПриборыУчета" id="28">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПриборыУчета</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПриборыУчетаКонтекстноеМеню" id="29"/>
+			<AutoCommandBar name="ПриборыУчетаКоманднаяПанель" id="30"/>
+			<ExtendedTooltip name="ПриборыУчетаРасширеннаяПодсказка" id="31"/>
+			<SearchStringAddition name="ПриборыУчетаСтрокаПоиска" id="32">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаСтрокаПоискаКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ПриборыУчетаСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПриборыУчетаСостояниеПросмотра" id="35">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаСостояниеПросмотраКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ПриборыУчетаСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПриборыУчетаУправлениеПоиском" id="38">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="ПриборыУчетаУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПриборыУчетаНомерСтроки" id="41">
+					<DataPath>Объект.ПриборыУчета.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаНомерСтрокиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПриборыУчетаНомерСтрокиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="ПриборыУчетаПриборУчета" id="44">
+					<DataPath>Объект.ПриборыУчета.ПриборУчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаПриборУчетаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПриборыУчетаПриборУчетаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ПриборыУчетаВидТарифа" id="64">
+					<DataPath>Объект.ПриборыУчета.ВидТарифа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаВидТарифаКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ПриборыУчетаВидТарифаРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="ПриборыУчетаУслуга" id="61">
+					<DataPath>Объект.ПриборыУчета.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаУслугаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ПриборыУчетаУслугаРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="ПриборыУчетаПредыдущиеПоказания" id="47">
+					<DataPath>Объект.ПриборыУчета.ПредыдущиеПоказания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПриборыУчетаПредыдущиеПоказанияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ПриборыУчетаПредыдущиеПоказанияРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ПриборыУчетаТекущиеПоказатели" id="50">
+					<DataPath>Объект.ПриборыУчета.ТекущиеПоказания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаТекущиеПоказателиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПриборыУчетаТекущиеПоказателиРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">ПриборыУчетаТекущиеПоказателиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПриборыУчетаКвоКубов" id="53">
+					<DataPath>Объект.ПриборыУчета.КвоКубов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаКвоКубовКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПриборыУчетаКвоКубовРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ПриборыУчетаПредварительныйРассчет" id="73">
+					<DataPath>Объект.ПриборыУчета.ПредварительныйРассчет</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сума</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.ПриборыУчета.TotalПредварительныйРассчет</FooterDataPath>
+					<FooterFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ПриборыУчетаПредварительныйРассчетКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ПриборыУчетаПредварительныйРассчетРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ПриборыУчетаИсточник" id="67">
+					<DataPath>Объект.ПриборыУчета.Источник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаИсточникКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ПриборыУчетаИсточникРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвал" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="58">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="Ответственный" id="25">
+					<DataPath>Объект.Ответственный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВводПоказанийПриборовВоды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

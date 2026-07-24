@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Group>Horizontal</Group>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>Top</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="27"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="28">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="30"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="31">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="34">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="36"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицевой счет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content> Особовий рахунок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="Организация" id="17">
+					<DataPath>Список.Организация</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="38"/>
+				</LabelField>
+				<LabelField name="Здание" id="19">
+					<DataPath>Список.Здание</DataPath>
+					<ContextMenu name="ЗданиеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="Подъезд" id="21">
+					<DataPath>Список.Подъезд</DataPath>
+					<ContextMenu name="ПодъездКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ПодъездРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="ОбъектЛицевогоСчета" id="23">
+					<DataPath>Список.ОбъектЛицевогоСчета</DataPath>
+					<ContextMenu name="ОбъектЛицевогоСчетаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОбъектЛицевогоСчетаРасширеннаяПодсказка" id="41"/>
+				</LabelField>
+				<LabelField name="ОтветственныйВладелец" id="25">
+					<DataPath>Список.ОтветственныйВладелец</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный владелец</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відповідальний власник</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОтветственныйВладелецКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОтветственныйВладелецРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаОтборы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбори</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відбори</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ОтборОрганизация" id="9">
+					<DataPath>ОтборОрганизация</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="44"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборЗдание" id="11">
+					<DataPath>ОтборЗдание</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборЗданиеКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ОтборЗданиеРасширеннаяПодсказка" id="45"/>
+					<Events>
+						<Event name="OnChange">ОтборЗданиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПодъезд" id="13">
+					<DataPath>ОтборПодъезд</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборПодъездКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтборПодъездРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ОтборПодъездПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборОтветственныйВладелец" id="15">
+					<DataPath>ОтборОтветственныйВладелец</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный владелец</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відповідальний власник</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборОтветственныйВладелецКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ОтборОтветственныйВладелецРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="OnChange">ОтборОтветсвенныйВладелецПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникЛицевыеСчета.Ссылка,
+	СправочникЛицевыеСчета.ВерсияДанных,
+	СправочникЛицевыеСчета.ПометкаУдаления,
+	СправочникЛицевыеСчета.Предопределенный,
+	СправочникЛицевыеСчета.Владелец КАК Здание,
+	СправочникЛицевыеСчета.Код,
+	СправочникЛицевыеСчета.Наименование,
+	СправочникЛицевыеСчета.ОбъектЛицевогоСчета,
+	ВложенныйЗапрос.ОтветственныйВладелец,
+	СправочникЛицевыеСчета.Владелец.Организация КАК Организация,
+	СправочникЛицевыеСчета.ОбъектЛицевогоСчета.Подъезд КАК Подъезд
+ИЗ
+	Справочник.ЛицевыеСчета КАК СправочникЛицевыеСчета
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ОтветственныйВладелецЛицевогоСчетаСрезПоследних.ОтветственныйВладелец КАК ОтветственныйВладелец,
+			ОтветственныйВладелецЛицевогоСчетаСрезПоследних.ЛицевойСчет КАК ЛицевойСчет
+		ИЗ
+			РегистрСведений.ОтветственныйВладелецЛицевогоСчета.СрезПоследних КАК ОтветственныйВладелецЛицевогоСчетаСрезПоследних) КАК ВложенныйЗапрос
+		ПО СправочникЛицевыеСчета.Ссылка = ВложенныйЗапрос.ЛицевойСчет</QueryText>
+				<MainTable>Catalog.ЛицевыеСчета</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборЗдание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор здание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбір будинок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗданияИСооружения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборОрганизация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборОтветственныйВладелец" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный владелец</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відповідальний власник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПотребителиУслуг</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПодъезд" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор подъезд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбір під'їзд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подъезды</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаВключитьПослеПоверкиПриборУчета</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаОтключитьНаПоверкуПриборУчета</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаОтключитьПриборУчета</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаОтключитьУслугу</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаОтключитьУслугуПодробно</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаПриостановитьУслугу</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаПриостановитьУслугуПодробно</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>6</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУправлениеЛьготами</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>7</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.УправлениеЛьготами.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>8</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.УправлениеПриборамиУчета.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>9</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУправлениеСубсидиями</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>10</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.УправлениеСубсидиями.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>11</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0:a7249a55-35cb-41ff-b3a6-464df6ad58a8</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>12</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.УправлениеУслугамиПодробно.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>13</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Document.УправлениеУслугами.StandardCommand.CreateBasedOn</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>14</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУстановитьПриборУчета</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>15</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУстановитьУслугу</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>16</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУстановитьУслугуПодробно</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>17</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаИзменитьКоличествоПрописанныхПроживающих</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>18</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаИзменитьОтветственногоВладельца</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>19</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаУправлениеСоставомЖильцов</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>20</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаВременноУстановитьУслугу</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>22</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаВременноУстановитьУслугуПодробно</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>21</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ЛицевыеСчета.Command.КомандаИзменитьМашиноМесто</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
+				<Index>23</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

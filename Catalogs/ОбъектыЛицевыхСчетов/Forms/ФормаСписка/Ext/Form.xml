@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтборы" id="20">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбори</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<InputField name="ОтборОрганизация" id="21">
+					<DataPath>ОтборОрганизация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Організація</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="69"/>
+					<Events>
+						<Event name="OnChange">ОтборОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборЗдание" id="23">
+					<DataPath>ОтборЗдание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Здание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Будинок</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборЗданиеКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОтборЗданиеРасширеннаяПодсказка" id="70"/>
+					<Events>
+						<Event name="OnChange">ОтборЗданиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборПодъезд" id="25">
+					<DataPath>ОтборПодъезд</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">ОтборЗдание</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подъезд</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Під'їзд</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборПодъездКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ОтборПодъездРасширеннаяПодсказка" id="71"/>
+					<Events>
+						<Event name="OnChange">ОтборПодъездПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтборЖилойФонд" id="27">
+					<DataPath>ОтборЖилойФонд</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Жилой фонд</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Житловий фонд</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Жилой фонд</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Житловий фонд</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборЖилойФондКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ОтборЖилойФондРасширеннаяПодсказка" id="72"/>
+					<Events>
+						<Event name="OnChange">ОтборЖилойФондПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="29">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>Top</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="30"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="31">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="КомандыФормы" id="67">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Команды формы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Команди форми</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Команды формы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Команди форми</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Form</CommandSource>
+						<ExtendedTooltip name="КомандыФормыРасширеннаяПодсказка" id="73"/>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="74"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="75">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="76"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="78">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="79"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="81">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="82"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Наименование" id="38">
+					<DataPath>Список.Description</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<LabelField name="Организация" id="63">
+					<DataPath>Список.Организация</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="Здание" id="65">
+					<DataPath>Список.Здание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Здание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Будинок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗданиеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="86"/>
+				</LabelField>
+				<LabelField name="Этаж" id="58">
+					<DataPath>Список.Этаж</DataPath>
+					<ContextMenu name="ЭтажКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ЭтажРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="Подъезд" id="52">
+					<DataPath>Список.Подъезд</DataPath>
+					<ContextMenu name="ПодъездКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПодъездРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="КоличествоКомнат" id="50">
+					<DataPath>Список.КоличествоКомнат</DataPath>
+					<ContextMenu name="КоличествоКомнатКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="КоличествоКомнатРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="ЖилойФонд" id="48">
+					<DataPath>Список.ЖилойФонд</DataPath>
+					<ContextMenu name="ЖилойФондКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ЖилойФондРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Действует</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОбъектыЛицевыхСчетов.Ссылка,
+	СправочникОбъектыЛицевыхСчетов.ВерсияДанных,
+	СправочникОбъектыЛицевыхСчетов.ПометкаУдаления,
+	СправочникОбъектыЛицевыхСчетов.Предопределенный,
+	СправочникОбъектыЛицевыхСчетов.Владелец КАК Здание,
+	СправочникОбъектыЛицевыхСчетов.Код,
+	СправочникОбъектыЛицевыхСчетов.Наименование,
+	СправочникОбъектыЛицевыхСчетов.Этаж,
+	СправочникОбъектыЛицевыхСчетов.Подъезд,
+	СправочникОбъектыЛицевыхСчетов.Суффикс,
+	СправочникОбъектыЛицевыхСчетов.КоличествоКомнат,
+	СправочникОбъектыЛицевыхСчетов.ЖилойФонд,
+	ВложенныйЗапрос.Действует,
+	СправочникОбъектыЛицевыхСчетов.Владелец.Организация КАК Организация
+ИЗ
+	Справочник.ОбъектыЛицевыхСчетов КАК СправочникОбъектыЛицевыхСчетов
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ РАЗЛИЧНЫЕ
+			ЛицевыеСчетаСрезПоследних.Действует КАК Действует,
+			ЛицевыеСчетаСрезПоследних.ЛицевойСчет.ОбъектЛицевогоСчета КАК ЛицевойСчетОбъектЛицевогоСчета
+		ИЗ
+			РегистрСведений.ЛицевыеСчета.СрезПоследних КАК ЛицевыеСчетаСрезПоследних
+		ГДЕ
+			ЛицевыеСчетаСрезПоследних.Действует = ИСТИНА) КАК ВложенныйЗапрос
+		ПО СправочникОбъектыЛицевыхСчетов.Ссылка = ВложенныйЗапрос.ЛицевойСчетОбъектЛицевогоСчета</QueryText>
+				<MainTable>Catalog.ОбъектыЛицевыхСчетов</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Действует</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:Gainsboro</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборЗдание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Здание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Будинок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗданияИСооружения</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборЗдание</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборОрганизация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборОрганизация</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПодъезд" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подъезд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Під'їзд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подъезды</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПодъезд</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборЖилойФонд" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор жилой фонд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбір житловий фонд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ЖилойНеЖилойФонд</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборЖилойФонд</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+</Form>

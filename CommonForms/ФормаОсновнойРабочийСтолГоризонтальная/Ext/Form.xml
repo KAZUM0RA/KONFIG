@@ -1,0 +1,1169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаЛицевыеСчета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лицевые счета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група особові рахунки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лицевые счета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група особові рахунки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЛицевыеСчетаРасширеннаяПодсказка" id="176"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛСОсновная" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛСОсновная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛСОсновная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛСОсновная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛСОсновная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>29</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛСОсновнаяРасширеннаяПодсказка" id="177"/>
+					<ChildItems>
+						<Button name="СправочникЛицевыеСчетаОткрытьСписок" id="47">
+							<Type>Hyperlink</Type>
+							<CommandName>Catalog.ЛицевыеСчета.StandardCommand.OpenList</CommandName>
+							<TextColor>#000000</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Лицевые счета</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Особові рахунки</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СправочникЛицевыеСчетаОткрытьСписокРасширеннаяПодсказка" id="178"/>
+						</Button>
+						<UsualGroup name="Группа2" id="55">
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="179"/>
+							<ChildItems>
+								<Button name="СправочникЛицевыеСчетаСоздать" id="53">
+									<Type>Hyperlink</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Catalog.ЛицевыеСчета.StandardCommand.Create</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СостояниеПользователя10</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать лицевой счет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити особовий рахунок</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СправочникЛицевыеСчетаСоздатьРасширеннаяПодсказка" id="180"/>
+								</Button>
+								<Button name="ДокументИзменениеЛицевогоСчетаОткрытьСписок" id="49">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.ИзменениеЛицевогоСчета.StandardCommand.OpenList</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СостояниеПользователя11</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изменить лицевой счет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Змінити особовий рахунок</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументИзменениеЛицевогоСчетаОткрытьСписокРасширеннаяПодсказка" id="181"/>
+								</Button>
+								<Button name="ДокументЗакрытиеЛицевогоСчетаОткрытьСписок" id="51">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.ЗакрытиеЛицевогоСчета.StandardCommand.OpenList</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.СостояниеПользователя09</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Закрыть лицевой счет</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Закрити особовий рахунок</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументЗакрытиеЛицевогоСчетаОткрытьСписокРасширеннаяПодсказка" id="182"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЛССлужебная" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛССлужебная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛССлужебная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛССлужебная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛССлужебная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>44</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛССлужебнаяРасширеннаяПодсказка" id="183"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКоманд1" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команд1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група команд1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команд1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група команд1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКоманд1РасширеннаяПодсказка" id="184"/>
+							<ChildItems>
+								<Button name="СправочникЛьготыОткрытьСписок" id="163">
+									<Type>Hyperlink</Type>
+									<CommandName>Catalog.Льготы.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="СправочникЛьготыОткрытьСписокРасширеннаяПодсказка" id="185"/>
+								</Button>
+								<Button name="ДокументУправлениеСубсидиямиОткрытьСписок" id="165">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.УправлениеСубсидиями.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументУправлениеСубсидиямиОткрытьСписокРасширеннаяПодсказка" id="186"/>
+								</Button>
+								<Button name="ДокументУправлениеЛьготамиОткрытьСписок" id="167">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.УправлениеЛьготами.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументУправлениеЛьготамиОткрытьСписокРасширеннаяПодсказка" id="187"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКоманд2" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать&gt;&gt;&gt;</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Створити&gt;&gt;&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команд2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група команд2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКоманд2РасширеннаяПодсказка" id="188"/>
+							<ChildItems>
+								<Button name="СправочникЛьготыСоздать" id="169">
+									<Type>UsualButton</Type>
+									<CommandName>Catalog.Льготы.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать&gt;&gt;&gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити&gt;&gt;&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СправочникЛьготыСоздатьРасширеннаяПодсказка" id="189"/>
+								</Button>
+								<Button name="ДокументУправлениеСубсидиямиСоздать" id="171">
+									<Type>UsualButton</Type>
+									<CommandName>Document.УправлениеСубсидиями.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначить субсидию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Призначити субсидію</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументУправлениеСубсидиямиСоздатьРасширеннаяПодсказка" id="190"/>
+								</Button>
+								<Button name="ДокументУправлениеЛьготамиСоздать" id="173">
+									<Type>UsualButton</Type>
+									<CommandName>Document.УправлениеЛьготами.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Назначить льготы</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Призначити пільги</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументУправлениеЛьготамиСоздатьРасширеннаяПодсказка" id="191"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЛСОтчеты" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛСОтчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛСОтчеты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ЛСОтчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа ЛСОтчеты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛСОтчетыРасширеннаяПодсказка" id="192"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отчеты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Звіти</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="193"/>
+							<ChildItems>
+								<Button name="ОтчетВзаиморасчетыСПотребителямиУслугОткрыть" id="57">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВзаиморасчетыСПотребителямиУслуг.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВзаиморасчетыСПотребителямиУслугОткрытьРасширеннаяПодсказка" id="194"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоУслугамОСМДОткрыть" id="61">
+									<Type>Hyperlink</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Report.ВедомостьПоУслугамОСМД.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоУслугамОСМДОткрытьРасширеннаяПодсказка" id="195"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоЛицевымСчетамОткрыть" id="59">
+									<Type>Hyperlink</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Report.ВедомостьПоЛицевымСчетам.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоЛицевымСчетамОткрытьРасширеннаяПодсказка" id="196"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПриборыУчета" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приборы учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група прилади обліку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приборы учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група прилади обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПриборыУчетаРасширеннаяПодсказка" id="197"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПриборыОсновная" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приборы основная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група прилади основна</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приборы основная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група прилади основна</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>29</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПриборыОсновнаяРасширеннаяПодсказка" id="198"/>
+					<ChildItems>
+						<Button name="СправочникПриборыУчетаОткрытьСписок" id="77">
+							<Type>Hyperlink</Type>
+							<CommandName>Catalog.ПриборыУчета.StandardCommand.OpenList</CommandName>
+							<TextColor>#000000</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ExtendedTooltip name="СправочникПриборыУчетаОткрытьСписокРасширеннаяПодсказка" id="199"/>
+						</Button>
+						<UsualGroup name="СубГруппаОсновная" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа основная</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа основная</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа основная</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа основная</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаОсновнаяРасширеннаяПодсказка" id="200"/>
+							<ChildItems>
+								<Button name="ДокументВводПоказанийПриборовУчетаОткрытьСписок" id="71">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.ВводПоказанийПриборовУчета.StandardCommand.OpenList</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.НастройкаВыполненияРегламентныхЗаданий</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ДокументВводПоказанийПриборовУчетаОткрытьСписокРасширеннаяПодсказка" id="201"/>
+								</Button>
+								<Button name="ДокументРаспределениеОбщедомовыхПриборовУчетаОткрытьСписок" id="73">
+									<Type>Hyperlink</Type>
+									<Width>23</Width>
+									<Height>2</Height>
+									<CommandName>Document.РаспределениеОбщедомовыхПриборовУчета.StandardCommand.OpenList</CommandName>
+									<Font ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+									<Picture>
+										<xr:Ref>CommonPicture.РаспространяетсяВИерархии</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ДокументРаспределениеОбщедомовыхПриборовУчетаОткрытьСписокРасширеннаяПодсказка" id="202"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПриборыСлужебная" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приборы служебная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група прилади службова</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приборы служебная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група прилади службова</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>44</Width>
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПриборыСлужебнаяРасширеннаяПодсказка" id="203"/>
+					<ChildItems>
+						<UsualGroup name="СубГруппаСлужебнаяСсылки" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа служебная ссылки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа служебная ссылки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа служебная ссылки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа служебная ссылки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаСлужебнаяСсылкиРасширеннаяПодсказка" id="204"/>
+							<ChildItems>
+								<Button name="ДокументЗаменаПриборовУчетаОткрытьСписок" id="79">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.ЗаменаПриборовУчета.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументЗаменаПриборовУчетаОткрытьСписокРасширеннаяПодсказка" id="205"/>
+								</Button>
+								<Button name="ДокументУправлениеПриборамиУчетаОткрытьСписок" id="83">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.УправлениеПриборамиУчета.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументУправлениеПриборамиУчетаОткрытьСписокРасширеннаяПодсказка" id="206"/>
+								</Button>
+								<Button name="ДокументКорректировкаПоказанийПриборовУчетаОткрытьСписок" id="81">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.КорректировкаПоказанийПриборовУчета.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументКорректировкаПоказанийПриборовУчетаОткрытьСписокРасширеннаяПодсказка" id="207"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СубГруппаСлужебнаяКнопки" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа служебная кнопки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа служебная кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа служебная кнопки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа служебная кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаСлужебнаяКнопкиРасширеннаяПодсказка" id="208"/>
+							<ChildItems>
+								<Button name="ДокументЗаменаПриборовУчетаСоздать" id="89">
+									<Type>UsualButton</Type>
+									<CommandName>Document.ЗаменаПриборовУчета.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументЗаменаПриборовУчетаСоздатьРасширеннаяПодсказка" id="209"/>
+								</Button>
+								<Button name="ДокументУправлениеПриборамиУчетаСоздать" id="91">
+									<Type>UsualButton</Type>
+									<CommandName>Document.УправлениеПриборамиУчета.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументУправлениеПриборамиУчетаСоздатьРасширеннаяПодсказка" id="210"/>
+								</Button>
+								<Button name="ДокументКорректировкаПоказанийПриборовУчетаСоздать" id="93">
+									<Type>UsualButton</Type>
+									<CommandName>Document.КорректировкаПоказанийПриборовУчета.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументКорректировкаПоказанийПриборовУчетаСоздатьРасширеннаяПодсказка" id="211"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПриборыОтчеты" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приборы отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група прилади звіти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПриборыОтчетыРасширеннаяПодсказка" id="212"/>
+					<ChildItems>
+						<Button name="ОтчетВедомостьПоПриборамУчетаДляОбщихОбъектовОткрыть" id="95">
+							<Type>Hyperlink</Type>
+							<CommandName>Report.ВедомостьПоПриборамУчетаДляОбщихОбъектов.StandardCommand.Open</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Report</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОтчетВедомостьПоПриборамУчетаДляОбщихОбъектовОткрытьРасширеннаяПодсказка" id="213"/>
+						</Button>
+						<Button name="ОтчетВедомостьПоприборамУчетаОткрыть" id="97">
+							<Type>Hyperlink</Type>
+							<CommandName>Report.ВедомостьПоприборамУчета.StandardCommand.Open</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Report</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОтчетВедомостьПоприборамУчетаОткрытьРасширеннаяПодсказка" id="214"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНачисленияИВзаиморассчеты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа начисления и взаиморасчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група нарахування і взєморозрахунки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа начисления и взаиморасчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група нарахування і взєморозрахунки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНачисленияИВзаиморассчетыРасширеннаяПодсказка" id="215"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНачисленияОсновная" id="99">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа начисления основная</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група нарахування основна</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>49</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНачисленияОсновнаяРасширеннаяПодсказка" id="216"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="115">
+							<TextColor>#000000</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начисления 
+и взаиморасчеты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Начисления и взаиморасчеты</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="217"/>
+						</LabelDecoration>
+						<Button name="ДокументНачислениеПоЛСОткрытьСписок" id="101">
+							<Type>Hyperlink</Type>
+							<CommandName>Document.НачислениеПоЛС.StandardCommand.OpenList</CommandName>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДокументНачислениеПоЛСОткрытьСписокРасширеннаяПодсказка" id="218"/>
+						</Button>
+						<Button name="ДокументПерерасчетПоЛСОткрытьСписок" id="103">
+							<Type>Hyperlink</Type>
+							<CommandName>Document.ПерерасчетПоЛС.StandardCommand.OpenList</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыполнитьЗапускОбменаДанными</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДокументПерерасчетПоЛСОткрытьСписокРасширеннаяПодсказка" id="219"/>
+						</Button>
+						<Button name="ДокументРазовоеНачислениеУслугОткрытьСписок" id="107">
+							<Type>Hyperlink</Type>
+							<CommandName>Document.РазовоеНачислениеУслуг.StandardCommand.OpenList</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДокументРазовоеНачислениеУслугОткрытьСписокРасширеннаяПодсказка" id="220"/>
+						</Button>
+						<Button name="ДокументРаспределениеДополнительныхНачисленийОткрытьСписок" id="105">
+							<Type>Hyperlink</Type>
+							<Height>3</Height>
+							<CommandName>Document.РаспределениеДополнительныхНачислений.StandardCommand.OpenList</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.ИспользоватьПользовательскийМакет</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДокументРаспределениеДополнительныхНачисленийОткрытьСписокРасширеннаяПодсказка" id="221"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНачисленияСлужебные" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа начисления служебные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група нарахування службові</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа начисления служебные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група нарахування службові</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>61</Width>
+					<Height>8</Height>
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНачисленияСлужебныеРасширеннаяПодсказка" id="222"/>
+					<ChildItems>
+						<UsualGroup name="СубГруппаНачисленияСсылки" id="122">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа начисления ссылки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа начисления ссылки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа начисления ссылки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа начисления ссылки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаНачисленияСсылкиРасширеннаяПодсказка" id="223"/>
+							<ChildItems>
+								<Button name="ДокументЗакрытиеМесяцаОткрытьСписок" id="118">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.ЗакрытиеМесяца.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументЗакрытиеМесяцаОткрытьСписокРасширеннаяПодсказка" id="224"/>
+								</Button>
+								<Button name="ОбработкаПечатьКвитанцийПечатьКвитанций" id="120">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.ПечатьКвитанций.Command.ПечатьКвитанций</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ОбработкаПечатьКвитанцийПечатьКвитанцийРасширеннаяПодсказка" id="225"/>
+								</Button>
+								<Button name="ДокументКорректировкаНачисленийОткрытьСписок" id="111">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.КорректировкаНачислений.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументКорректировкаНачисленийОткрытьСписокРасширеннаяПодсказка" id="226"/>
+								</Button>
+								<Button name="ДокументКорректировкаОплатОткрытьСписок" id="113">
+									<Type>Hyperlink</Type>
+									<CommandName>Document.УДАЛИТЬКорректировкаОплат.StandardCommand.OpenList</CommandName>
+									<TextColor>#000000</TextColor>
+									<ExtendedTooltip name="ДокументКорректировкаОплатОткрытьСписокРасширеннаяПодсказка" id="227"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СубГруппаНачисленияКнопки" id="124">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа начисления кнопки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа начисления кнопки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа начисления кнопки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа начисления кнопки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаНачисленияКнопкиРасширеннаяПодсказка" id="228"/>
+							<ChildItems>
+								<Button name="ДокументЗакрытиеМесяцаСоздать" id="126">
+									<Type>UsualButton</Type>
+									<CommandName>Document.ЗакрытиеМесяца.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать &gt;&gt;&gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити &gt;&gt;&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументЗакрытиеМесяцаСоздатьРасширеннаяПодсказка" id="229"/>
+								</Button>
+								<LabelDecoration name="Декорация2" id="132">
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="230"/>
+								</LabelDecoration>
+								<Button name="ДокументКорректировкаНачисленийСоздать" id="128">
+									<Type>UsualButton</Type>
+									<CommandName>Document.КорректировкаНачислений.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать &gt;&gt;&gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити &gt;&gt;&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументКорректировкаНачисленийСоздатьРасширеннаяПодсказка" id="231"/>
+								</Button>
+								<Button name="ДокументКорректировкаОплатСоздать" id="130">
+									<Type>UsualButton</Type>
+									<CommandName>Document.УДАЛИТЬКорректировкаОплат.StandardCommand.Create</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать &gt;&gt;&gt;</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Створити &gt;&gt;&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДокументКорректировкаОплатСоздатьРасширеннаяПодсказка" id="232"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНачисленияОтчеты" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Звіти</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа начисления отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група нарахування звіти</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаНачисленияОтчетыРасширеннаяПодсказка" id="233"/>
+					<ChildItems>
+						<UsualGroup name="СубГруппаОтчеты1" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа отчеты1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа отчеты1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа отчеты1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа отчеты1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаОтчеты1РасширеннаяПодсказка" id="234"/>
+							<ChildItems>
+								<Button name="ОтчетВедомостьНачисленийОткрыть" id="137">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьНачислений.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьНачисленийОткрытьРасширеннаяПодсказка" id="235"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоЛьготамОткрыть" id="141">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьПоЛьготам.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоЛьготамОткрытьРасширеннаяПодсказка" id="236"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоСубсидиямОткрыть" id="139">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьПоСубсидиям.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоСубсидиямОткрытьРасширеннаяПодсказка" id="237"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоПерерасчетамОткрыть" id="143">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьПоПерерасчетам.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоПерерасчетамОткрытьРасширеннаяПодсказка" id="238"/>
+								</Button>
+								<Button name="ОтчетОстаткиИДвиженияДенежныхСредствОткрыть" id="145">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ОстаткиИДвиженияДенежныхСредств.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетОстаткиИДвиженияДенежныхСредствОткрытьРасширеннаяПодсказка" id="239"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СубГруппаОтчеты2" id="149">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа отчеты2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа отчеты2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Суб группа отчеты2</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Суб группа отчеты2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СубГруппаОтчеты2РасширеннаяПодсказка" id="240"/>
+							<ChildItems>
+								<Button name="ОтчетВзаиморасчетыСПотребителямиУслугОткрыть1" id="151">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВзаиморасчетыСПотребителямиУслуг.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВзаиморасчетыСПотребителямиУслугОткрыть1РасширеннаяПодсказка" id="241"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоРасчетамЛицевыхСчетовОткрыть" id="153">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьПоРасчетамЛицевыхСчетов.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоРасчетамЛицевыхСчетовОткрытьРасширеннаяПодсказка" id="242"/>
+								</Button>
+								<Button name="ОтчетВедомостьПоУслугамОСМДОткрыть1" id="155">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.ВедомостьПоУслугамОСМД.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетВедомостьПоУслугамОСМДОткрыть1РасширеннаяПодсказка" id="243"/>
+								</Button>
+								<Button name="ОтчетРапортРуководителюПоРентабельностиПредоставляемыхУслугОткрыть" id="157">
+									<Type>Hyperlink</Type>
+									<CommandName>Report.РапортРуководителюПоРентабельностиПредоставляемыхУслуг.StandardCommand.Open</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетРапортРуководителюПоРентабельностиПредоставляемыхУслугОткрытьРасширеннаяПодсказка" id="244"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СлужебныеОбработки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебные обработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Службові обробки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Служебные обработки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Службові обробки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="СлужебныеОбработкиРасширеннаяПодсказка" id="245"/>
+			<ChildItems>
+				<Button name="ОбработкаПечатьКвитанцийПечатьКвитанций1" id="175">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>24</Width>
+					<Height>3</Height>
+					<CommandName>DataProcessor.ПечатьКвитанций.Command.ПечатьКвитанций</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбработкаПечатьКвитанцийПечатьКвитанций1РасширеннаяПодсказка" id="246"/>
+				</Button>
+				<Button name="ОбщаяКомандаОткрытьМастераВыгрузкиНаСайт" id="161">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>24</Width>
+					<Height>3</Height>
+					<CommandName>CommonCommand.ОткрытьМастераВыгрузкиНаСайт</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбщаяКомандаОткрытьМастераВыгрузкиНаСайтРасширеннаяПодсказка" id="247"/>
+				</Button>
+				<Button name="ОбщаяКомандаОткрытьОбменыДанными" id="159">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>24</Width>
+					<Height>3</Height>
+					<CommandName>CommonCommand.ОткрытьОбменыДанными</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбщаяКомандаОткрытьОбменыДаннымиРасширеннаяПодсказка" id="248"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+</Form>

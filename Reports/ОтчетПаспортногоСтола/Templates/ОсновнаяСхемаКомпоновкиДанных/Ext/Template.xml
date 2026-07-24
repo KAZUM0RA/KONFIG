@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Действует</dataPath>
+			<field>Действует</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Доля</dataPath>
+			<field>Доля</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Здание</dataPath>
+			<field>Здание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПроживающих</dataPath>
+			<field>КоличествоПроживающих</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПрописанных</dataPath>
+			<field>КоличествоПрописанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛицевойСчет</dataPath>
+			<field>ЛицевойСчет</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектЛС</dataPath>
+			<field>ОбъектЛС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" kind="WindowsFont"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БЛ=; БИ=P</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ФорматРедактирования</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БЛ=; БИ=P</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проживает</dataPath>
+			<field>Проживает</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проживает</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Проживает</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" kind="WindowsFont"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">БЛ=; БИ=P</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прописан</dataPath>
+			<field>Прописан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФизическоеЛицоСвязанное</dataPath>
+			<field>ФизическоеЛицоСвязанное</field>
+			<role>
+				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЖилойФонд</dataPath>
+			<field>ЖилойФонд</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПроживания</dataPath>
+			<field>ДатаПроживания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрописки</dataPath>
+			<field>ДатаПрописки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаИзмененияЛС</dataPath>
+			<field>ДатаИзмененияЛС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтепеньРодства</dataPath>
+			<field>СтепеньРодства</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЛицевыеСчета.ЛицевойСчет,
+	ЛицевыеСчета.КоличествоПрописанных,
+	ЛицевыеСчета.КоличествоПроживающих,
+	ЛицевыеСчета.Действует,
+	СправочникЛС.Владелец КАК Здание,
+	СправочникЛС.Владелец.Организация КАК Организация,
+	СправочникЛС.ОбъектЛицевогоСчета КАК ОбъектЛС,
+	ЛицевыеСчета.Период,
+	СправочникЛС.ОбъектЛицевогоСчета.ЖилойФонд КАК ЖилойФонд
+ПОМЕСТИТЬ ТабДок
+ИЗ
+	РегистрСведений.ЛицевыеСчета КАК ЛицевыеСчета
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЛицевыеСчета КАК СправочникЛС
+		ПО ЛицевыеСчета.ЛицевойСчет = СправочникЛС.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СтепеньРодстваФизическихЛиц.ФизическоеЛицоСвязанное,
+	ЕСТЬNULL(СтепеньРодстваФизическихЛиц.СтепеньРодства, "Владелец") КАК СтепеньРодства,
+	СобственникиОбектовЛицевыхСчетов.Доля,
+	СведенияОПрописанныхЖильцах.Прописан,
+	СведенияОПроживающихЖильцах.Проживает,
+	ТабДок.ЛицевойСчет,
+	ТабДок.КоличествоПрописанных,
+	ТабДок.КоличествоПроживающих,
+	ТабДок.Действует,
+	ТабДок.Здание,
+	ТабДок.Организация,
+	ТабДок.ОбъектЛС,
+	ТабДок.ЖилойФонд,
+	СведенияОПроживающихЖильцах.Период КАК ДатаПроживания,
+	СведенияОПрописанныхЖильцах.Период КАК ДатаПрописки,
+	ТабДок.Период КАК ДатаИзмененияЛС
+ИЗ
+	РегистрСведений.СтепеньРодстваФизическихЛиц КАК СтепеньРодстваФизическихЛиц
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СобственникиОбектовЛицевыхСчетов КАК СобственникиОбектовЛицевыхСчетов
+		ПО СтепеньРодстваФизическихЛиц.Регистратор = СобственникиОбектовЛицевыхСчетов.Регистратор
+			И СтепеньРодстваФизическихЛиц.ФизическоеЛицоСвязанное = СобственникиОбектовЛицевыхСчетов.Собственник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПрописанныхЖильцах КАК СведенияОПрописанныхЖильцах
+		ПО СтепеньРодстваФизическихЛиц.Регистратор = СведенияОПрописанныхЖильцах.Регистратор
+			И СтепеньРодстваФизическихЛиц.ФизическоеЛицоСвязанное = СведенияОПрописанныхЖильцах.Жилец
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПроживающихЖильцах КАК СведенияОПроживающихЖильцах
+		ПО СтепеньРодстваФизическихЛиц.Регистратор = СведенияОПроживающихЖильцах.Регистратор
+			И СтепеньРодстваФизическихЛиц.ФизическоеЛицоСвязанное = СведенияОПроживающихЖильцах.Жилец
+		ЛЕВОЕ СОЕДИНЕНИЕ ТабДок КАК ТабДок
+		ПО (ТабДок.ЛицевойСчет = СтепеньРодстваФизическихЛиц.Регистратор.ЛицевойСчет)
+ГДЕ
+	ТабДок.Период МЕЖДУ ЕСТЬNULL(&amp;ДатаНачала, ДАТАВРЕМЯ(1, 1, 1)) И ВЫБОР
+			КОГДА &amp;ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА ДАТАВРЕМЯ(3999, 12, 31)
+			ИНАЧЕ &amp;ДатаОкончания
+		КОНЕЦ</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Проживает</dataPath>
+		<expression>Количество(Проживает)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Прописан</dataPath>
+		<expression>Количество(Прописан)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДатаПрописки</dataPath>
+		<expression>Количество(ДатаПрописки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДатаПроживания</dataPath>
+		<expression>Количество(ДатаПроживания)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Дата початку</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Дата закінчення</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Період</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>14bb3d66-1338-4c69-b646-ec6efafb78e6</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Здание</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9fb21d18-e633-41bb-bf32-b781c1506ef4</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ЖилойФонд</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>5e64fb3c-c120-4a8f-89da-ef312d29b857</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ЛицевойСчет</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>7b76151f-bd51-43f9-98ac-8484f8ed6459</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Действует</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:userSettingID>0cec2ce3-2665-4e71-bbcf-4140a9c1fded</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>506b50b1-fbe8-47c9-bf40-660b9d60b81a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Организация</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Здание</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЛицевойСчет</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаПрописки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаПроживания</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Здание</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ЛицевойСчет</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ОбъектЛС</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:filter>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>7c012309-266f-4d6a-8025-21034f5ac236</dcsset:userSettingID>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>f5319ee8-6c5e-4956-b42f-8bb85f982ced</dcsset:userSettingID>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>92b95fa9-f82d-4c89-a51a-80cef8b5510d</dcsset:userSettingID>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>4cbb3211-221b-4a45-8cb8-5eca52ca5575</dcsset:userSettingID>
+						</dcsset:conditionalAppearance>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ДатаИзмененияЛС</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>КоличествоПрописанных</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>КоличествоПроживающих</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>КоличествоПрописанных</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>ФизическоеЛицоСвязанное</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>СтепеньРодства</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemField">
+										<dcsset:field>Доля</dcsset:field>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Проживание</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Проживання</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>Проживает</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ДатаПроживания</dcsset:field>
+										</dcsset:item>
+										<dcsset:placement>Auto</dcsset:placement>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+										<dcsset:lwsTitle>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Прописка</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Прописка</v8:content>
+											</v8:item>
+										</dcsset:lwsTitle>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>Прописан</dcsset:field>
+										</dcsset:item>
+										<dcsset:item xsi:type="dcsset:SelectedItemField">
+											<dcsset:field>ДатаПрописки</dcsset:field>
+										</dcsset:item>
+										<dcsset:placement>Auto</dcsset:placement>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:conditionalAppearance>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>Прописан</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">Прописан</dcsset:left>
+												<dcsset:comparisonType>Equal</dcsset:comparisonType>
+												<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Шрифт</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Формат</dcscor:parameter>
+												<dcscor:value xsi:type="v8:LocalStringType">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>БЛ=; БИ=P</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>БЛ =; БІ = P</v8:content>
+													</v8:item>
+												</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>Проживает</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">Проживает</dcsset:left>
+												<dcsset:comparisonType>Equal</dcsset:comparisonType>
+												<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Шрифт</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Формат</dcscor:parameter>
+												<dcscor:value xsi:type="v8:LocalStringType">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>БЛ=; БИ=P</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>БЛ =; БІ = P</v8:content>
+													</v8:item>
+												</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>Прописан</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">Прописан</dcsset:left>
+												<dcsset:comparisonType>Equal</dcsset:comparisonType>
+												<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>ЦветТекста</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Шрифт</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" kind="WindowsFont"/>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Формат</dcscor:parameter>
+												<dcscor:value xsi:type="v8:LocalStringType">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>БЛ=Т; БИ=P</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>БЛ=Т; БИ=P</v8:content>
+													</v8:item>
+												</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:selection>
+											<dcsset:item>
+												<dcsset:field>Проживает</dcsset:field>
+											</dcsset:item>
+										</dcsset:selection>
+										<dcsset:filter>
+											<dcsset:item xsi:type="dcsset:FilterItemComparison">
+												<dcsset:left xsi:type="dcscor:Field">Проживает</dcsset:left>
+												<dcsset:comparisonType>Equal</dcsset:comparisonType>
+												<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+											</dcsset:item>
+										</dcsset:filter>
+										<dcsset:appearance>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>ЦветТекста</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Шрифт</dcscor:parameter>
+												<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Wingdings 2" kind="WindowsFont"/>
+											</dcscor:item>
+											<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+												<dcscor:parameter>Формат</dcscor:parameter>
+												<dcscor:value xsi:type="v8:LocalStringType">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>БЛ=Т; БИ=P</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>uk</v8:lang>
+														<v8:content>БЛ=Т; БИ=P</v8:content>
+													</v8:item>
+												</dcscor:value>
+											</dcscor:item>
+										</dcsset:appearance>
+									</dcsset:item>
+								</dcsset:conditionalAppearance>
+							</dcsset:item>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>e060554d-5406-4861-b15c-f134ae3dae42</dcsset:userSettingID>
+						<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						<dcsset:itemsUserSettingID>9166db26-0f25-49b6-bcef-3b458bad9610</dcsset:itemsUserSettingID>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

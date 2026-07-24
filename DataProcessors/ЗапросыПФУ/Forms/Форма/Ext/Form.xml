@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="19">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="Период" id="101">
+					<DataPath>Объект.Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="Файл" id="1">
+					<DataPath>Объект.Файл</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФайлКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ФайлНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="ПрочитатьФайл" id="17">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПрочитатьФайл</CommandName>
+					<ExtendedTooltip name="ПрочитатьФайлРасширеннаяПодсказка" id="18"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТаблицаДанных" id="21">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаДанных</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаДанныхКонтекстноеМеню" id="22"/>
+			<AutoCommandBar name="ТаблицаДанныхКоманднаяПанель" id="23">
+				<ChildItems>
+					<Button name="ТаблицаДанныхЗаполнить" id="97">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ТаблицаДанныхЗаполнитьРасширеннаяПодсказка" id="98"/>
+					</Button>
+					<Button name="ТаблицаДанныхЗаписатьВФайл" id="99">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаписатьВФайл</CommandName>
+						<ExtendedTooltip name="ТаблицаДанныхЗаписатьВФайлРасширеннаяПодсказка" id="100"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаДанныхРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ТаблицаДанныхСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ТаблицаДанных</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаДанныхСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ТаблицаДанныхСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаДанныхСостояниеПросмотра" id="28">
+				<AdditionSource>
+					<Item>ТаблицаДанных</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаДанныхСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ТаблицаДанныхСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаДанныхУправлениеПоиском" id="31">
+				<AdditionSource>
+					<Item>ТаблицаДанных</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаДанныхУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ТаблицаДанныхУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицаДанныхНомерСтроки" id="34">
+					<DataPath>Объект.ТаблицаДанных.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхНомерСтрокиКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТаблицаДанныхНомерСтрокиРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<InputField name="ТаблицаДанныхID" id="37">
+					<DataPath>Объект.ТаблицаДанных.ID</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхIDКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТаблицаДанныхIDРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхOZN" id="40">
+					<DataPath>Объект.ТаблицаДанных.OZN</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхOZNКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ТаблицаДанныхOZNРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхCDPR" id="43">
+					<DataPath>Объект.ТаблицаДанных.CDPR</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхCDPRКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ТаблицаДанныхCDPRРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхNCARD" id="46">
+					<DataPath>Объект.ТаблицаДанных.NCARD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхNCARDКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТаблицаДанныхNCARDРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхOSOB" id="49">
+					<DataPath>Объект.ТаблицаДанных.OSOB</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхOSOBКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаДанныхOSOBРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхEIS" id="52">
+					<DataPath>Объект.ТаблицаДанных.EIS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхEISКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ТаблицаДанныхEISРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхFIO" id="55">
+					<DataPath>Объект.ТаблицаДанных.FIO</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхFIOКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТаблицаДанныхFIOРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхIDPIL" id="58">
+					<DataPath>Объект.ТаблицаДанных.IDPIL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхIDPILКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ТаблицаДанныхIDPILРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхINDEX" id="61">
+					<DataPath>Объект.ТаблицаДанных.INDEX</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхINDEXКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ТаблицаДанныхINDEXРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхCDUL" id="64">
+					<DataPath>Объект.ТаблицаДанных.CDUL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхCDULКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ТаблицаДанныхCDULРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхUL" id="67">
+					<DataPath>Объект.ТаблицаДанных.UL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхULКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ТаблицаДанныхULРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхHOUSE" id="70">
+					<DataPath>Объект.ТаблицаДанных.HOUSE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхHOUSEКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ТаблицаДанныхHOUSEРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхBLILD" id="73">
+					<DataPath>Объект.ТаблицаДанных.BLILD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхBLILDКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТаблицаДанныхBLILDРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхAPT" id="76">
+					<DataPath>Объект.ТаблицаДанных.APT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхAPTКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТаблицаДанныхAPTРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхPLZAG" id="79">
+					<DataPath>Объект.ТаблицаДанных.PLZAG</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхPLZAGКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ТаблицаДанныхPLZAGРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхPLOPAL" id="82">
+					<DataPath>Объект.ТаблицаДанных.PLOPAL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхPLOPALКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ТаблицаДанныхPLOPALРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхZABORG" id="85">
+					<DataPath>Объект.ТаблицаДанных.ZABORG</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхZABORGКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ТаблицаДанныхZABORGРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхCOD" id="88">
+					<DataPath>Объект.ТаблицаДанных.COD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхCODКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ТаблицаДанныхCODРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхPIDTVERD" id="91">
+					<DataPath>Объект.ТаблицаДанных.PIDTVERD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхPIDTVERDКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ТаблицаДанныхPIDTVERDРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<InputField name="ТаблицаДанныхTARIF" id="94">
+					<DataPath>Объект.ТаблицаДанных.TARIF</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаДанныхTARIFКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ТаблицаДанныхTARIFРасширеннаяПодсказка" id="96"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗапросыПФУ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Прочитати</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьФайл</Action>
+		</Command>
+		<Command name="Заполнить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заповнити даними</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити даними</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="ЗаписатьВФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записати у файл</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записати у файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьВФайл</Action>
+		</Command>
+	</Commands>
+</Form>

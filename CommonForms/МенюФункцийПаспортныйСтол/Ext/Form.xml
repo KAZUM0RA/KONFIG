@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Паспортный стол</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Паспортний стіл</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група документи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРегистрация" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистрация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група реєстрація</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регистрация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група реєстрація</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегистрацияРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияРегистрация" id="5">
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>win:DisabledText</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Регистрация новых жильцов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Реєстрація нових мешканців</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияРегистрацияКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ДекорацияРегистрацияРасширеннаяПодсказка" id="45"/>
+						</LabelDecoration>
+						<LabelDecoration name="УправлениеСоставомЖильцов" id="11">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новая регистрация</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Нова реєстрація</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="УправлениеСоставомЖильцовКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="УправлениеСоставомЖильцовРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="Click">УправлениеСоставомЖильцовНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ЗаявлениеоРегистрации" id="18">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать заявления о регистрации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Друк заяви про реєстрацію</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ЗаявлениеоРегистрацииКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ЗаявлениеоРегистрацииРасширеннаяПодсказка" id="47"/>
+							<Events>
+								<Event name="Click">ЗаявлениеоРегистрацииНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ТалонПрибытия" id="16">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать талона прибытия (Форма 2)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Друк талона прибуття (Форма 2)</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ТалонПрибытияКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ТалонПрибытияРасширеннаяПодсказка" id="48"/>
+							<Events>
+								<Event name="Click">ТалонПрибытияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСправки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа справки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група довідки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа справки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група довідки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСправкиРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияСправки" id="7">
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>win:DisabledText</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формы справок</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Форми довідок</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияСправкиКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДекорацияСправкиРасширеннаяПодсказка" id="50"/>
+						</LabelDecoration>
+						<LabelDecoration name="СправкаОСоставеСемьи" id="28">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Справка о составе семьи и прописке</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Довідка про состав родини й прописці</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="СправкаОСоставеСемьиКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СправкаОСоставеСемьиРасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="Click">СправкаОСоставеСемьиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="СправкаОПрописке" id="32">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Справка о прописке</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Довідка про прописку</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="СправкаОПропискеКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СправкаОПропискеРасширеннаяПодсказка" id="52"/>
+							<Events>
+								<Event name="Click">СправкаОПропискеНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ФормаА1" id="30">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Форма А1</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Форма А1</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ФормаА1КонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ФормаА1РасширеннаяПодсказка" id="53"/>
+							<Events>
+								<Event name="Click">ФормаА1Нажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВыписка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выписка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група виписка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выписка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група виписка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВыпискаРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияВыписка" id="9">
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>win:DisabledText</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Снятие с регистрации жильцов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Зняття з реєстрації мешканців</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияВыпискаКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ДекорацияВыпискаРасширеннаяПодсказка" id="55"/>
+						</LabelDecoration>
+						<LabelDecoration name="УправлениеСоставомЖильцов2" id="20">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выписать жильца</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Виписати мешканця</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="УправлениеСоставомЖильцов2КонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="УправлениеСоставомЖильцов2РасширеннаяПодсказка" id="56"/>
+							<Events>
+								<Event name="Click">УправлениеСоставомЖильцов2Нажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ЗаявлениеОСнятииСРегистрации" id="24">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать заявления о снятии с регистрации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Друк заяви про зняття з реєстрації</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ЗаявлениеОСнятииСРегистрацииКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ЗаявлениеОСнятииСРегистрацииРасширеннаяПодсказка" id="57"/>
+							<Events>
+								<Event name="Click">ЗаявлениеОСнятииСРегистрацииНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ТалонУбытия" id="22">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать талона убытия (Форма 4)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Друк талона вибуття (Форма 4)</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ТалонУбытияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ТалонУбытияРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="Click">ТалонУбытияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСправочники" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочники</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Довідники</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>win:DisabledText</TitleTextColor>
+			<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа справочники</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група довідники</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаСправочникиРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаФизЛица" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа физ лица</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група фIз особи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа физ лица</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група фIз особи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФизЛицаРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<PictureDecoration name="ДобавитьФизЛицо" id="35">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить физ лицо</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Додати фIз особа</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<Picture>
+								<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДобавитьФизЛицоКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДобавитьФизЛицоРасширеннаяПодсказка" id="61"/>
+							<Events>
+								<Event name="Click">ДобавитьФизЛицоНажатие</Event>
+							</Events>
+						</PictureDecoration>
+						<LabelDecoration name="ФизическиеЛица" id="14">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Физические лица</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content> Фізичні особи</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ФизическиеЛицаКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ФизическиеЛицаРасширеннаяПодсказка" id="62"/>
+							<Events>
+								<Event name="Click">ФизическиеЛицаНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПотребители" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа потребители</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група споживачі</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа потребители</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група споживачі</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПотребителиРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<PictureDecoration name="ДобавитьПотребителя" id="38">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавить потребителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Додати споживача</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<Picture>
+								<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДобавитьПотребителяКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ДобавитьПотребителяРасширеннаяПодсказка" id="64"/>
+							<Events>
+								<Event name="Click">ДобавитьПотребителяНажатие</Event>
+							</Events>
+						</PictureDecoration>
+						<LabelDecoration name="ПотребителиУслуг" id="26">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Потребители услуг</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Споживачі послуг</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ПотребителиУслугКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПотребителиУслугРасширеннаяПодсказка" id="65"/>
+							<Events>
+								<Event name="Click">ПотребителиУслугНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОписание" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група опис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа описание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група опис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОписаниеРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<LabelDecoration name="Описание" id="41">
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсистема "Паспортный стол" предназначена для создания рабочей среды для специалиста, выполняющего функции регистрации граждан. В программе также поддерживается формирование печатных форм, установленных законодательством справок, предоставляемых зарегистрированным физическим лицам.
+
+Документ "Управление составом жильцов" предназначен для регистрации в системе, для конкретного лицевого счета, списка проживающих и списка зарегистрированных физических лиц, а также их родственных связей с основным владельцем.
+
+Печатные формы справок можно вызывать как непосредственно из данной формы, так и из желаемого объекта справочника "Лицевые счета".</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Подсистема "Паспортный стол" предназначена для создания рабочей среды для специалиста, выполняющего функции регистрации граждан. В программе также поддерживается формирование печатных форм, установленных законодательством справок, предоставляемых зарегистрированным физическим лицам.
+
+Документ "Управление составом жильцов" предназначен для регистрации в системе, для конкретного лицевого счета, списка проживающих и списка зарегистрированных физических лиц, а также их родственных связей с основным владельцем.
+
+Печатные формы справок можно вызывать как непосредственно из данной формы, так и из желаемого объекта справочника "Лицевые счета".</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="67"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+</Form>

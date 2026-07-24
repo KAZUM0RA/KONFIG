@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="141">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="142"/>
+			<ChildItems>
+				<InputField name="ФайлDBF" id="1">
+					<DataPath>Объект.ФайлDBF</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ФайлDBFКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ФайлDBFРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ФайлDBFНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Период" id="143">
+					<DataPath>Объект.Период</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="145"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаУслуги" id="146">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список послуг</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список послуг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа услуги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаУслугиРасширеннаяПодсказка" id="147"/>
+			<ChildItems>
+				<InputField name="Услуги" id="148">
+					<DataPath>Услуги</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="УслугиКонтекстноеМеню" id="149"/>
+					<ExtendedTooltip name="УслугиРасширеннаяПодсказка" id="150"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДанныеДляВыгрузки" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеДляВыгрузки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеДляВыгрузкиКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ДанныеДляВыгрузкиКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ДанныеДляВыгрузкиЗаполнить" id="104">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ДанныеДляВыгрузкиЗаполнитьРасширеннаяПодсказка" id="105"/>
+					</Button>
+					<Button name="ДанныеДляВыгрузкиВыгрузитьВФайл" id="139">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьВФайл</CommandName>
+						<ExtendedTooltip name="ДанныеДляВыгрузкиВыгрузитьВФайлРасширеннаяПодсказка" id="140"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеДляВыгрузкиРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ДанныеДляВыгрузкиСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ДанныеДляВыгрузки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляВыгрузкиСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДанныеДляВыгрузкиСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеДляВыгрузкиСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ДанныеДляВыгрузки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляВыгрузкиСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДанныеДляВыгрузкиСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеДляВыгрузкиУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ДанныеДляВыгрузки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеДляВыгрузкиУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДанныеДляВыгрузкиУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ДанныеДляВыгрузкиНомерСтроки" id="17">
+					<DataPath>Объект.ДанныеДляВыгрузки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ДанныеДляВыгрузкиPAYERIDENT" id="20">
+					<DataPath>Объект.ДанныеДляВыгрузки.PAYERIDENT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиPAYERIDENTКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиPAYERIDENTРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиFIO" id="23">
+					<DataPath>Объект.ДанныеДляВыгрузки.FIO</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиFIOКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиFIOРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSTREETCODE" id="26">
+					<DataPath>Объект.ДанныеДляВыгрузки.STREETCODE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSTREETCODEКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSTREETCODEРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSTREET" id="29">
+					<DataPath>Объект.ДанныеДляВыгрузки.STREET</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSTREETКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSTREETРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиBUILDING" id="32">
+					<DataPath>Объект.ДанныеДляВыгрузки.BUILDING</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиBUILDINGКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиBUILDINGРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиFLAT" id="35">
+					<DataPath>Объект.ДанныеДляВыгрузки.FLAT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиFLATКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиFLATРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиCOMPANY" id="38">
+					<DataPath>Объект.ДанныеДляВыгрузки.COMPANY</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиCOMPANYКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиCOMPANYРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиOKPO" id="41">
+					<DataPath>Объект.ДанныеДляВыгрузки.OKPO</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиOKPOКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиOKPOРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиCOMPANYCOD" id="44">
+					<DataPath>Объект.ДанныеДляВыгрузки.COMPANYCOD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиCOMPANYCODКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиCOMPANYCODРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиPHONE" id="47">
+					<DataPath>Объект.ДанныеДляВыгрузки.PHONE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиPHONEКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиPHONEРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиACCOUNT" id="50">
+					<DataPath>Объект.ДанныеДляВыгрузки.ACCOUNT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиACCOUNTКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиACCOUNTРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиMFO" id="53">
+					<DataPath>Объект.ДанныеДляВыгрузки.MFO</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиMFOКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиMFOРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSERVICE" id="56">
+					<DataPath>Объект.ДанныеДляВыгрузки.SERVICE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSERVICEКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSERVICEРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSERVICECOD" id="59">
+					<DataPath>Объект.ДанныеДляВыгрузки.SERVICECOD</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSERVICECODКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSERVICECODРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиLS" id="62">
+					<DataPath>Объект.ДанныеДляВыгрузки.LS</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиLSКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиLSРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиPAYDEST" id="65">
+					<DataPath>Объект.ДанныеДляВыгрузки.PAYDEST</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиPAYDESTКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиPAYDESTРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиCASHSYMBOL" id="68">
+					<DataPath>Объект.ДанныеДляВыгрузки.CASHSYMBOL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиCASHSYMBOLКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиCASHSYMBOLРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиMGTARIF_S" id="71">
+					<DataPath>Объект.ДанныеДляВыгрузки.MGTARIF_S</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиMGTARIF_SКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиMGTARIF_SРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSUM" id="74">
+					<DataPath>Объект.ДанныеДляВыгрузки.SUM</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSUMКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSUMРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиYEAR" id="77">
+					<DataPath>Объект.ДанныеДляВыгрузки.YEAR</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиYEARКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиYEARРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиMONTH" id="80">
+					<DataPath>Объект.ДанныеДляВыгрузки.MONTH</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиMONTHКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиMONTHРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиDEBT" id="83">
+					<DataPath>Объект.ДанныеДляВыгрузки.DEBT</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиDEBTКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиDEBTРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиCHARGE" id="86">
+					<DataPath>Объект.ДанныеДляВыгрузки.CHARGE</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиCHARGEКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиCHARGEРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиLASTPAY" id="106">
+					<DataPath>Объект.ДанныеДляВыгрузки.LASTPAY</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиLASTPAYКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиLASTPAYРасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиRECALC" id="89">
+					<DataPath>Объект.ДанныеДляВыгрузки.RECALC</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиRECALCКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиRECALCРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиREMISSION" id="92">
+					<DataPath>Объект.ДанныеДляВыгрузки.REMISSION</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиREMISSIONКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиREMISSIONРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиSUBSIDIES" id="95">
+					<DataPath>Объект.ДанныеДляВыгрузки.SUBSIDIES</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиSUBSIDIESКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиSUBSIDIESРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиIDMET1" id="98">
+					<DataPath>Объект.ДанныеДляВыгрузки.IDMET1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиIDMET1КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиIDMET1РасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиEVAL1" id="101">
+					<DataPath>Объект.ДанныеДляВыгрузки.EVAL1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиEVAL1КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиEVAL1РасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиРегион" id="112">
+					<DataPath>Объект.ДанныеДляВыгрузки.Регион</DataPath>
+					<ContextMenu name="ДанныеДляВыгрузкиРегионКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиРегионРасширеннаяПодсказка" id="114"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиГород" id="115">
+					<DataPath>Объект.ДанныеДляВыгрузки.Город</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиГородКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиГородРасширеннаяПодсказка" id="117"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиРайон" id="118">
+					<DataPath>Объект.ДанныеДляВыгрузки.Район</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиРайонКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиРайонРасширеннаяПодсказка" id="120"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиНаселенныйПункт" id="121">
+					<DataPath>Объект.ДанныеДляВыгрузки.НаселенныйПункт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиНаселенныйПунктКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиНаселенныйПунктРасширеннаяПодсказка" id="123"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиУлица" id="124">
+					<DataPath>Объект.ДанныеДляВыгрузки.Улица</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиУлицаКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиУлицаРасширеннаяПодсказка" id="126"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиДом" id="127">
+					<DataPath>Объект.ДанныеДляВыгрузки.Дом</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиДомКонтекстноеМеню" id="128"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиДомРасширеннаяПодсказка" id="129"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиКвартира" id="130">
+					<DataPath>Объект.ДанныеДляВыгрузки.Квартира</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиКвартираКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиКвартираРасширеннаяПодсказка" id="132"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиКодСтраны" id="136">
+					<DataPath>Объект.ДанныеДляВыгрузки.КодСтраны</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиКодСтраныКонтекстноеМеню" id="137"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиКодСтраныРасширеннаяПодсказка" id="138"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиСтрана" id="133">
+					<DataPath>Объект.ДанныеДляВыгрузки.Страна</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиСтранаКонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиСтранаРасширеннаяПодсказка" id="135"/>
+				</InputField>
+				<InputField name="ДанныеДляВыгрузкиИндекс" id="109">
+					<DataPath>Объект.ДанныеДляВыгрузки.Индекс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДанныеДляВыгрузкиИндексКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="ДанныеДляВыгрузкиИндексРасширеннаяПодсказка" id="111"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаАБанк</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:691349b0-adc6-4d65-8f9c-a32c54a6f8c9</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Услуги" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Услуги</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="ВыгрузитьВФайл" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выгрузить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьВФайл</Action>
+		</Command>
+	</Commands>
+</Form>

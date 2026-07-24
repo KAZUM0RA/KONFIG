@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10586.713"></meta></head><body>
+<h1>Обработка "Загрузка данных из EXCEL"</h1>
+<p>Обработка предназначена для загрузки зданий, объектов лицевых счетов и физических лиц из электронных таблиц Microsoft Office Excel. Для ввода начальных остатков и приборов учета и следует перейти на вкладку "Настройка услуг" и заполнить таблицу соответствия услуг. Указывайте в ней наименования услуг, которые использованы в документах EXCEL. </p>
+<h4>Формат для загрузки зданий:</h4>
+<ol><li>
+<div><strong>Тип сооружения</strong>. Доступные значения: "Здание", "Паркинг", "Общежитие".</div>
+</li><li>
+<div>
+<div><strong>Область</strong>.</div></div>
+</li><li>
+<div><strong>Город</strong>.</div>
+</li><li>
+<div>
+<div><strong>Район</strong>.</div></div>
+</li><li>
+<div>
+<div>
+<div><strong>Улица</strong>.</div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div><strong>Корпус</strong>.</div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Номер дома</strong>.</div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Почтовый индекс </strong>здания.</div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Дата принятия на баланс. </strong>Обязательно к заполнению.</div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Дата ввода в эксплуатацию</strong>. Обязательно к заполнению.</div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Количество подъездов</strong> в здании.</div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Количество лифтов</strong> в здании.</div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Общая площадь </strong>здания.</div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Отапливаемая площадь </strong>здания.</div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Жилая площадь </strong>здания.</div></div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Дополнительная площадь </strong>здания.</div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Префикс лицевых счетов</strong> для здания.</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></li></ol><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div> </div>
+<h4>Формат для объектов лицевых счетов:</h4>
+<ol><li>
+<div><strong>Номер квартиры</strong>. </div>
+</li><li>
+<div>
+<div><strong>Этаж</strong>.</div></div>
+</li><li>
+<div><strong>Подъезд</strong>. Указывается код подъезда. Либо номер подъезда, если требуется создать новый.</div>
+</li><li>
+<div>
+<div><strong>Количество комнат</strong>.</div></div>
+</li><li>
+<div>
+<div>
+<div><strong>Жилой фонд</strong>. Для указания нежилого фонда нужно ввести "Нежилой фонд", "Нет" или "0".</div></div></div>
+<div>
+<div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Общая площадь </strong>объекта.</div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Отапливаемая площадь </strong>объекта.</div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Жилая площадь </strong>объекта.</div></div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Дополнительная площадь </strong>объекта.</div></div></div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Суффикс</strong>.</div></div></div></div></div></div></div></div></div></div></div></div></div></li></ol><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div> </div>
+<h4>Формат для физических лиц:</h4>
+<ol><li>
+<div><strong>Фамилия</strong> <strong>Имя</strong> <strong>Отчество </strong>физического лица. </div>
+</li><li>
+<div>
+<div><strong>Пол </strong>физического лица. Указывается в формате "Жен", "Ж" или "Женский".</div></div>
+</li><li>
+<div>
+<div>
+<div><strong>Инн</strong>.</div></div></div>
+<div>
+<div>
+<div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Дата рождения </strong>физического лица.</div></div></div></div></div></div></div></div></div></div></div>
+</li><li>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><strong>Место рождения </strong>физического лица.</div></div></div></div></div></div></div></div></div></div></div></li></ol></div></div></div>
+<ol></ol></div></div></div></div></div></div></div></div></div></div></div></div>
+<p> </p>
+<h4>Формат для лицевых счетов:</h4>
+<ol><li>
+<div><strong>Номер квартиры</strong>. </div>
+</li><li>
+<div><strong>Суффикс</strong> квартиры.</div>
+</li><li>
+<div>
+<div><strong>Ответственный владелец</strong> лицевого счета.</div></div>
+</li><li>
+<div><strong>Количество проживающих </strong>на лицевом счете. </div>
+</li><li>
+<div>
+<div><strong>Количество прописанных </strong>на лицевом счете. </div></div></li></ol><p></p>
+<div> </div>
+<p></p>
+<h4>Формат для приборов учета:</h4>
+<ol><li>
+<div><strong>Услуга.</strong></div>
+</li><li>
+<div><strong>Заводской Номер </strong>прибора учета.</div>
+</li><li>
+<div><strong>Номер квартиры </strong>в которой установлен прибор учета.</div>
+</li><li>
+<div><strong>Суффикс</strong> квартиры.</div>
+</li><li>
+<div><strong>Разрядность </strong>прибора учета.</div>
+</li><li>
+<div><strong>Коэффициент трансформации </strong>прибора учета.</div>
+</li><li>
+<div><strong>Способ регистрации показаний </strong>прибора учета. Указывается "Расход за период расчета" или "Нарастающим итогом".</div>
+</li><li>
+<div><strong>Начальное показание </strong>прибора учета.</div>
+</li><li>
+<div><strong>Тарифность </strong>прибора учета. Заполняется цифрами "1", "2" или "3".<br></div></li></ol><h4>Формат для начальных остатков:</h4>
+<ol><li>
+<div><strong>Номер квартиры</strong>.</div>
+</li><li>
+<div><strong>Суффикс</strong> квартиры.</div>
+</li><li>
+<div><strong>Услуга.</strong></div>
+</li><li>
+<div><strong>Месяц начисления.</strong></div>
+</li><li>
+<div><strong>Сумма.</strong></div></li></ol><p>При нажатии на кнопку "Сохранить услуги" - услуги назначаются на лицевые счета с помощью документов "Управление услугами ЖКХ". При нажатии на кнопку "Сохранить начальные остатки в документ" - записывается документ "Ввод начальных остатков".</p></div></div></div></div></div></div></div></div></body></html>

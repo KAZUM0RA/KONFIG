@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група відбір</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<InputField name="КассаОтбор" id="10">
+					<DataPath>КассаККМ</DataPath>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="КассаОтборКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КассаОтборРасширеннаяПодсказка" id="78"/>
+					<Events>
+						<Event name="OnChange">КассаОтборПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтатусКассовойСменыОтбор" id="44">
+					<DataPath>СтатусКассовойСмены</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыКассовойСмены.EnumValue.Открыта</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыКассовойСмены.EnumValue.Закрыта</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СтатусыКассовойСмены.EnumValue.ЗакрытаЧекиЗаархивированы</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Все</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Усі</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">09597e8f-edeb-41f5-ae66-a6a256326a95.00000000-0000-0000-0000-000000000000</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СтатусКассовойСменыОтборКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СтатусКассовойСменыОтборРасширеннаяПодсказка" id="79"/>
+					<Events>
+						<Event name="OnChange">СтатусКассовойСменыОтборПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="КассовыеСмены" id="46">
+			<ChangeRowSet>false</ChangeRowSet>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>КассовыеСмены</DataPath>
+			<RowPictureDataPath>КассовыеСмены.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>Top</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="КассовыеСменыКонтекстноеМеню" id="47"/>
+			<AutoCommandBar name="КассовыеСменыКоманднаяПанель" id="48">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="ГруппаКомандыСписка" id="76">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Команды формы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Команди форми</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа команды списка</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Група команди списку</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Form</CommandSource>
+						<ExtendedTooltip name="ГруппаКомандыСпискаРасширеннаяПодсказка" id="80"/>
+					</ButtonGroup>
+					<Popup name="ГруппаУправлениеОборудованием" id="73">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Управление оборудованием</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Управління обладнанням</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Управление оборудованием</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Управління обладнанням</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаУправлениеОборудованиемРасширеннаяПодсказка" id="81"/>
+						<ChildItems>
+							<Button name="ОтчетыОРозничныхПродажахОткрытьУправлениеФискальнымРегистратором" id="74">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьУправлениеФискальнымРегистратором</CommandName>
+								<ExtendedTooltip name="ОтчетыОРозничныхПродажахОткрытьУправлениеФискальнымРегистраторомРасширеннаяПодсказка" id="82"/>
+							</Button>
+							<Button name="ОтчетыОРозничныхПродажахОткрытьУправлениеЭквайринговымТерминалом" id="75">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьУправлениеЭквайринговымТерминалом</CommandName>
+								<ExtendedTooltip name="ОтчетыОРозничныхПродажахОткрытьУправлениеЭквайринговымТерминаломРасширеннаяПодсказка" id="83"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КассовыеСменыРасширеннаяПодсказка" id="84"/>
+			<SearchStringAddition name="КассовыеСменыСтрокаПоиска" id="85">
+				<AdditionSource>
+					<Item>КассовыеСмены</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КассовыеСменыСтрокаПоискаКонтекстноеМеню" id="86"/>
+				<ExtendedTooltip name="КассовыеСменыСтрокаПоискаРасширеннаяПодсказка" id="87"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КассовыеСменыСостояниеПросмотра" id="88">
+				<AdditionSource>
+					<Item>КассовыеСмены</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КассовыеСменыСостояниеПросмотраКонтекстноеМеню" id="89"/>
+				<ExtendedTooltip name="КассовыеСменыСостояниеПросмотраРасширеннаяПодсказка" id="90"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КассовыеСменыУправлениеПоиском" id="91">
+				<AdditionSource>
+					<Item>КассовыеСмены</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КассовыеСменыУправлениеПоискомКонтекстноеМеню" id="92"/>
+				<ExtendedTooltip name="КассовыеСменыУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Номер" id="51">
+					<DataPath>КассовыеСмены.Number</DataPath>
+					<ContextMenu name="НомерКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="Дата" id="49">
+					<DataPath>КассовыеСмены.Date</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="КассаККМ" id="55">
+					<DataPath>КассовыеСмены.КассаККМ</DataPath>
+					<ContextMenu name="КассаККМКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="КассаККМРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="СтатусКассовойСмены" id="67">
+					<DataPath>КассовыеСмены.СтатусКассовойСмены</DataPath>
+					<ContextMenu name="СтатусКассовойСменыКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СтатусКассовойСменыРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="Касса" id="57">
+					<DataPath>КассовыеСмены.Касса</DataPath>
+					<ContextMenu name="КассаКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КассаРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="СуммаДокумента" id="69">
+					<DataPath>КассовыеСмены.СуммаДокумента</DataPath>
+					<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="59">
+					<DataPath>КассовыеСмены.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="НачалоКассовойСмены" id="61">
+					<DataPath>КассовыеСмены.НачалоКассовойСмены</DataPath>
+					<ContextMenu name="НачалоКассовойСменыКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="НачалоКассовойСменыРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="ОкончаниеКассовойСмены" id="63">
+					<DataPath>КассовыеСмены.ОкончаниеКассовойСмены</DataPath>
+					<ContextMenu name="ОкончаниеКассовойСменыКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ОкончаниеКассовойСменыРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+				<LabelField name="Автор" id="71">
+					<DataPath>КассовыеСмены.Автор</DataPath>
+					<ContextMenu name="АвторКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="103"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КассовыеСмены" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кассовые смены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Касові зміни</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.КассоваяСмена</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Касса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Кассы.ПустаяСсылка</dcsset:right>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="КассаККМ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Касса ККМ</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Каса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+			</Type>
+			<Save>
+				<Field>КассаККМ</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтатусКассовойСмены" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус кассовой смены</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Статус касової зміни</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыКассовойСмены</v8:Type>
+			</Type>
+			<Save>
+				<Field>СтатусКассовойСмены</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьУправлениеФискальнымРегистратором" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление фискальным регистратором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління фіскальним реєстратором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление фискальным регистратором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити управління фіскальним реєстратором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУправлениеФискальнымРегистратором</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьУправлениеЭквайринговымТерминалом" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление эквайринговым терминалом</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Управління еквайрингової терміналом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть управление эквайринговым терминалом</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити управління еквайрингової терміналом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУправлениеЭквайринговымТерминалом</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>0:3a5e1bfa-0e5a-464d-b963-a72d0a2d1bbf</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+			</Item>
+			<Item>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+				<Index>2</Index>
+			</Item>
+			<Item>
+				<Command>Document.КассоваяСмена.Command.ПечатьКМ6</Command>
+				<Type>Auto</Type>
+				<CommandGroup>CommandGroup.Печать</CommandGroup>
+				<Index>1</Index>
+			</Item>
+			<Item>
+				<Command>Document.КассоваяСмена.Command.ЗаархивироватьЧекиККМ</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>

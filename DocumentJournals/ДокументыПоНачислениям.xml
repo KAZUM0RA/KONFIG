@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<DocumentJournal uuid="df9ae043-0470-4fd9-9b78-3ffad5c1227d">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПоНачислениям" category="Selection">
+				<xr:TypeId>cf207fac-5ab5-4eb4-915c-f07bf57db4f3</xr:TypeId>
+				<xr:ValueId>03a4d9a6-be0a-4aa1-98de-83a75d8e3a17</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПоНачислениям" category="List">
+				<xr:TypeId>6c4dad2b-aced-4755-9a10-e88507873254</xr:TypeId>
+				<xr:ValueId>4f29bb0e-8639-4447-b7ab-cb6775ba683f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПоНачислениям" category="Manager">
+				<xr:TypeId>7eaefa92-f0ce-4bb8-a2cc-498071148320</xr:TypeId>
+				<xr:ValueId>41b7711d-b626-42ce-87da-907749ba6077</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоНачислениям</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по начислениям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документи по нарахуваннях</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыПоНачислениям.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПениПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РазовоеНачислениеУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеДополнительныхНачислений</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="109a61a0-e0e6-4485-904c-c1567eb3cf32">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Організація</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РазовоеНачислениеУслуг.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПениПоЛС.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеДополнительныхНачислений.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="8f6e782f-3591-4205-843c-3a042475934a">
+				<Properties>
+					<Name>Здание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Здание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Будинок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС.Attribute.Здание</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС.Attribute.Здание</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПениПоЛС.Attribute.Здание</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РазовоеНачислениеУслуг.Attribute.Здание</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеДополнительныхНачислений.Attribute.Здание</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+			<Command uuid="d3f62ab2-8187-4bd5-8627-11d53d7bd6ae">
+				<Properties>
+					<Name>ОткрытьДокументыПоНачислениям</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы по начислениям</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документи по нарахуваннях</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

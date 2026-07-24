@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="bfe6bf07-4fcb-49bd-a2e8-2910d46d5acc">
+		<Properties>
+			<Name>ПриборыУчета</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приборы учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Прилади обліку</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ПриборыМикро</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеПриборамиУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УстановленныеПриборыУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТарифностьСчетчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыРегистрацииПоказанийСчетчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктСнятияПоказанийТеплосчетчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасчетПоказанийПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаспределениеТепловойЕнергии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиПриборыУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаменаПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводПоказанийПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоприборамУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоПриборамУчетаДляОбщихОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыПриборыУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводПоказанийПриборовВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоТелефонамАбонентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПоказанияПриборовЗаМесяц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаПоказанийПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеОбщедомовыхПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТехПоддержкаПанельНавигации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ЗарегистрироватьМобильногоАгента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПоказанийИзВнешнихИсточников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПоказанияПУИзВнешнихИсточников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИндивидуальныйВводПоказаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеТепловойЕнергии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводПоказанийПриборовЗаМесяц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетНулевыеПоказанияРазвернуто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктСнятияПоказанийТеплосчетчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РаспределениеТепловойЕнергии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктСнятияПоказанийХолоднойВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктСнятияПоказанийХолоднойВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеХолоднойВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РаспределениеХолоднойВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РаспределениеХолоднойВоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводОбъемаПотребленияГВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасчетПоказанийПриборовОтопление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводПоказанийПриборовОтопление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РозподілЗБЛічильникаГВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаПоказанийВодыИзExcel</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаДанныхВXLSX</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Справочники</Subsystem>
+			<Subsystem>МобильноеПриложение</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ФайлЕксель" id="126">
+			<DataPath>Объект.ФайлЕксель</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ФайлЕксельКонтекстноеМеню" id="127"/>
+			<ExtendedTooltip name="ФайлЕксельРасширеннаяПодсказка" id="128"/>
+			<Events>
+				<Event name="StartChoice">ФайлЕксельНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="Колонки" id="116">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="117"/>
+			<ChildItems>
+				<UsualGroup name="БанкОрганизация" id="111">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банк организация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Банк организация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="БанкОрганизацияРасширеннаяПодсказка" id="112"/>
+					<ChildItems>
+						<InputField name="Организация" id="69">
+							<DataPath>Объект.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="БанковскийСчет" id="113">
+							<DataPath>Объект.БанковскийСчет</DataPath>
+							<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="115"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="118">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<InputField name="ТипФайла" id="120">
+							<DataPath>Объект.ТипФайла</DataPath>
+							<DropListButton>true</DropListButton>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Льготы</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Пільги</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Льготы</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Субсидии</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Субсидії</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Субсидии</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипФайлаКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ТипФайлаРасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="Услуга" id="123">
+							<DataPath>Объект.Услуга</DataPath>
+							<ContextMenu name="УслугаКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="125"/>
+						</InputField>
+						<UsualGroup name="Группа2" id="129">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<InputField name="ДатаДокумента" id="131">
+									<DataPath>Объект.ДатаДокумента</DataPath>
+									<ContextMenu name="ДатаДокументаКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ДатаДокументаРасширеннаяПодсказка" id="133"/>
+								</InputField>
+								<CheckBoxField name="Багачка" id="134">
+									<DataPath>Объект.Багачка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="БагачкаКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="БагачкаРасширеннаяПодсказка" id="136"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаЗагрузка" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завантаження</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗагрузкаРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<Table name="Загрузка" id="30">
+							<Representation>List</Representation>
+							<HeaderHeight>2</HeaderHeight>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Загрузка</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗагрузкаКонтекстноеМеню" id="31"/>
+							<AutoCommandBar name="ЗагрузкаКоманднаяПанель" id="32">
+								<ChildItems>
+									<Button name="ЗагрузкаЗагрузитьИзФайлаЗагрузка" id="145">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗагрузитьИзФайлаЗагрузка</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.LevelDown</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Загрузить выписку</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Завантажити виписку</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗагрузкаЗагрузитьИзФайлаЗагрузкаРасширеннаяПодсказка" id="146"/>
+									</Button>
+									<Button name="ЗагрузкаСохранитьВыписку" id="143">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СохранитьВыписку</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.СохранитьФайлКак</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ЗагрузкаСохранитьВыпискуРасширеннаяПодсказка" id="144"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗагрузкаРасширеннаяПодсказка" id="33"/>
+							<SearchStringAddition name="ЗагрузкаСтрокаПоиска" id="34">
+								<AdditionSource>
+									<Item>Загрузка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагрузкаСтрокаПоискаКонтекстноеМеню" id="35"/>
+								<ExtendedTooltip name="ЗагрузкаСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗагрузкаСостояниеПросмотра" id="37">
+								<AdditionSource>
+									<Item>Загрузка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагрузкаСостояниеПросмотраКонтекстноеМеню" id="38"/>
+								<ExtendedTooltip name="ЗагрузкаСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗагрузкаУправлениеПоиском" id="40">
+								<AdditionSource>
+									<Item>Загрузка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗагрузкаУправлениеПоискомКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="ЗагрузкаУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗагрузкаНомерСтроки" id="43">
+									<DataPath>Объект.Загрузка.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаНомерСтрокиКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ЗагрузкаНомерСтрокиРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<InputField name="ЗагрузкаНомерУПСЗН" id="46">
+									<DataPath>Объект.Загрузка.НомерУПСЗН</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаНомерУПСЗНКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ЗагрузкаНомерУПСЗНРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="ЗагрузкаIDУчетнойЗаписи" id="49">
+									<DataPath>Объект.Загрузка.IDУчетнойЗаписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаIDУчетнойЗаписиКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ЗагрузкаIDУчетнойЗаписиРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="ЗагрузкаФИО" id="52">
+									<DataPath>Объект.Загрузка.ФИО</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаФИОКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЗагрузкаФИОРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ЗагрузкаЛицевойСчет" id="55">
+									<DataPath>Объект.Загрузка.ЛицевойСчет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаЛицевойСчетКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ЗагрузкаЛицевойСчетРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ЗагрузкаСуммаНасчитаная" id="58">
+									<DataPath>Объект.Загрузка.СуммаНасчитаная</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загальна нарахована сума за спожиті послуги у звітному місяці (грн.)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Загальна нарахована сума за спожиті послуги у звітному місяці (грн.)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ЗагрузкаСуммаНасчитанаяКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ЗагрузкаСуммаНасчитанаяРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="ЗагрузкаСуммаКОплате" id="61">
+									<DataPath>Объект.Загрузка.СуммаКОплате</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загальна сума до сплати, що включає заборгованість/переплату за попередні періоди (грн.)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Загальна сума до сплати, що включає заборгованість/переплату за попередні періоди (грн.)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ЗагрузкаСуммаКОплатеКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ЗагрузкаСуммаКОплатеРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="ЗагрузкаОплаченнаяСумма" id="64">
+									<DataPath>Объект.Загрузка.ОплаченнаяСумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗагрузкаОплаченнаяСуммаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ЗагрузкаОплаченнаяСуммаРасширеннаяПодсказка" id="66"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВыгрузка" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вивантаження</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выгрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<Table name="Выгрузка" id="72">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Выгрузка</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ВыгрузкаКонтекстноеМеню" id="73"/>
+							<AutoCommandBar name="ВыгрузкаКоманднаяПанель" id="74">
+								<ChildItems>
+									<Button name="ВыгрузкаСформироватьНачисления" id="139">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СформироватьНачисления</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.AccumulationRegister</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ВыгрузкаСформироватьНачисленияРасширеннаяПодсказка" id="140"/>
+									</Button>
+									<Button name="ВыгрузкаСохранитьВФайл" id="141">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СохранитьВФайл</CommandName>
+										<Picture>
+											<xr:Ref>CommonPicture.ФорматExcel2007</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ВыгрузкаСохранитьВФайлРасширеннаяПодсказка" id="142"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВыгрузкаРасширеннаяПодсказка" id="75"/>
+							<SearchStringAddition name="ВыгрузкаСтрокаПоиска" id="76">
+								<AdditionSource>
+									<Item>Выгрузка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыгрузкаСтрокаПоискаКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="ВыгрузкаСтрокаПоискаРасширеннаяПодсказка" id="78"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВыгрузкаСостояниеПросмотра" id="79">
+								<AdditionSource>
+									<Item>Выгрузка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыгрузкаСостояниеПросмотраКонтекстноеМеню" id="80"/>
+								<ExtendedTooltip name="ВыгрузкаСостояниеПросмотраРасширеннаяПодсказка" id="81"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВыгрузкаУправлениеПоиском" id="82">
+								<AdditionSource>
+									<Item>Выгрузка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыгрузкаУправлениеПоискомКонтекстноеМеню" id="83"/>
+								<ExtendedTooltip name="ВыгрузкаУправлениеПоискомРасширеннаяПодсказка" id="84"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВыгрузкаНомерСтроки" id="85">
+									<DataPath>Объект.Выгрузка.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаНомерСтрокиКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ВыгрузкаНомерСтрокиРасширеннаяПодсказка" id="87"/>
+								</LabelField>
+								<InputField name="ВыгрузкаНомерУПСЗН" id="88">
+									<DataPath>Объект.Выгрузка.НомерУПСЗН</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаНомерУПСЗНКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ВыгрузкаНомерУПСЗНРасширеннаяПодсказка" id="90"/>
+								</InputField>
+								<InputField name="ВыгрузкаIDУчетнойЗаписи" id="91">
+									<DataPath>Объект.Выгрузка.IDУчетнойЗаписи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаIDУчетнойЗаписиКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ВыгрузкаIDУчетнойЗаписиРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="ВыгрузкаФИО" id="94">
+									<DataPath>Объект.Выгрузка.ФИО</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаФИОКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ВыгрузкаФИОРасширеннаяПодсказка" id="96"/>
+								</InputField>
+								<InputField name="ВыгрузкаЛицевойСчет" id="97">
+									<DataPath>Объект.Выгрузка.ЛицевойСчет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаЛицевойСчетКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ВыгрузкаЛицевойСчетРасширеннаяПодсказка" id="99"/>
+								</InputField>
+								<InputField name="ВыгрузкаСуммаНасчитаная" id="100">
+									<DataPath>Объект.Выгрузка.СуммаНасчитаная</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загальна нарахована сума за спожиті послуги у звітному місяці (грн.)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Загальна нарахована сума за спожиті послуги у звітному місяці (грн.)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаСуммаНасчитанаяКонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="ВыгрузкаСуммаНасчитанаяРасширеннаяПодсказка" id="102"/>
+								</InputField>
+								<InputField name="ВыгрузкаСуммаКОплате" id="103">
+									<DataPath>Объект.Выгрузка.СуммаКОплате</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загальна сума до сплати, що включає заборгованість/переплату за попередні періоди (грн.)</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Загальна сума до сплати, що включає заборгованість/переплату за попередні періоди (грн.)</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаСуммаКОплатеКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ВыгрузкаСуммаКОплатеРасширеннаяПодсказка" id="105"/>
+								</InputField>
+								<InputField name="ВыгрузкаОплаченнаяСумма" id="106">
+									<DataPath>Объект.Выгрузка.ОплаченнаяСумма</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВыгрузкаОплаченнаяСуммаКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ВыгрузкаОплаченнаяСуммаРасширеннаяПодсказка" id="108"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаФайлаПоЛьготамИСубсидии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="СформироватьНачисления" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сформувати нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать начисления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьНачисления</Action>
+		</Command>
+		<Command name="СохранитьВФайл" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти у файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВФайл</Action>
+		</Command>
+		<Command name="СохранитьВыписку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить выписку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зберегти виписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить выписку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВыписку</Action>
+		</Command>
+		<Command name="ЗагрузитьИзФайлаЗагрузка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла загрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла загрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайлаЗагрузка</Action>
+		</Command>
+	</Commands>
+</Form>

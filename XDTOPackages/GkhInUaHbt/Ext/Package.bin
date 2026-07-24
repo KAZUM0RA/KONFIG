@@ -1,0 +1,387 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://gkh.in.ua/hbt">
+	<objectType name="Account">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="ACCOUNT_NUMB" type="xs:string" nillable="true"/>
+		<property name="ACCOUNT_STATE" type="xs:string" nillable="true"/>
+		<property name="ACCOUNT_DATA" type="xs:string" nillable="true"/>
+		<property name="ACCOUNT_NOTE" type="xs:string" nillable="true"/>
+		<property name="CONTRACT_NUMB" type="xs:string" nillable="true"/>
+		<property name="CONTRACT_DATE" type="xs:date" nillable="true"/>
+		<property name="LOCALITY_CODE" type="xs:string" nillable="true"/>
+		<property name="DISTRICT_CODE" type="xs:string" nillable="true"/>
+		<property name="AREA_NAME" type="xs:string" nillable="true"/>
+		<property name="STREET_NAME" type="xs:string" nillable="true"/>
+		<property name="BUILDING_POST" type="xs:string" nillable="true"/>
+		<property name="BUILDING_ENTR" type="xs:int" nillable="true"/>
+		<property name="BUILDING_FLOO" type="xs:int" nillable="true"/>
+		<property name="BUILDING_APRT" type="xs:int" nillable="true"/>
+		<property name="BUILDING_NUMB" type="xs:string" nillable="true"/>
+		<property name="ADDRESS_ENTR" type="xs:int" nillable="true"/>
+		<property name="ADDRESS_FLOO" type="xs:int" nillable="true"/>
+		<property name="ADDRESS_NUMB" type="xs:string" nillable="true"/>
+		<property name="HABITATION_TYPE" type="xs:string" nillable="true"/>
+		<property name="HABITATION_NAME" type="xs:string" nillable="true"/>
+		<property name="DELEGATE_LAST" type="xs:string" nillable="true"/>
+		<property name="DELEGATE_FIRST" type="xs:string" nillable="true"/>
+		<property name="DELEGATE_MIDDLE" type="xs:string" nillable="true"/>
+		<property name="DELEGATE_TAXID" type="xs:string" nillable="true"/>
+		<property name="DELEGATE_BIRTH" type="xs:date" nillable="true"/>
+		<property name="MANAGER_CODE" type="xs:string" nillable="true"/>
+		<property name="MANAGER_NUMB" type="xs:string" nillable="true"/>
+		<property name="MANAGER_NAME" type="xs:string" nillable="true"/>
+		<property name="MDEPART_CODE" type="xs:string" nillable="true"/>
+		<property name="MDEPART_NAME" type="xs:string" nillable="true"/>
+		<property name="AGENTIC_CODE" type="xs:string" nillable="true"/>
+		<property name="AGENTIC_NUMB" type="xs:string" nillable="true"/>
+		<property name="AGENTIC_NAME" type="xs:string" nillable="true"/>
+		<property name="ADEPART_CODE" type="xs:string" nillable="true"/>
+		<property name="ADEPART_NAME" type="xs:string" nillable="true"/>
+		<property name="SCENTER_CODE" type="xs:string" nillable="true"/>
+		<property name="SCENTER_NAME" type="xs:string" nillable="true"/>
+		<property name="SDOMAIN_CODE" type="xs:string" nillable="true"/>
+		<property name="SDOMAIN_NAME" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Accounts">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Account" upperBound="-1"/>
+	</objectType>
+	<objectType name="Contact">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="LOCALITY_PSTN" type="xs:string" nillable="true"/>
+		<property name="CONTACT_TYPE" type="xs:string" nillable="true"/>
+		<property name="CONTACT_DATA" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Contacts">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Contact" upperBound="-1"/>
+	</objectType>
+	<objectType name="Service">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="INDUSTRY_TYPE" type="xs:string" nillable="true"/>
+		<property name="INDUSTRY_NAME" type="xs:string" nillable="true"/>
+		<property name="INDUSTRY_HINT" type="xs:string" nillable="true"/>
+		<property name="INDUSTRY_WEAL" type="xs:string" nillable="true"/>
+		<property name="GROUP_TYPE" type="xs:string" nillable="true"/>
+		<property name="GROUP_NAME" type="xs:string" nillable="true"/>
+		<property name="GROUP_HINT" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_TYPE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_NAME" type="xs:string" nillable="true"/>
+		<property name="SERVICE_HINT" type="xs:string" nillable="true"/>
+		<property name="SERVICE_STATE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_UNIT" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Services">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Service" upperBound="-1"/>
+	</objectType>
+	<objectType name="Feature">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_CODE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_TYPE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_NAME" type="xs:string" nillable="true"/>
+		<property name="FEATURE_HINT" type="xs:string" nillable="true"/>
+		<property name="FEATURE_UNIT" type="xs:string" nillable="true"/>
+		<property name="FEATURE_VALUE" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Features">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Feature" upperBound="-1"/>
+	</objectType>
+	<objectType name="Rate">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_CODE" type="xs:string" nillable="true"/>
+		<property name="RATE_TYPE" type="xs:string" nillable="true"/>
+		<property name="RATE_UNIT" type="xs:string" nillable="true"/>
+		<property name="RATE_VALUE" type="xs:float" nillable="true"/>
+		<property name="RATE_RANGE" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Rates">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Rate" upperBound="-1"/>
+	</objectType>
+	<objectType name="Norm">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_UNIT" type="xs:string" nillable="true"/>
+		<property name="FEATURE_CODE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_UNIT" type="xs:string" nillable="true"/>
+		<property name="NORM_PERIOD" type="xs:string" nillable="true"/>
+		<property name="NORM_VALUE" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Norms">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Norm" upperBound="-1"/>
+	</objectType>
+	<objectType name="Balance">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="INDUSTRY_TYPE" type="xs:string" nillable="true"/>
+		<property name="GROUP_TYPE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_TYPE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="PERIOD_CODE" type="xs:int" nillable="true"/>
+		<property name="PERIOD_YEAR" type="xs:int" nillable="true"/>
+		<property name="PERIOD_MONTH" type="xs:int" nillable="true"/>
+		<property name="CALC_START" type="xs:float" nillable="true"/>
+		<property name="CALC_ACCRUAL" type="xs:float" nillable="true"/>
+		<property name="CALC_PENALTY" type="xs:float" nillable="true"/>
+		<property name="CALC_BENEFIT" type="xs:float" nillable="true"/>
+		<property name="CALC_SUBSIDY" type="xs:float" nillable="true"/>
+		<property name="CALC_PAYMENT" type="xs:float" nillable="true"/>
+		<property name="CALC_RECALC" type="xs:float" nillable="true"/>
+		<property name="CALC_INVOICE" type="xs:float" nillable="true"/>
+		<property name="CALC_FINISH" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Balances">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Balance" upperBound="-1"/>
+	</objectType>
+	<objectType name="Consumpt">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="PERIOD_CODE" type="xs:int" nillable="true"/>
+		<property name="PERIOD_YEAR" type="xs:int" nillable="true"/>
+		<property name="PERIOD_MONTH" type="xs:int" nillable="true"/>
+		<property name="CONSUMPT_UNIT" type="xs:string" nillable="true"/>
+		<property name="CONSUMPT_VOLUME" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Consumpts">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Consumpt" upperBound="-1"/>
+	</objectType>
+	<objectType name="Finance">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_UNIT" type="xs:string" nillable="true"/>
+		<property name="FEATURE_CODE" type="xs:string" nillable="true"/>
+		<property name="FEATURE_UNIT" type="xs:string" nillable="true"/>
+		<property name="FEATURE_VALUE" type="xs:float" nillable="true"/>
+		<property name="NORM_SUNIT" type="xs:string" nillable="true"/>
+		<property name="NORM_FUNIT" type="xs:string" nillable="true"/>
+		<property name="NORM_PERIOD" type="xs:string" nillable="true"/>
+		<property name="NORM_VALUE" type="xs:float" nillable="true"/>
+		<property name="RATE_TYPE" type="xs:string" nillable="true"/>
+		<property name="RATE_UNIT" type="xs:string" nillable="true"/>
+		<property name="RATE_VALUE" type="xs:float" nillable="true"/>
+		<property name="RATE_RANGE" type="xs:float" nillable="true"/>
+		<property name="PERIOD_CURRENT_CODE" type="xs:int" nillable="true"/>
+		<property name="PERIOD_CURRENT_YEAR" type="xs:int" nillable="true"/>
+		<property name="PERIOD_CURRENT_MONTH" type="xs:int" nillable="true"/>
+		<property name="PERIOD_CURRENT_START" type="xs:date" nillable="true"/>
+		<property name="PERIOD_CURRENT_FINISH" type="xs:date" nillable="true"/>
+		<property name="PERIOD_ACCOUNT_CODE" type="xs:int" nillable="true"/>
+		<property name="PERIOD_ACCOUNT_YEAR" type="xs:int" nillable="true"/>
+		<property name="PERIOD_ACCOUNT_MONTH" type="xs:int" nillable="true"/>
+		<property name="PERIOD_ACCOUNT_START" type="xs:date" nillable="true"/>
+		<property name="PERIOD_ACCOUNT_FINISH" type="xs:date" nillable="true"/>
+		<property name="CALC_TYPE" type="xs:string" nillable="true"/>
+		<property name="CALC_METHOD" type="xs:string" nillable="true"/>
+		<property name="CALC_VOLUME" type="xs:float" nillable="true"/>
+		<property name="CALC_PERCENT" type="xs:float" nillable="true"/>
+		<property name="CALC_COEFFICIENT" type="xs:float" nillable="true"/>
+		<property name="CALC_INTERVAL" type="xs:int" nillable="true"/>
+		<property name="CALC_CSUM" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Finances">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Finance" upperBound="-1"/>
+	</objectType>
+	<objectType name="Payment">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PERIOD_CODE" type="xs:int" nillable="true"/>
+		<property name="PERIOD_YEAR" type="xs:int" nillable="true"/>
+		<property name="PERIOD_MONTH" type="xs:int" nillable="true"/>
+		<property name="PAYMENT_CODE" type="xs:string" nillable="true"/>
+		<property name="PAYMENT_DATE" type="xs:date" nillable="true"/>
+		<property name="PAYMENT_CSUM" type="xs:float" nillable="true"/>
+		<property name="PAYMENT_AGENT" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Payments">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Payment" upperBound="-1"/>
+	</objectType>
+	<objectType name="Meter">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="GROUP_TYPE" type="xs:string" nillable="true"/>
+		<property name="GROUP_NAME" type="xs:string" nillable="true"/>
+		<property name="GROUP_HINT" type="xs:string" nillable="true"/>
+		<property name="GROUP_START_DAY" type="xs:int" nillable="true"/>
+		<property name="GROUP_FINISH_DAY" type="xs:int" nillable="true"/>
+		<property name="GROUP_LIMIT_AMAX" type="xs:int" nillable="true"/>
+		<property name="GROUP_LIMIT_EMAX" type="xs:int" nillable="true"/>
+		<property name="GROUP_LIMIT_AMIN" type="xs:int" nillable="true"/>
+		<property name="GROUP_LIMIT_EMIN" type="xs:int" nillable="true"/>
+		<property name="GROUP_NOTICE_AMAX" type="xs:int" nillable="true"/>
+		<property name="GROUP_NOTICE_EMAX" type="xs:int" nillable="true"/>
+		<property name="GROUP_NOTICE_AMIN" type="xs:int" nillable="true"/>
+		<property name="GROUP_NOTICE_EMIN" type="xs:int" nillable="true"/>
+		<property name="METER_CODE" type="xs:string" nillable="true"/>
+		<property name="METER_TYPE" type="xs:string" nillable="true"/>
+		<property name="METER_NAME" type="xs:string" nillable="true"/>
+		<property name="METER_HINT" type="xs:string" nillable="true"/>
+		<property name="METER_DATA" type="xs:string" nillable="true"/>
+		<property name="METER_NOTE" type="xs:string" nillable="true"/>
+		<property name="METER_KIND" type="xs:string" nillable="true"/>
+		<property name="METER_STATE" type="xs:string" nillable="true"/>
+		<property name="METER_SERIAL" type="xs:string" nillable="true"/>
+		<property name="METER_MODEL" type="xs:string" nillable="true"/>
+		<property name="METER_PLACE" type="xs:string" nillable="true"/>
+		<property name="METER_PRODUCTED" type="xs:date" nillable="true"/>
+		<property name="METER_INSTALLED" type="xs:date" nillable="true"/>
+		<property name="METER_CONFIRMED" type="xs:date" nillable="true"/>
+		<property name="METER_NCONFIRMD" type="xs:date" nillable="true"/>
+		<property name="METER_INTERVAL" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_CODE" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_TYPE" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_NAME" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_HINT" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_PURP" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_UNIT" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_LIMIT_AMAX" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_LIMIT_EMAX" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_LIMIT_AMIN" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_LIMIT_EMIN" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_NOTICE_AMAX" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_NOTICE_EMAX" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_NOTICE_AMIN" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_NOTICE_EMIN" type="xs:int" nillable="true"/>
+		<property name="INDICATOR_COEFFICIENT" type="xs:float" nillable="true"/>
+		<property name="INDICATOR_PRECISION" type="xs:int" nillable="true"/>
+	</objectType>
+	<objectType name="Meters">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Meter" upperBound="-1"/>
+	</objectType>
+	<objectType name="Seal">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="METER_CODE" type="xs:string" nillable="true"/>
+		<property name="SEAL_CODE" type="xs:string" nillable="true"/>
+		<property name="SEAL_TYPE" type="xs:string" nillable="true"/>
+		<property name="SEAL_NUMB" type="xs:string" nillable="true"/>
+		<property name="SEAL_DATE" type="xs:date" nillable="true"/>
+		<property name="SEAL_OWNER" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Seals">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Seal" upperBound="-1"/>
+	</objectType>
+	<objectType name="Indication">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="GROUP_TYPE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_CODE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_TYPE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_STATE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_INDICATED" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_APPLIED" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_PERIOD_START" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_PERIOD_FINISH" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_SOURCE" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_CODE" type="xs:string" nillable="true"/>
+		<property name="INDICATION_PREV" type="xs:float" nillable="true"/>
+		<property name="INDICATION_CURR" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="Indications">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Indication" upperBound="-1"/>
+	</objectType>
+	<objectType name="ISRel">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PROVIDER_CODE" type="xs:string" nillable="true"/>
+		<property name="SERVICE_CODE" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_CODE" type="xs:string" nillable="true"/>
+		<property name="REL_PROPORTION" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="ISRels">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:ISRel" upperBound="-1"/>
+	</objectType>
+	<objectType name="IPR">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_CODE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_STATE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_APPLIED" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_PAYLOAD" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="IPRs">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:IPR" upperBound="-1"/>
+	</objectType>
+	<objectType name="CCE">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="ACTION_CODE" type="xs:string" nillable="true"/>
+		<property name="ACTION_TYPE" type="xs:string" nillable="true"/>
+		<property name="ACTION_TIME" type="xs:dateTime" nillable="true"/>
+		<property name="ACTION_METHOD" type="xs:string" nillable="true"/>
+		<property name="ACTION_DEVICE" type="xs:string" nillable="true"/>
+		<property name="ACTION_AGENT" type="xs:string" nillable="true"/>
+		<property name="CONTACT_TYPE" type="xs:string" nillable="true"/>
+		<property name="CONTACT_DATA" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="CCEs">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:CCE" upperBound="-1"/>
+	</objectType>
+	<objectType name="IPE">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="GROUP_TYPE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_CODE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_TYPE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_DATE" type="xs:date" nillable="true"/>
+		<property name="PACKAGE_DATA" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_STATE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_SOURCE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_METHOD" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_FORMAT" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_DEVICE" type="xs:string" nillable="true"/>
+		<property name="PACKAGE_AGENT" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_TYPE" type="xs:string" nillable="true"/>
+		<property name="INDICATOR_CODE" type="xs:string" nillable="true"/>
+		<property name="INDICATION_PREV" type="xs:float" nillable="true"/>
+		<property name="INDICATION_CURR" type="xs:float" nillable="true"/>
+	</objectType>
+	<objectType name="IPEs">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:IPE" upperBound="-1"/>
+	</objectType>
+	<objectType name="NDE">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="NOTIFY_TYPE" type="xs:string" nillable="true"/>
+		<property name="NOTIFY_CODE" type="xs:string" nillable="true"/>
+		<property name="NOTIFY_NAME" type="xs:string" nillable="true"/>
+		<property name="MESSAGE_CODE" type="xs:string" nillable="true"/>
+		<property name="MESSAGE_TYPE" type="xs:string" nillable="true"/>
+		<property name="MESSAGE_DATA" type="xs:string" nillable="true"/>
+		<property name="MESSAGE_TIME" type="xs:dateTime" nillable="true"/>
+		<property name="MESSAGE_TEXT" type="xs:string" nillable="true"/>
+		<property name="MESSAGE_LINK" type="xs:string" nillable="true"/>
+		<property name="ACTION_CODE" type="xs:string" nillable="true"/>
+		<property name="ACTION_TYPE" type="xs:string" nillable="true"/>
+		<property name="ACTION_DATA" type="xs:string" nillable="true"/>
+		<property name="ACTION_TIME" type="xs:dateTime" nillable="true"/>
+		<property name="ACTION_METHOD" type="xs:string" nillable="true"/>
+		<property name="ACTION_CHANNEL" type="xs:string" nillable="true"/>
+		<property name="ACTION_DEVICE" type="xs:string" nillable="true"/>
+		<property name="ACTION_AGENT" type="xs:string" nillable="true"/>
+		<property name="CONTACT_TYPE" type="xs:string" nillable="true"/>
+		<property name="CONTACT_DATA" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="NDEs">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:NDE" upperBound="-1"/>
+	</objectType>
+	<objectType name="MDF">
+		<property name="ACCOUNT_CODE" type="xs:string" nillable="true"/>
+		<property name="ACTION_CODE" type="xs:string" nillable="true"/>
+		<property name="ACTION_TYPE" type="xs:string" nillable="true"/>
+		<property name="OBJECT_CODE" type="xs:string" nillable="true"/>
+		<property name="OBJECT_TYPE" type="xs:string" nillable="true"/>
+		<property name="MEDIA_CODE" type="xs:string" nillable="true"/>
+		<property name="MEDIA_TYPE" type="xs:string" nillable="true"/>
+		<property name="MEDIA_NAME" type="xs:string" nillable="true"/>
+		<property name="MEDIA_FILE" type="xs:string" nillable="true"/>
+		<property name="MEDIA_LINK" type="xs:string" nillable="true"/>
+		<property name="MEDIA_FORMAT" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="MDFs">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:MDF" upperBound="-1"/>
+	</objectType>
+	<objectType name="State">
+		<property name="STATE" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="States">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:State" upperBound="-1"/>
+	</objectType>
+	<objectType name="Empty"/>
+	<objectType name="Empties">
+		<property xmlns:d3p1="http://gkh.in.ua/hbt" name="items" type="d3p1:Empty" upperBound="-1"/>
+	</objectType>
+</package>

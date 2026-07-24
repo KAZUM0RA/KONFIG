@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ДатаПоказания" id="1">
+			<DataPath>Объект.ДатаПоказания</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаПоказанияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаПоказанияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ФайлЕксель" id="4">
+			<DataPath>Объект.ФайлЕксель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ФайлЕксельКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ФайлЕксельРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">ФайлЕксельНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="ТабличнаяЧасть" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабличнаяЧасть</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧастьКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТабличнаяЧастьКоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="ТабличнаяЧастьЗагрузитьИзФайла" id="146">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+						<ExtendedTooltip name="ТабличнаяЧастьЗагрузитьИзФайлаРасширеннаяПодсказка" id="147"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТабличнаяЧастьРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТабличнаяЧастьСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧастьСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТабличнаяЧастьСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧастьУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧастьУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТабличнаяЧастьУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧастьНомерСтроки" id="20">
+					<DataPath>Объект.ТабличнаяЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧастьЛицевойСчет" id="23">
+					<DataPath>Объект.ТабличнаяЧасть.ЛицевойСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьЛицевойСчетКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТабличнаяЧастьЛицевойСчетРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРазмещение1" id="26">
+					<DataPath>Объект.ТабличнаяЧасть.Размещение1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРазмещение1КонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРазмещение1РасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПрибора1" id="29">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПрибора1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПрибора1КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПрибора1РасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоверка1" id="32">
+					<DataPath>Объект.ТабличнаяЧасть.Поверка1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоверка1КонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоверка1РасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСледПоверка1" id="35">
+					<DataPath>Объект.ТабличнаяЧасть.СледПоверка1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСледПоверка1КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСледПоверка1РасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПломбы1" id="38">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПломбы1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПломбы1КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПломбы1РасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоказатель1" id="41">
+					<DataPath>Объект.ТабличнаяЧасть.Показатель1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоказатель1КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоказатель1РасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьХолодна1" id="44">
+					<DataPath>Объект.ТабличнаяЧасть.Холодна1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьХолодна1КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабличнаяЧастьХолодна1РасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьГаряча1" id="47">
+					<DataPath>Объект.ТабличнаяЧасть.Гаряча1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьГаряча1КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТабличнаяЧастьГаряча1РасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРазмещение2" id="50">
+					<DataPath>Объект.ТабличнаяЧасть.Размещение2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРазмещение2КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРазмещение2РасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПрибора2" id="53">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПрибора2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПрибора2КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПрибора2РасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоверка2" id="56">
+					<DataPath>Объект.ТабличнаяЧасть.Поверка2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоверка2КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоверка2РасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСледПоверка2" id="59">
+					<DataPath>Объект.ТабличнаяЧасть.СледПоверка2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСледПоверка2КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСледПоверка2РасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПломбы2" id="62">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПломбы2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПломбы2КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПломбы2РасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоказатель2" id="65">
+					<DataPath>Объект.ТабличнаяЧасть.Показатель2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоказатель2КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоказатель2РасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьХолодна2" id="68">
+					<DataPath>Объект.ТабличнаяЧасть.Холодна2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьХолодна2КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТабличнаяЧастьХолодна2РасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьГаряча2" id="71">
+					<DataPath>Объект.ТабличнаяЧасть.Гаряча2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьГаряча2КонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТабличнаяЧастьГаряча2РасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРазмещение3" id="74">
+					<DataPath>Объект.ТабличнаяЧасть.Размещение3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРазмещение3КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРазмещение3РасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПрибора3" id="77">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПрибора3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПрибора3КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПрибора3РасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоверка3" id="80">
+					<DataPath>Объект.ТабличнаяЧасть.Поверка3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоверка3КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоверка3РасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСледПоверка3" id="83">
+					<DataPath>Объект.ТабличнаяЧасть.СледПоверка3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСледПоверка3КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСледПоверка3РасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПломбы3" id="86">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПломбы3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПломбы3КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПломбы3РасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоказатель3" id="89">
+					<DataPath>Объект.ТабличнаяЧасть.Показатель3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоказатель3КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоказатель3РасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьХолодна3" id="92">
+					<DataPath>Объект.ТабличнаяЧасть.Холодна3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьХолодна3КонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ТабличнаяЧастьХолодна3РасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьГаряча3" id="95">
+					<DataPath>Объект.ТабличнаяЧасть.Гаряча3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьГаряча3КонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ТабличнаяЧастьГаряча3РасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРазмещение4" id="98">
+					<DataPath>Объект.ТабличнаяЧасть.Размещение4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРазмещение4КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРазмещение4РасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПрибора4" id="101">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПрибора4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПрибора4КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПрибора4РасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоверка4" id="104">
+					<DataPath>Объект.ТабличнаяЧасть.Поверка4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоверка4КонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоверка4РасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСледПоверка4" id="107">
+					<DataPath>Объект.ТабличнаяЧасть.СледПоверка4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСледПоверка4КонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСледПоверка4РасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПломбы4" id="110">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПломбы4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПломбы4КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПломбы4РасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоказатель4" id="113">
+					<DataPath>Объект.ТабличнаяЧасть.Показатель4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоказатель4КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоказатель4РасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьХолодна4" id="116">
+					<DataPath>Объект.ТабличнаяЧасть.Холодна4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьХолодна4КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ТабличнаяЧастьХолодна4РасширеннаяПодсказка" id="118"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьГаряча4" id="119">
+					<DataPath>Объект.ТабличнаяЧасть.Гаряча4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьГаряча4КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ТабличнаяЧастьГаряча4РасширеннаяПодсказка" id="121"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьРазмещение5" id="122">
+					<DataPath>Объект.ТабличнаяЧасть.Размещение5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьРазмещение5КонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ТабличнаяЧастьРазмещение5РасширеннаяПодсказка" id="124"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПрибора5" id="125">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПрибора5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПрибора5КонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПрибора5РасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоверка5" id="128">
+					<DataPath>Объект.ТабличнаяЧасть.Поверка5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоверка5КонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоверка5РасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьСледПоверка5" id="131">
+					<DataPath>Объект.ТабличнаяЧасть.СледПоверка5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьСледПоверка5КонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ТабличнаяЧастьСледПоверка5РасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьНомерПломбы5" id="134">
+					<DataPath>Объект.ТабличнаяЧасть.НомерПломбы5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьНомерПломбы5КонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ТабличнаяЧастьНомерПломбы5РасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьПоказатель5" id="137">
+					<DataPath>Объект.ТабличнаяЧасть.Показатель5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьПоказатель5КонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="ТабличнаяЧастьПоказатель5РасширеннаяПодсказка" id="139"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьХолодна5" id="140">
+					<DataPath>Объект.ТабличнаяЧасть.Холодна5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьХолодна5КонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="ТабличнаяЧастьХолодна5РасширеннаяПодсказка" id="142"/>
+				</InputField>
+				<InputField name="ТабличнаяЧастьГаряча5" id="143">
+					<DataPath>Объект.ТабличнаяЧасть.Гаряча5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧастьГаряча5КонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ТабличнаяЧастьГаряча5РасширеннаяПодсказка" id="145"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="ЗаписатьПоказания" id="148">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаписатьПоказания</CommandName>
+			<ExtendedTooltip name="ЗаписатьПоказанияРасширеннаяПодсказка" id="149"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВводПоказанийПриборов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="ЗаписатьПоказания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать показания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать показания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьПоказания</Action>
+		</Command>
+	</Commands>
+</Form>

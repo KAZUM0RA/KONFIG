@@ -1,0 +1,1886 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="97"/>
+			<ChildItems>
+				<InputField name="Номер" id="3">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="НомерКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="98"/>
+				</InputField>
+				<InputField name="Дата" id="5">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="99"/>
+				</InputField>
+				<InputField name="ОтображениеПериодаНачисления" id="72">
+					<DataPath>ОтображениеПериодаНачисления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>за период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content> за період</v8:content>
+						</v8:item>
+					</Title>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<BackColor>web:Linen</BackColor>
+					<ContextMenu name="ОтображениеПериодаНачисленияКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ОтображениеПериодаНачисленияРасширеннаяПодсказка" id="100"/>
+					<Events>
+						<Event name="OnChange">ОтображениеПериодаНачисленияПриИзменении</Event>
+						<Event name="StartChoice">ОтображениеПериодаНачисленияНачалоВыбора</Event>
+						<Event name="Tuning">ОтображениеПериодаНачисленияРегулирование</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВсегоГКал" id="155">
+					<DataPath>Объект.ВсегоГКал</DataPath>
+					<ContextMenu name="ВсегоГКалКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="ВсегоГКалРасширеннаяПодсказка" id="157"/>
+				</InputField>
+				<InputField name="СреднееЗначение" id="258">
+					<DataPath>Объект.СреднееЗначение</DataPath>
+					<ContextMenu name="СреднееЗначениеКонтекстноеМеню" id="259"/>
+					<ExtendedTooltip name="СреднееЗначениеРасширеннаяПодсказка" id="260"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="101"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="2">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<InputField name="Организация" id="52">
+							<DataPath>Объект.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="103"/>
+						</InputField>
+						<InputField name="ЛицевойСчетПрибораУчета" id="143">
+							<DataPath>Объект.ЛицевойСчетПрибораУчета</DataPath>
+							<ContextMenu name="ЛицевойСчетПрибораУчетаКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="ЛицевойСчетПрибораУчетаРасширеннаяПодсказка" id="145"/>
+							<Events>
+								<Event name="OnChange">ЛицевойСчетПрибораУчетаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Здание" id="54">
+							<DataPath>Объект.Здание</DataPath>
+							<ContextMenu name="ЗданиеКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="104"/>
+						</InputField>
+						<InputField name="Подъезд" id="88">
+							<DataPath>Объект.Подъезд</DataPath>
+							<ContextMenu name="ПодъездКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ПодъездРасширеннаяПодсказка" id="105"/>
+						</InputField>
+						<UsualGroup name="ГруппаДопПриборУчета" id="247">
+							<Title>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Группа доп прибор учета</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Группа доп прибор учета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДопПриборУчетаРасширеннаяПодсказка" id="248"/>
+							<ChildItems>
+								<CheckBoxField name="ДопПриборУчета" id="244">
+									<DataPath>Объект.ДопПриборУчета</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дод. прилад</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дод. прилад</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДопПриборУчетаКонтекстноеМеню" id="245"/>
+									<ExtendedTooltip name="ДопПриборУчетаРасширеннаяПодсказка" id="246"/>
+									<Events>
+										<Event name="OnChange">ДопПриборУчетаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="ПриборУчета2" id="249">
+									<DataPath>Объект.ПриборУчета2</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ПриборУчета2КонтекстноеМеню" id="250"/>
+									<ExtendedTooltip name="ПриборУчета2РасширеннаяПодсказка" id="251"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметри розподілу загального ресурсу</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Параметри розподілу загального ресурсу</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<InputField name="ОбщедомовойПриборУчета" id="149">
+							<DataPath>Объект.ОбщедомовойПриборУчета</DataPath>
+							<ChoiceForm>Catalog.ПриборыУчета.Form.ФормаВыбора</ChoiceForm>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Здание</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Объект.Здание</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ChoiceParameters>
+								<app:item name="Отбор.Здание">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xr:DesignTimeRef">Catalog.ЗданияИСооружения.EmptyRef</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<ContextMenu name="ОбщедомовойПриборУчетаКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="ОбщедомовойПриборУчетаРасширеннаяПодсказка" id="151"/>
+							<Events>
+								<Event name="OnChange">ОбщедомовойПриборУчетаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаОбщегоРесурса" id="94">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбщегоРесурсаРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="158">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="159"/>
+									<ChildItems>
+										<InputField name="ЗначениеОбщедомовое" id="90">
+											<DataPath>Объект.ЗначениеОбщедомовое</DataPath>
+											<ContextMenu name="ЗначениеОбщедомовоеКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="ЗначениеОбщедомовоеРасширеннаяПодсказка" id="108"/>
+										</InputField>
+										<InputField name="ЗначениеМЗК" id="152">
+											<DataPath>Объект.ЗначениеМЗК</DataPath>
+											<ContextMenu name="ЗначениеМЗККонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ЗначениеМЗКРасширеннаяПодсказка" id="154"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="160">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="161"/>
+									<ChildItems>
+										<InputField name="ЗначениеИТП" id="162">
+											<DataPath>Объект.ЗначениеИТП</DataPath>
+											<ContextMenu name="ЗначениеИТПКонтекстноеМеню" id="163"/>
+											<ExtendedTooltip name="ЗначениеИТПРасширеннаяПодсказка" id="164"/>
+										</InputField>
+										<InputField name="ЗначениеГенераторна" id="165">
+											<DataPath>Объект.ЗначениеГенераторна</DataPath>
+											<ContextMenu name="ЗначениеГенераторнаКонтекстноеМеню" id="166"/>
+											<ExtendedTooltip name="ЗначениеГенераторнаРасширеннаяПодсказка" id="167"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelField name="УслугаЕдиницаИзмерения" id="95">
+									<DataPath>Объект.Услуга.ЕдиницаИзмерения</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>None</TitleLocation>
+									<Width>5</Width>
+									<ContextMenu name="УслугаЕдиницаИзмеренияКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="УслугаЕдиницаИзмеренияРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Услуга" id="56">
+							<DataPath>Объект.Услуга</DataPath>
+							<QuickChoice>true</QuickChoice>
+							<ContextMenu name="УслугаКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="110"/>
+						</InputField>
+						<InputField name="УслугаИндивидуальная" id="92">
+							<DataPath>Объект.УслугаИндивидуальная</DataPath>
+							<Visible>false</Visible>
+							<QuickChoice>true</QuickChoice>
+							<ContextMenu name="УслугаИндивидуальнаяКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="УслугаИндивидуальнаяРасширеннаяПодсказка" id="111"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Основная" id="18">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Основная</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОсновнаяКонтекстноеМеню" id="19"/>
+			<AutoCommandBar name="ОсновнаяКоманднаяПанель" id="20">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ОсновнаяКнопкаЗаполнить" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ОсновнаяКнопкаЗаполнитьРасширеннаяПодсказка" id="112"/>
+					</Button>
+					<Button name="ОсновнаяКнопка1" id="68">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Основная.StandardCommand.SortListAsc</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ОсновнаяКнопка1РасширеннаяПодсказка" id="113"/>
+					</Button>
+					<Button name="ОсновнаяКнопка2" id="69">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Основная.StandardCommand.SortListDesc</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ОсновнаяКнопка2РасширеннаяПодсказка" id="114"/>
+					</Button>
+					<Button name="ОсновнаяУдалить" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Основная.StandardCommand.Delete</CommandName>
+						<ExtendedTooltip name="ОсновнаяУдалитьРасширеннаяПодсказка" id="115"/>
+					</Button>
+					<Button name="ОсновнаяНайти" id="74">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Основная.StandardCommand.Find</CommandName>
+						<ExtendedTooltip name="ОсновнаяНайтиРасширеннаяПодсказка" id="116"/>
+					</Button>
+					<Button name="ОсновнаяОтменитьПоиск" id="75">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.Основная.StandardCommand.CancelSearch</CommandName>
+						<ExtendedTooltip name="ОсновнаяОтменитьПоискРасширеннаяПодсказка" id="117"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="118"/>
+			<SearchStringAddition name="ОсновнаяСтрокаПоиска" id="119">
+				<AdditionSource>
+					<Item>Основная</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОсновнаяСтрокаПоискаКонтекстноеМеню" id="120"/>
+				<ExtendedTooltip name="ОсновнаяСтрокаПоискаРасширеннаяПодсказка" id="121"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОсновнаяСостояниеПросмотра" id="122">
+				<AdditionSource>
+					<Item>Основная</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОсновнаяСостояниеПросмотраКонтекстноеМеню" id="123"/>
+				<ExtendedTooltip name="ОсновнаяСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОсновнаяУправлениеПоиском" id="125">
+				<AdditionSource>
+					<Item>Основная</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОсновнаяУправлениеПоискомКонтекстноеМеню" id="126"/>
+				<ExtendedTooltip name="ОсновнаяУправлениеПоискомРасширеннаяПодсказка" id="127"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОсновнаяНомерСтроки" id="21">
+					<DataPath>Объект.Основная.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОсновнаяНомерСтрокиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ОсновнаяНомерСтрокиРасширеннаяПодсказка" id="128"/>
+				</LabelField>
+				<InputField name="ОсновнаяОбъектУстановки" id="27">
+					<DataPath>Объект.Основная.ЛицевойСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОсновнаяОбъектУстановкиКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ОсновнаяОбъектУстановкиРасширеннаяПодсказка" id="129"/>
+				</InputField>
+				<InputField name="ОсновнаяОтапливаемаПлощадь" id="255">
+					<DataPath>Объект.Основная.ОтапливаемаПлощадь</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalОтапливаемаПлощадь</FooterDataPath>
+					<ContextMenu name="ОсновнаяОтапливаемаПлощадьКонтекстноеМеню" id="256"/>
+					<ExtendedTooltip name="ОсновнаяОтапливаемаПлощадьРасширеннаяПодсказка" id="257"/>
+				</InputField>
+				<InputField name="ОсновнаяПомещение" id="85">
+					<DataPath>Объект.Основная.ОбъектЛицевогоСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОсновнаяПомещениеКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ОсновнаяПомещениеРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ОсновнаяОтветственныйВладелец" id="81">
+					<DataPath>Объект.Основная.ОтветственныйВладелец</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОсновнаяОтветственныйВладелецКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ОсновнаяОтветственныйВладелецРасширеннаяПодсказка" id="131"/>
+				</InputField>
+				<InputField name="ОсновнаяЗБП" id="226">
+					<DataPath>Объект.Основная.ЗБП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalЗБП</FooterDataPath>
+					<ContextMenu name="ОсновнаяЗБПКонтекстноеМеню" id="227"/>
+					<ExtendedTooltip name="ОсновнаяЗБПРасширеннаяПодсказка" id="228"/>
+				</InputField>
+				<InputField name="ОсновнаяТЕ" id="229">
+					<DataPath>Объект.Основная.ТЕ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalТЕ</FooterDataPath>
+					<ContextMenu name="ОсновнаяТЕКонтекстноеМеню" id="230"/>
+					<ExtendedTooltip name="ОсновнаяТЕРасширеннаяПодсказка" id="231"/>
+				</InputField>
+				<InputField name="ОсновнаяВРО" id="232">
+					<DataPath>Объект.Основная.ВРО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalВРО</FooterDataPath>
+					<ContextMenu name="ОсновнаяВРОКонтекстноеМеню" id="233"/>
+					<ExtendedTooltip name="ОсновнаяВРОРасширеннаяПодсказка" id="234"/>
+				</InputField>
+				<InputField name="ОсновнаяВКО" id="241">
+					<DataPath>Объект.Основная.ВКО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalВКО</FooterDataPath>
+					<ContextMenu name="ОсновнаяВКОКонтекстноеМеню" id="242"/>
+					<ExtendedTooltip name="ОсновнаяВКОРасширеннаяПодсказка" id="243"/>
+				</InputField>
+				<InputField name="ОсновнаяQдон" id="235">
+					<DataPath>Объект.Основная.Qдон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalQдон</FooterDataPath>
+					<ContextMenu name="ОсновнаяQдонКонтекстноеМеню" id="236"/>
+					<ExtendedTooltip name="ОсновнаяQдонРасширеннаяПодсказка" id="237"/>
+				</InputField>
+				<InputField name="ОсновнаяНебаланс" id="252">
+					<DataPath>Объект.Основная.Небаланс</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОсновнаяНебалансКонтекстноеМеню" id="253"/>
+					<ExtendedTooltip name="ОсновнаяНебалансРасширеннаяПодсказка" id="254"/>
+				</InputField>
+				<InputField name="ОсновнаяПоказание" id="29">
+					<DataPath>Объект.Основная.Показание</DataPath>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Основная.TotalПоказание</FooterDataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<ContextMenu name="ОсновнаяПоказаниеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОсновнаяПоказаниеРасширеннаяПодсказка" id="132"/>
+				</InputField>
+				<InputField name="ОсновнаяВидТарифа" id="33">
+					<DataPath>Объект.Основная.ВидТарифа</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>12</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОсновнаяВидТарифаКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ОсновнаяВидТарифаРасширеннаяПодсказка" id="133"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="тзДанныхДляРаспределения" id="168">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>тзДанныхДляРаспределения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="тзДанныхДляРаспределенияКонтекстноеМеню" id="169"/>
+			<AutoCommandBar name="тзДанныхДляРаспределенияКоманднаяПанель" id="170">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="тзДанныхДляРаспределенияРасширеннаяПодсказка" id="171"/>
+			<SearchStringAddition name="тзДанныхДляРаспределенияСтрокаПоиска" id="172">
+				<AdditionSource>
+					<Item>тзДанныхДляРаспределения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныхДляРаспределенияСтрокаПоискаКонтекстноеМеню" id="173"/>
+				<ExtendedTooltip name="тзДанныхДляРаспределенияСтрокаПоискаРасширеннаяПодсказка" id="174"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="тзДанныхДляРаспределенияСостояниеПросмотра" id="175">
+				<AdditionSource>
+					<Item>тзДанныхДляРаспределения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныхДляРаспределенияСостояниеПросмотраКонтекстноеМеню" id="176"/>
+				<ExtendedTooltip name="тзДанныхДляРаспределенияСостояниеПросмотраРасширеннаяПодсказка" id="177"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="тзДанныхДляРаспределенияУправлениеПоиском" id="178">
+				<AdditionSource>
+					<Item>тзДанныхДляРаспределения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныхДляРаспределенияУправлениеПоискомКонтекстноеМеню" id="179"/>
+				<ExtendedTooltip name="тзДанныхДляРаспределенияУправлениеПоискомРасширеннаяПодсказка" id="180"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="тзДанныхДляРаспределенияПериод" id="181">
+					<DataPath>тзДанныхДляРаспределения.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияПериодКонтекстноеМеню" id="182"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияПериодРасширеннаяПодсказка" id="183"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕЗагальный" id="238">
+					<DataPath>тзДанныхДляРаспределения.ТЕЗагальный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕЗагальныйКонтекстноеМеню" id="239"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕЗагальныйРасширеннаяПодсказка" id="240"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕЗаВКО" id="184">
+					<DataPath>тзДанныхДляРаспределения.ТЕЗаВКО</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕЗаВКОКонтекстноеМеню" id="185"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕЗаВКОРасширеннаяПодсказка" id="186"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕЗаВРО" id="187">
+					<DataPath>тзДанныхДляРаспределения.ТЕЗаВРО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕЗаВРОКонтекстноеМеню" id="188"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕЗаВРОРасширеннаяПодсказка" id="189"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕНаЗБП" id="190">
+					<DataPath>тзДанныхДляРаспределения.ТЕНаЗБП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕНаЗБПКонтекстноеМеню" id="191"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕНаЗБПРасширеннаяПодсказка" id="192"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияq_max" id="193">
+					<DataPath>тзДанныхДляРаспределения.q_max</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияq_maxКонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияq_maxРасширеннаяПодсказка" id="195"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияq_min" id="196">
+					<DataPath>тзДанныхДляРаспределения.q_min</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияq_minКонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияq_minРасширеннаяПодсказка" id="198"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияq_оп" id="199">
+					<DataPath>тзДанныхДляРаспределения.q_оп</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияq_опКонтекстноеМеню" id="200"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияq_опРасширеннаяПодсказка" id="201"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияQ_дон" id="202">
+					<DataPath>тзДанныхДляРаспределения.Q_дон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияQ_донКонтекстноеМеню" id="203"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияQ_донРасширеннаяПодсказка" id="204"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕБезСчет" id="205">
+					<DataPath>тзДанныхДляРаспределения.ТЕБезСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕБезСчетКонтекстноеМеню" id="206"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕБезСчетРасширеннаяПодсказка" id="207"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияОбщПлДома" id="208">
+					<DataPath>тзДанныхДляРаспределения.ОбщПлДома</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияОбщПлДомаКонтекстноеМеню" id="209"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияОбщПлДомаРасширеннаяПодсказка" id="210"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияОбщПлИндОтопл" id="211">
+					<DataPath>тзДанныхДляРаспределения.ОбщПлИндОтопл</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияОбщПлИндОтоплКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияОбщПлИндОтоплРасширеннаяПодсказка" id="213"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияОбщПлВРО" id="214">
+					<DataPath>тзДанныхДляРаспределения.ОбщПлВРО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияОбщПлВРОКонтекстноеМеню" id="215"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияОбщПлВРОРасширеннаяПодсказка" id="216"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияОбщПлВКО" id="217">
+					<DataPath>тзДанныхДляРаспределения.ОбщПлВКО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияОбщПлВКОКонтекстноеМеню" id="218"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияОбщПлВКОРасширеннаяПодсказка" id="219"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕНаЗБПм2" id="220">
+					<DataPath>тзДанныхДляРаспределения.ТЕНаЗБПм2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕНаЗБПм2КонтекстноеМеню" id="221"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕНаЗБПм2РасширеннаяПодсказка" id="222"/>
+				</InputField>
+				<InputField name="тзДанныхДляРаспределенияТЕНаСпоживачаМ2" id="223">
+					<DataPath>тзДанныхДляРаспределения.ТЕНаСпоживачаМ2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="тзДанныхДляРаспределенияТЕНаСпоживачаМ2КонтекстноеМеню" id="224"/>
+					<ExtendedTooltip name="тзДанныхДляРаспределенияТЕНаСпоживачаМ2РасширеннаяПодсказка" id="225"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Подвал" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="134"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="14">
+					<DataPath>Объект.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="135"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнформация" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група інформація</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група інформація</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="136"/>
+			<ChildItems>
+				<PictureField name="КартинкаСостоянияДокумента" id="36">
+					<DataPath>КартинкаСостоянияДокумента</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа: новый, не проведен, проведен, записан.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа: новий, не проведений, проведений, записаний.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Zoomable>true</Zoomable>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыДокумента</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<Border width="1">
+						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+					</Border>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаСостоянияДокументаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="КартинкаСостоянияДокументаРасширеннаяПодсказка" id="137"/>
+				</PictureField>
+				<LabelField name="СостояниеДокумента" id="38">
+					<DataPath>СостояниеДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа: новый, не проведен, проведен, записан.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стан документа: новий, не проведений, проведений, записаний.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<TextColor>#993300</TextColor>
+					<ContextMenu name="СостояниеДокументаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СостояниеДокументаРасширеннаяПодсказка" id="138"/>
+				</LabelField>
+				<PictureDecoration name="КартинкаАвторДокумента" id="40">
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор документу</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь, автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Користувач, автор документа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.User</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаАвторДокументаКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="КартинкаАвторДокументаРасширеннаяПодсказка" id="139"/>
+				</PictureDecoration>
+				<LabelField name="АвторДокумента" id="42">
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор документу</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="АвторДокументаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="АвторДокументаРасширеннаяПодсказка" id="140"/>
+				</LabelField>
+				<PictureDecoration name="КартинкаАвторПоследнегоИзменения" id="44">
+					<Width>2</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<SkipOnInput>false</SkipOnInput>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор последненго изменения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Автор останньої зміни</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь, автор последнего изменения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Користувач, автор останньої зміни</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.АвторПоследнегоИзменения</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="КартинкаАвторПоследнегоИзмененияКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КартинкаАвторПоследнегоИзмененияРасширеннаяПодсказка" id="141"/>
+				</PictureDecoration>
+				<LabelField name="ПоследнееИзменение" id="46">
+					<DataPath>ПоследнееИзменение</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<ContextMenu name="ПоследнееИзменениеКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПоследнееИзменениеРасширеннаяПодсказка" id="142"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РаспределениеТепловойЕнергии</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КартинкаСостоянияДокумента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка состояния документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка стану документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследнееИзменение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последнее изменение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Остання зміна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазрешеноПроведение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрешено проведение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дозволене проведення</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стан документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображениеПериодаНачисления" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение периода начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення періоду нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказаниеПередРедактированием" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показание перед редактированием</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Показання перед редагуванням</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Sобщ_дом" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загальна опалювальна площа будинку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загальна опалювальна площа будинку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Sобщ_дом</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Sобщ_инд_от" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загальна площа квартир з індивід.опаленням</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загальна площа квартир з індивід.опаленням</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Sобщ_инд_от</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Sобщ_вро" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загальна площа квартир з ВРО</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загальна площа квартир з ВРО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Sобщ_вро</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="коеф_Z" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коеф Z</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>9</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>коеф_Z</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Qmax" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Qmax</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Qmax</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="t_вн_норм" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Температура за нормою</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Температура за нормою</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>t_вн_норм</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="t_min_оп_пер" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Температура зовнішнього повітря холодного періоду </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Температура зовнішнього повітря холодного періоду </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>t_min_оп_пер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="t_сер_оп_пер" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Середня температура зовнішнього повітря у опалювальному періоді</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Середня температура зовнішнього повітря у опалювальному періоді</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>t_сер_оп_пер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Пр" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кількість діб у розрахунковому періоді, доба</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>кількість діб у розрахунковому періоді, доба</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Пр</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="По_" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тривалість опалювального періоду</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тривалість опалювального періоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>По_</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Q_буд_норм" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормативне теплове навантаження будівлі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Нормативне теплове навантаження будівлі</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Q_буд_норм</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Q_буд_за_оп_пер_норм" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кількість теплової енергії, спожитої будівлею/будинком за опалювальний період</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість теплової енергії, спожитої будівлею/будинком за опалювальний період</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Q_буд_за_оп_пер_норм</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Q_оп_буд" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактичний обсяг спожитої у будівлі/будинку теплової енергії у розрахунковому періоді</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Фактичний обсяг спожитої у будівлі/будинку теплової енергії у розрахунковому періоді</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Q_оп_буд</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="t_факт" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Середня місячна фактична температура зовнішнього повітря в розрахунковому періоді</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Середня місячна фактична температура зовнішнього повітря в розрахунковому періоді</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>t_факт</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Nбуд" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Nбуд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>9</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Nбуд</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="q_оп" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Середнє питоме споживання теплової енергії на опалення приміщень </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Середнє питоме споживання теплової енергії на опалення приміщень </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>q_оп</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="q_min" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мінімальна частка середнього питомого споживання теплової енергії </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Мінімальна частка середнього питомого споживання теплової енергії </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>q_min</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="q_max" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальна частка питомого споживання теплової енергії </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Максимальна частка питомого споживання теплової енергії </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>q_max</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="тзДанныхДляРаспределения" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зведена таблиця даних для розподілу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зведена таблиця даних для розподілу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>тзДанныхДляРаспределения</Field>
+			</Save>
+			<Columns>
+				<Column name="Период" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Період</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Період</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕЗаВКО" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕ по заг.буд.ліч, ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТЕ по заг.буд.ліч, ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕЗаВРО" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕ за ліч.ВРО, ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТЕ за ліч.ВРО, ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕНаЗБП" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕ на ЗБП, ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТЕ на ЗБП, ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="q_max" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>q_max, ГКал/м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>q_max, ГКал/м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="q_min" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>q_min, ГКал/м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>q_min, ГКал/м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="q_оп" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>q_оп, ГКал/м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>q_оп, ГКал/м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Q_дон" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Q_дон, ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Q_дон, ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕБезСчет" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЕ без ліч., ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТЕ без ліч., ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщПлДома" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заг. площа буд., м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заг. площа буд., м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщПлИндОтопл" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заг. площа з інд.опаленням, м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заг. площа з інд.опаленням, м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщПлВРО" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заг. площа ВРО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заг. площа ВРО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбщПлВКО" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заг. площа ВКО, м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заг. площа ВКО, м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕНаЗБПм2" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облік ТЕ на ЗБП на м2, Гкал/м2</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Облік ТЕ на ЗБП на м2, Гкал/м2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕНаСпоживачаМ2" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Облік ТЕ на споживача на м2, ГКал</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Облік ТЕ на споживача на м2, ГКал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТЕЗагальный" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ТЕЗагальный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТЕНаЗБПм2" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Облік ТЕ на ЗБП на м2, Гкал/м2</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Облік ТЕ на ЗБП на м2, Гкал/м2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЕНаСпоживачаМ2" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Облік ТЕ на споживача на м2, ГКал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Облік ТЕ на споживача на м2, ГКал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Sобщ_вко" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загальна площа квартир з ВРО</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загальна площа квартир з ВКО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>12</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Sобщ_вко</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="тзДоначисленияБезПоказанийПрибора" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Тз доначисления без показаний прибора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>тзДоначисленияБезПоказанийПрибора</Field>
+			</Save>
+			<Columns>
+				<Column name="ДоначислениеДоМинимального" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Доначисление до минимального</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПлощадьОбъекта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Площадь объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЛицевойСчет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Лицевой счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОсновнаяРазница</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Основная.ПереходЧерезНоль</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ФайлЗанятыйТекущимПользователем</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОсновнаяРазница</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Основная.РасходЗаПериодРасчета</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ПоясняющийТекст</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Основная</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Основная.Отключен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gainsboro</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

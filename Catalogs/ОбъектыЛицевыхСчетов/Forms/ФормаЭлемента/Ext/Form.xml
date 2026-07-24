@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Владелец" id="5">
+			<DataPath>Объект.Owner</DataPath>
+			<SkipOnInput>true</SkipOnInput>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Здание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Будинок</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="61"/>
+		</InputField>
+		<LabelField name="Наименование" id="3">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<SkipOnInput>true</SkipOnInput>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="62"/>
+		</LabelField>
+		<UsualGroup name="ГруппаЖилойНеЖилойФонд" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа жилой не жилой фонд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група житловий не житловий фонд</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа жилой не жилой фонд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група житловий не житловий фонд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЖилойНеЖилойФондРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<RadioButtonField name="ЖилойФонд" id="52">
+					<DataPath>Объект.ЖилойФонд</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Жилой фонд</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Житловий фонд</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ЖилойНеЖилойФонд.EnumValue.Жилой</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Нежилой фонд</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Нежитловий фонд</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.ЖилойНеЖилойФонд.EnumValue.НеЖилой</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ЖилойФондКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ЖилойФондРасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">ЖилойФондПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<CheckBoxField name="Паркинг" id="57">
+					<DataPath>Объект.Паркинг</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПаркингКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ПаркингРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="OnChange">ПаркингПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Префикс" id="59">
+					<DataPath>Объект.Префикс</DataPath>
+					<ContextMenu name="ПрефиксКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<CheckBoxField name="Магазин" id="90">
+					<DataPath>Объект.Магазин</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МагазинКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="МагазинРасширеннаяПодсказка" id="92"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодъездЭтаж" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подъезд этаж</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група під'їзд поверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подъезд этаж</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група під'їзд поверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодъездЭтажРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<InputField name="Этаж" id="30">
+					<DataPath>Объект.Этаж</DataPath>
+					<ContextMenu name="ЭтажКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ЭтажРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="Подъезд" id="32">
+					<DataPath>Объект.Подъезд</DataPath>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Объект.Owner</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="ПодъездКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПодъездРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКодНаименование" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група код найменування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група код найменування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер квартиры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номер квартири</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="Суффикс" id="44">
+					<DataPath>Объект.Суффикс</DataPath>
+					<ContextMenu name="СуффиксКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СуффиксРасширеннаяПодсказка" id="72"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КоличествоКомнат" id="46">
+			<DataPath>Объект.КоличествоКомнат</DataPath>
+			<ContextMenu name="КоличествоКомнатКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="КоличествоКомнатРасширеннаяПодсказка" id="73"/>
+		</InputField>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="74"/>
+			<ChildItems>
+				<Page name="ГруппаВидыПлощадей" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды площадей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Види площ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа виды площадей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група види площі</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВидыПлощадейРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<InputField name="ДатаИзменения" id="48">
+							<DataPath>ДатаИзменения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменить на дату</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Змінити на дату</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="76"/>
+						</InputField>
+						<Table name="ВидыПлощадей" id="37">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ВидыПлощадей</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ВидыПлощадейКонтекстноеМеню" id="38"/>
+							<AutoCommandBar name="ВидыПлощадейКоманднаяПанель" id="39">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВидыПлощадейРасширеннаяПодсказка" id="77"/>
+							<SearchStringAddition name="ВидыПлощадейСтрокаПоиска" id="78">
+								<AdditionSource>
+									<Item>ВидыПлощадей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыПлощадейСтрокаПоискаКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ВидыПлощадейСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВидыПлощадейСостояниеПросмотра" id="81">
+								<AdditionSource>
+									<Item>ВидыПлощадей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыПлощадейСостояниеПросмотраКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ВидыПлощадейСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВидыПлощадейУправлениеПоиском" id="84">
+								<AdditionSource>
+									<Item>ВидыПлощадей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВидыПлощадейУправлениеПоискомКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ВидыПлощадейУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ВидыПлощадейВидПлощади" id="40">
+									<DataPath>ВидыПлощадей.ВидПлощади</DataPath>
+									<Enabled>false</Enabled>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыПлощадейВидПлощадиКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ВидыПлощадейВидПлощадиРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="ВидыПлощадейПлощадь" id="42">
+									<DataPath>ВидыПлощадей.Площадь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Площадь</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Площа</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВидыПлощадейПлощадьКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ВидыПлощадейПлощадьРасширеннаяПодсказка" id="88"/>
+									<Events>
+										<Event name="OnChange">ВидыПлощадейПлощадьПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительныеРеквизиты" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные реквизиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додаткові реквізити</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительные реквизиты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сторінка додаткові реквізити</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительныеРеквизитыРасширеннаяПодсказка" id="89"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбъектыЛицевыхСчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВидыПлощадей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды площадей</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види площ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидПлощади" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид площади</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид площі</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыПлощадей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Площадь" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Площадь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Площа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаИзменения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата изменения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата зміни</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоЖилойФонд" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это жилой фонд</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Це житловий фонд</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

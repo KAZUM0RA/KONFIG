@@ -1,0 +1,129 @@
+﻿<xs:schema xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:tns="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/8.1/data/enterprise/current-config" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<xs:import namespace="http://v8.1c.ru/8.1/data/enterprise"/>
+	<xs:complexType name="CatalogObject.ЗданияИСооружения">
+		<xs:sequence>
+			<xs:element name="Ref" type="tns:CatalogRef.ЗданияИСооружения"/>
+			<xs:element name="DeletionMark" type="xs:boolean"/>
+			<xs:element name="Code" type="xs:string"/>
+			<xs:element name="Description" type="xs:string"/>
+			<xs:element name="PredefinedDataName" type="xs:string" minOccurs="0"/>
+			<xs:element name="НомерЗдания" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CatalogObject.ОбъектыЛицевыхСчетов">
+		<xs:sequence>
+			<xs:element name="Ref" type="tns:CatalogRef.ОбъектыЛицевыхСчетов"/>
+			<xs:element name="DeletionMark" type="xs:boolean"/>
+			<xs:element name="Code" type="xs:decimal"/>
+			<xs:element name="Description" type="xs:string"/>
+			<xs:element name="PredefinedDataName" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВладелецЛицевогоСчета" type="xs:string"/>
+			<xs:element name="НомерСчета" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CatalogObject.ПриборыУчета">
+		<xs:sequence>
+			<xs:element name="Ref" type="tns:CatalogRef.ПриборыУчета"/>
+			<xs:element name="DeletionMark" type="xs:boolean"/>
+			<xs:element name="Code" type="xs:string"/>
+			<xs:element name="Description" type="xs:string"/>
+			<xs:element name="PredefinedDataName" type="xs:string" minOccurs="0"/>
+			<xs:element name="ЗаводскойНомер" type="xs:string"/>
+			<xs:element name="ВидУслуги" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CatalogRef.ЗданияИСооружения">
+		<xs:restriction base="ent:AnyRef"/>
+	</xs:simpleType>
+	<xs:simpleType name="CatalogRef.ОбъектыЛицевыхСчетов">
+		<xs:restriction base="ent:AnyRef"/>
+	</xs:simpleType>
+	<xs:simpleType name="CatalogRef.ПриборыУчета">
+		<xs:restriction base="ent:AnyRef"/>
+	</xs:simpleType>
+	<xs:complexType name="ConstantValueManager.АдресВебСервиса">
+		<xs:sequence>
+			<xs:element name="Value" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConstantValueManager.ВладелецУстройства">
+		<xs:sequence>
+			<xs:element name="Value" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ConstantValueManager.ДатаОчистки">
+		<xs:sequence>
+			<xs:element name="Value" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DocumentObject.Служебный_РегистраторДляРегистра">
+		<xs:sequence>
+			<xs:element name="Ref" type="tns:DocumentRef.Служебный_РегистраторДляРегистра"/>
+			<xs:element name="DeletionMark" type="xs:boolean"/>
+			<xs:element name="Date" type="xs:dateTime"/>
+			<xs:element name="Posted" type="xs:boolean"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="DocumentRef.Служебный_РегистраторДляРегистра">
+		<xs:restriction base="ent:AnyRef"/>
+	</xs:simpleType>
+	<xs:complexType name="ExchangePlanObject.ОбменСМобильнымиУстройствами">
+		<xs:sequence>
+			<xs:element name="Ref" type="tns:ExchangePlanRef.ОбменСМобильнымиУстройствами"/>
+			<xs:element name="DeletionMark" type="xs:boolean"/>
+			<xs:element name="Code" type="xs:string"/>
+			<xs:element name="Description" type="xs:string"/>
+			<xs:element name="SentNo" type="xs:decimal"/>
+			<xs:element name="ReceivedNo" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ExchangePlanRef.ОбменСМобильнымиУстройствами">
+		<xs:restriction base="ent:AnyRef"/>
+	</xs:simpleType>
+	<xs:complexType name="InformationRegisterRecord.ЗаданияНаСнятиеПоказанийПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Recorder" type="tns:DocumentRef.Служебный_РегистраторДляРегистра"/>
+			<xs:element name="Period" type="xs:dateTime"/>
+			<xs:element name="Active" type="xs:boolean"/>
+			<xs:element name="Здание" type="tns:CatalogRef.ЗданияИСооружения"/>
+			<xs:element name="ОбъектЛицевогоСчета" type="tns:CatalogRef.ОбъектыЛицевыхСчетов"/>
+			<xs:element name="ПриборУчета" type="tns:CatalogRef.ПриборыУчета"/>
+			<xs:element name="ГраничнаяДатаСъема" type="xs:dateTime"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationRegisterRecord.СнятыеПоказанияПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Period" type="xs:dateTime"/>
+			<xs:element name="ПриборУчета" type="tns:CatalogRef.ПриборыУчета"/>
+			<xs:element name="Значение" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationRegisterRecordKey.ЗаданияНаСнятиеПоказанийПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Recorder" type="tns:DocumentRef.Служебный_РегистраторДляРегистра" minOccurs="0"/>
+			<xs:element name="Period" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Здание" type="tns:CatalogRef.ЗданияИСооружения" minOccurs="0"/>
+			<xs:element name="ОбъектЛицевогоСчета" type="tns:CatalogRef.ОбъектыЛицевыхСчетов" minOccurs="0"/>
+			<xs:element name="ПриборУчета" type="tns:CatalogRef.ПриборыУчета" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationRegisterRecordKey.СнятыеПоказанияПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Period" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="ПриборУчета" type="tns:CatalogRef.ПриборыУчета" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationRegisterRecordSet.ЗаданияНаСнятиеПоказанийПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Filter" type="ent:Filter"/>
+			<xs:element name="Record" type="tns:InformationRegisterRecord.ЗаданияНаСнятиеПоказанийПриборовУчета" minOccurs="0" maxOccurs="999999999"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InformationRegisterRecordSet.СнятыеПоказанияПриборовУчета">
+		<xs:sequence>
+			<xs:element name="Filter" type="ent:Filter"/>
+			<xs:element name="Record" type="tns:InformationRegisterRecord.СнятыеПоказанияПриборовУчета" minOccurs="0" maxOccurs="999999999"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

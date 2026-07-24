@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ОтчетыФискальногоРегистратора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты фискального регистратора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіти фіскального реєстратора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты фискального регистратора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіти фіскального реєстратора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ОтчетыФискальногоРегистратораРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група ліво</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група ліво</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<Button name="ПечатьОтчетаБезГашения" id="3">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ПечатьОтчетаБезГашения</CommandName>
+							<ExtendedTooltip name="ПечатьОтчетаБезГашенияРасширеннаяПодсказка" id="24"/>
+						</Button>
+						<Button name="ПечатьПериодическогоОтчетаПоДатам" id="7">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ПечатьПериодическогоОтчетаПоДатам</CommandName>
+							<ExtendedTooltip name="ПечатьПериодическогоОтчетаПоДатамРасширеннаяПодсказка" id="25"/>
+						</Button>
+						<UsualGroup name="ГруппаПараметрыПериодическогоОтчетаПоДатам" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Період</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры периодического отчета по датам</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група параметри періодичного звіту по датах</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПараметрыПериодическогоОтчетаПоДатамРасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<InputField name="ПериодПериодическогоОтчета" id="15">
+									<DataPath>ПериодПериодическогоОтчета</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ПериодПериодическогоОтчетаКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="ПериодПериодическогоОтчетаРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ПечатьОтчетаОПроданныхТоварах" id="9">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ПечатьОтчетаОПроданныхТоварах</CommandName>
+							<ExtendedTooltip name="ПечатьОтчетаОПроданныхТоварахРасширеннаяПодсказка" id="28"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<Button name="ПечатьОтчетаСГашением" id="4">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<SkipOnInput>false</SkipOnInput>
+							<CommandName>Form.Command.ПечатьОтчетаСГашением</CommandName>
+							<ExtendedTooltip name="ПечатьОтчетаСГашениемРасширеннаяПодсказка" id="30"/>
+						</Button>
+						<Button name="ПечатьПериодическогоОтчетаПоНомерам" id="8">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ПечатьПериодическогоОтчетаПоНомерам</CommandName>
+							<ExtendedTooltip name="ПечатьПериодическогоОтчетаПоНомерамРасширеннаяПодсказка" id="31"/>
+						</Button>
+						<UsualGroup name="ГруппаПараметрыПериодическогоОтчетаПоНомерам" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номера дневных отчетов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Номери денних звітів</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры периодического отчета по датам</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група параметри періодичного звіту по датах</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПараметрыПериодическогоОтчетаПоНомерамРасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<InputField name="НачальныйНомерПериодическогоОтчета" id="18">
+									<DataPath>НачальныйНомерПериодическогоОтчета</DataPath>
+									<ContextMenu name="НачальныйНомерПериодическогоОтчетаКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="НачальныйНомерПериодическогоОтчетаРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="КонечныйНомерПериодическогоОтчета" id="20">
+									<DataPath>КонечныйНомерПериодическогоОтчета</DataPath>
+									<ContextMenu name="КонечныйНомерПериодическогоОтчетаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="КонечныйНомерПериодическогоОтчетаРасширеннаяПодсказка" id="34"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:TypeId>49e7095c-441e-4033-a44b-77d33c6a5b01</v8:TypeId>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПериодПериодическогоОтчета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальныйНомерПериодическогоОтчета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Початковий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонечныйНомерПериодическогоОтчета" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конечный</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кінцевий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьОтчетаБезГашения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета без гашения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту без гасіння</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета без гашения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту без гасіння</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодключаемоеОборудованиеОтчетБезГашения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="4" y="2"/>
+			</Picture>
+			<Action>ПечатьОтчетаБезГашенияВыполнить</Action>
+		</Command>
+		<Command name="ПечатьОтчетаСГашением" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета с гашением</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту з гасінням</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета с гашением</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту з гасінням</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодключаемоеОборудованиеОтчетСГашением</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="3" y="2"/>
+			</Picture>
+			<Action>ПечатьОтчетаСГашениемВыполнить</Action>
+		</Command>
+		<Command name="ПечатьПериодическогоОтчетаПоДатам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать периодического отчета по датам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк періодичного звіту по датах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать периодического отчета по датам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк періодичного звіту по датах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetDateInterval</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьПериодическогоОтчетаПоДатамВыполнить</Action>
+		</Command>
+		<Command name="ПечатьПериодическогоОтчетаПоНомерам" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать периодического отчета по номерам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк періодичного звіту за номерами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать периодического отчета по номерам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк періодичного звіту за номерами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FindByNumber</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьПериодическогоОтчетаПоНомерамВыполнить</Action>
+		</Command>
+		<Command name="ПечатьОтчетаОПроданныхТоварах" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета о проданных товарах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту про продані товари</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать отчета о проданных товарах</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк звіту про продані товари</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьОтчетаОПроданныхТоварахВыполнить</Action>
+		</Command>
+	</Commands>
+</Form>

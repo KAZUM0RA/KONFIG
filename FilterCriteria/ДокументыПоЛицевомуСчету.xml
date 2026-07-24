@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<FilterCriterion uuid="2de68c02-bd13-4d0c-b230-1462a35ba2f8">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ДокументыПоЛицевомуСчету" category="Manager">
+				<xr:TypeId>4fe87655-6688-450a-9070-b67fc33e7a1c</xr:TypeId>
+				<xr:ValueId>a5c14325-25e3-4611-bb88-d977fc491ef5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ДокументыПоЛицевомуСчету" category="List">
+				<xr:TypeId>a64c95d0-5cbd-4730-854c-ddae21e37b49</xr:TypeId>
+				<xr:ValueId>7ed0a488-615e-49d7-bbd1-7ac46256dbc6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоЛицевомуСчету</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по лицевому счету</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документи по особовому рахункові</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводНачальныхОстатков.TabularSection.ЛицевыеСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводПоказанийПриборовУчета.TabularSection.Основная.Attribute.ОбъектУстановки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Голосование.TabularSection.РезультатыГолосования.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Иск.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПредписаниеНаСнос.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеЛицевогоСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявкаНаПроведениеРемонта.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеЛицевогоСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИнформационныйЛистДляГолосования.TabularSection.УчастникиГолосования.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПениПоЛС.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС.TabularSection.Услуги.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПоЛС.TabularSection.Льготы.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОткрытиеЛицевогоСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС.TabularSection.ЛицевыеСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС.TabularSection.Услуги.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПерерасчетПоЛС.TabularSection.Перерасчет.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеВКассу.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеНаСчет.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Претензия.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РазовоеНачислениеУслуг.TabularSection.ЛицевыеСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеПриборамиУчета.Attribute.ОбъектУстановки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеСоставомЖильцов.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеСубсидиями.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УправлениеУслугамиПодробно.TabularSection.ЛицевыеСчета.Attribute.ЛицевойСчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаПоказанийПриборовУчета.TabularSection.Основная.Attribute.ОбъектУстановки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаДолга.Attribute.ЛицевойСчетДебитор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаДолга.Attribute.ЛицевойСчетКредитор</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов по лицевым счетам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Список документів по особових рахунках</v8:content>
+				</v8:item>
+			</Explanation>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

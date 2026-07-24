@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаУстановитьТарифыПоУслугам" id="109">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УстановитьТарифыПоУслугам</CommandName>
+				<ExtendedTooltip name="ФормаУстановитьТарифыПоУслугамРасширеннаяПодсказка" id="110"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Организация" id="5">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="7"/>
+		</InputField>
+		<UsualGroup name="Шапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяКолонка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ліва колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<InputField name="ФайлПослуги" id="16">
+							<DataPath>Объект.ФайлПослуги</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ФайлПослугиКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ФайлПослугиРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ФайлПослугиПриИзменении</Event>
+								<Event name="StartChoice">ФайлПослугиНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ФайлТарифы" id="8">
+							<DataPath>Объект.ФайлТарифы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ФайлТарифыКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ФайлТарифыРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="StartChoice">ФайлТарифыНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяКолонка" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Права колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="ДатаНазначенияТарифа" id="19">
+							<DataPath>Объект.ДатаНазначенияТарифа</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаНазначенияТарифаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДатаНазначенияТарифаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="ДатаНазначенияУслуги" id="11">
+							<DataPath>Объект.ДатаНазначенияУслуги</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаНазначенияУслугиКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ДатаНазначенияУслугиРасширеннаяПодсказка" id="13"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сторінки</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<Page name="ГруппаТабличнаяЧастьУслуги" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Послуги</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Послуги</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТабличнаяЧастьУслугиРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Table name="ТабличнаяЧастьУслуги" id="26">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТабличнаяЧастьУслуги</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТабличнаяЧастьУслугиКонтекстноеМеню" id="27"/>
+							<AutoCommandBar name="ТабличнаяЧастьУслугиКоманднаяПанель" id="28">
+								<ChildItems>
+									<Button name="ТабличнаяЧастьУслугиЗагрузитьУслуги" id="105">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьУслуги</CommandName>
+										<ExtendedTooltip name="ТабличнаяЧастьУслугиЗагрузитьУслугиРасширеннаяПодсказка" id="106"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТабличнаяЧастьУслугиРасширеннаяПодсказка" id="29"/>
+							<SearchStringAddition name="ТабличнаяЧастьУслугиСтрокаПоиска" id="30">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьУслуги</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьУслугиСтрокаПоискаКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ТабличнаяЧастьУслугиСтрокаПоискаРасширеннаяПодсказка" id="32"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТабличнаяЧастьУслугиСостояниеПросмотра" id="33">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьУслуги</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьУслугиСостояниеПросмотраКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ТабличнаяЧастьУслугиСостояниеПросмотраРасширеннаяПодсказка" id="35"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТабличнаяЧастьУслугиУправлениеПоиском" id="36">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьУслуги</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьУслугиУправлениеПоискомКонтекстноеМеню" id="37"/>
+								<ExtendedTooltip name="ТабличнаяЧастьУслугиУправлениеПоискомРасширеннаяПодсказка" id="38"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТабличнаяЧастьУслугиНомерСтроки" id="39">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиНомерСтрокиКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиНомерСтрокиРасширеннаяПодсказка" id="41"/>
+								</LabelField>
+								<InputField name="ТабличнаяЧастьУслугиАдрес" id="42">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Адрес</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиАдресКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиАдресРасширеннаяПодсказка" id="44"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслугаСтарая" id="45">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.УслугаСтарая</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслугаСтараяКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслугаСтараяРасширеннаяПодсказка" id="47"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиЛицевойСчет" id="48">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.ЛицевойСчет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиЛицевойСчетКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиЛицевойСчетРасширеннаяПодсказка" id="50"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга1" id="51">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга1КонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга1РасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга2" id="54">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга2КонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга2РасширеннаяПодсказка" id="56"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга3" id="57">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга3КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга3РасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга4" id="60">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга4</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга4КонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга4РасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга5" id="63">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга5</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга5КонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга5РасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга6" id="66">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга6</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга6КонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга6РасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга7" id="111">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга7</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга7КонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга7РасширеннаяПодсказка" id="113"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга8" id="114">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга8</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга8КонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга8РасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга9" id="117">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга9</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга9КонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга9РасширеннаяПодсказка" id="119"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга10" id="120">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга10</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга10КонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга10РасширеннаяПодсказка" id="122"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга11" id="123">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга11</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга11КонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга11РасширеннаяПодсказка" id="125"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьУслугиУслуга12" id="126">
+									<DataPath>Объект.ТабличнаяЧастьУслуги.Услуга12</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьУслугиУслуга12КонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ТабличнаяЧастьУслугиУслуга12РасширеннаяПодсказка" id="128"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТабличнаяЧастьТарифы" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тарифы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Тарифи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТабличнаяЧастьТарифыРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Table name="ТабличнаяЧастьТарифы" id="71">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТабличнаяЧастьТарифы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТабличнаяЧастьТарифыКонтекстноеМеню" id="72"/>
+							<AutoCommandBar name="ТабличнаяЧастьТарифыКоманднаяПанель" id="73">
+								<ChildItems>
+									<Button name="ТабличнаяЧастьТарифыЗагрузитьТарифы" id="107">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьТарифы</CommandName>
+										<ExtendedTooltip name="ТабличнаяЧастьТарифыЗагрузитьТарифыРасширеннаяПодсказка" id="108"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТабличнаяЧастьТарифыРасширеннаяПодсказка" id="74"/>
+							<SearchStringAddition name="ТабличнаяЧастьТарифыСтрокаПоиска" id="75">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьТарифы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьТарифыСтрокаПоискаКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ТабличнаяЧастьТарифыСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТабличнаяЧастьТарифыСостояниеПросмотра" id="78">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьТарифы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьТарифыСостояниеПросмотраКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ТабличнаяЧастьТарифыСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТабличнаяЧастьТарифыУправлениеПоиском" id="81">
+								<AdditionSource>
+									<Item>ТабличнаяЧастьТарифы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТабличнаяЧастьТарифыУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ТабличнаяЧастьТарифыУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТабличнаяЧастьТарифыНомерСтроки" id="84">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыНомерСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыНомерСтрокиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<InputField name="ТабличнаяЧастьТарифыУслуга" id="87">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.Услуга</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыУслугаКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыУслугаРасширеннаяПодсказка" id="89"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьТарифыТариф" id="90">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.Тариф</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыТарифКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыТарифРасширеннаяПодсказка" id="92"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьТарифыТарифЛьготы" id="93">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.ТарифЛьготы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыТарифЛьготыКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыТарифЛьготыРасширеннаяПодсказка" id="95"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьТарифыНормаПотребления" id="96">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.НормаПотребления</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыНормаПотребленияКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыНормаПотребленияРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьТарифыТарифПоНорме" id="99">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.ТарифПоНорме</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыТарифПоНормеКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыТарифПоНормеРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ТабличнаяЧастьТарифыТарифПоНормеЛьгота" id="102">
+									<DataPath>Объект.ТабличнаяЧастьТарифы.ТарифПоНормеЛьгота</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабличнаяЧастьТарифыТарифПоНормеЛьготаКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ТабличнаяЧастьТарифыТарифПоНормеЛьготаРасширеннаяПодсказка" id="104"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НазначениеУслуг</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьУслуги" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить услуги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити послуги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить услуги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьУслуги</Action>
+		</Command>
+		<Command name="ЗагрузитьТарифы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить тарифы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити тарифи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить тарифы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьТарифы</Action>
+		</Command>
+		<Command name="УстановитьТарифыПоУслугам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить тарифы по услугам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Втановити тариф по послугам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить тарифы по услугам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьТарифыПоУслугам</Action>
+		</Command>
+	</Commands>
+</Form>

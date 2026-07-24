@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПоляКартинки" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поля картинки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група поля картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа поля картинки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група поля картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПоляКартинкиРасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<PictureDecoration name="ПолеКартинкиФинансУа" id="32">
+					<Width>25</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле картинки finance.ua</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Поле картинки finance.ua</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.ФинансУа</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="160" y="8"/>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ПолеКартинкиФинансУаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПолеКартинкиФинансУаРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="Click">ПолеКартинкиФинансУаНажатие</Event>
+					</Events>
+				</PictureDecoration>
+				<UsualGroup name="ГруппаНадписей" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа надписей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група написів</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа надписей</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група написів</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНадписейРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПояснение" id="34">
+							<Width>39</Width>
+							<Height>2</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для полного доступа к архивам курсов за период необходимо наличие кода доступа.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content> Для повного доступу до архівів курсів за період необхідна наявність коду доступу.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПояснениеКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="НадписьПояснениеРасширеннаяПодсказка" id="50"/>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьПолучитьКод" id="36">
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получить код полного доступа</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Одержати код повного доступу</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="НадписьПолучитьКодКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="НадписьПолучитьКодРасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="Click">НадписьПолучитьКодНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ЗагрузкаКурсов" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка курсов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження курсів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка курсов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження курсів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗагрузкаКурсовРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<Page name="Загрузка" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завантаження</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Завантаження</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗагрузкаРасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<UsualGroup name="РамкаГруппыПериод" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Період</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рамка группы период</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Рамка групи період</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="РамкаГруппыПериодРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗаПериод" id="16">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа за период</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група протягом періоду</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа за период</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група протягом періоду</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗаПериодРасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<InputField name="НачДата" id="2">
+											<DataPath>Объект.НачалоПериодаЗагрузки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период загрузки с</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Період завантаження з</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="НачДатаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="НачДатаРасширеннаяПодсказка" id="56"/>
+										</InputField>
+										<InputField name="КонДата" id="3">
+											<DataPath>Объект.ОкончаниеПериодаЗагрузки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>по</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>по</v8:content>
+												</v8:item>
+											</Title>
+											<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+											<Wrap>false</Wrap>
+											<BorderColor>style:BorderColor</BorderColor>
+											<ContextMenu name="КонДатаКонтекстноеМеню" id="19"/>
+											<ExtendedTooltip name="КонДатаРасширеннаяПодсказка" id="57"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЗаДень" id="44">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа за день</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група протягом дня</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа за день</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Група протягом дня</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗаДеньРасширеннаяПодсказка" id="58"/>
+									<ChildItems>
+										<LabelDecoration name="НадписьДата" id="27">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Надпись дата</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Напис дата</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьДатаКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="НадписьДатаРасширеннаяПодсказка" id="59"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="КоманднаяПанельСписокВалют" id="6">
+							<CommandSource>Item.СписокВалют</CommandSource>
+							<ExtendedTooltip name="КоманднаяПанельСписокВалютРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<Button name="КнопкаПодборВалют" id="17">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.КомандаПодборВалют</CommandName>
+									<TextColor>style:ButtonTextColor</TextColor>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ExtendedTooltip name="КнопкаПодборВалютРасширеннаяПодсказка" id="61"/>
+								</Button>
+								<Button name="КнопкаЗаполнить" id="8">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.КомандаЗаполнить</CommandName>
+									<TextColor>style:ButtonTextColor</TextColor>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ExtendedTooltip name="КнопкаЗаполнитьРасширеннаяПодсказка" id="62"/>
+								</Button>
+								<Button name="КнопкаОчистить" id="14">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.КомандаОчистить</CommandName>
+									<TextColor>style:ButtonTextColor</TextColor>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ExtendedTooltip name="КнопкаОчиститьРасширеннаяПодсказка" id="63"/>
+								</Button>
+								<Button name="КнопкаЗагрузить" id="15">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.КомандаЗагрузить</CommandName>
+									<TextColor>style:ButtonTextColor</TextColor>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ExtendedTooltip name="КнопкаЗагрузитьРасширеннаяПодсказка" id="64"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<Table name="СписокВалют" id="7">
+							<CommandBarLocation>None</CommandBarLocation>
+							<SkipOnInput>false</SkipOnInput>
+							<Width>40</Width>
+							<HeightInTableRows>10</HeightInTableRows>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.СписокВалют</DataPath>
+							<BorderColor>style:BorderColor</BorderColor>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокВалютКонтекстноеМеню" id="20"/>
+							<AutoCommandBar name="СписокВалютКоманднаяПанель" id="26"/>
+							<ExtendedTooltip name="СписокВалютРасширеннаяПодсказка" id="65"/>
+							<SearchStringAddition name="СписокВалютСтрокаПоиска" id="66">
+								<AdditionSource>
+									<Item>СписокВалют</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВалютСтрокаПоискаКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="СписокВалютСтрокаПоискаРасширеннаяПодсказка" id="68"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокВалютСостояниеПросмотра" id="69">
+								<AdditionSource>
+									<Item>СписокВалют</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВалютСостояниеПросмотраКонтекстноеМеню" id="70"/>
+								<ExtendedTooltip name="СписокВалютСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокВалютУправлениеПоиском" id="72">
+								<AdditionSource>
+									<Item>СписокВалют</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВалютУправлениеПоискомКонтекстноеМеню" id="73"/>
+								<ExtendedTooltip name="СписокВалютУправлениеПоискомРасширеннаяПодсказка" id="74"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокВалютВыбор</Event>
+								<Event name="BeforeAddRow">СписокВалютПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="Валюта" id="10">
+									<DataPath>Объект.СписокВалют.Валюта</DataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="ВалютаКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="75"/>
+								</LabelField>
+								<LabelField name="КодВалюты" id="9">
+									<DataPath>Объект.СписокВалют.КодВалюты</DataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="КодВалютыКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="КодВалютыРасширеннаяПодсказка" id="76"/>
+								</LabelField>
+								<LabelField name="ДатаКурса" id="11">
+									<DataPath>Объект.СписокВалют.ДатаКурса</DataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="ДатаКурсаКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДатаКурсаРасширеннаяПодсказка" id="77"/>
+								</LabelField>
+								<LabelField name="Курс" id="12">
+									<DataPath>Объект.СписокВалют.Курс</DataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="КурсКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="78"/>
+								</LabelField>
+								<LabelField name="Кратность" id="13">
+									<DataPath>Объект.СписокВалют.Кратность</DataPath>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<ContextMenu name="КратностьКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="КратностьРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="РамкаГруппаНастройка" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка с сайта finance.ua</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Завантаження з сайту finance.ua</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="РамкаГруппаНастройкаРасширеннаяПодсказка" id="80"/>
+							<ChildItems>
+								<InputField name="КодДоступа" id="40">
+									<DataPath>Объект.КодДоступа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код доступа к платным серверам</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Код доступу до платних серверів</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КодДоступаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="КодДоступаРасширеннаяПодсказка" id="81"/>
+									<Events>
+										<Event name="OnChange">КодДоступаПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаКурсовВалют</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить список для загрузки всеми валютами из справочника</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити список для завантаження усіма валютами з довідника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаполнитьСписокВалютВыполнить</Action>
+		</Command>
+		<Command name="КомандаОчистить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить список валют для загрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити список валют для завантаження</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОчиститьВыполнить</Action>
+		</Command>
+		<Command name="КомандаЗагрузить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить курсы выбранных валют с веб-сайта РБК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити курси обраних валют з веб-сайту РБК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗагрузитьВыполнить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаПодборВалют" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Добір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать валюты в список для загрузки из справочника</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підібрати валюти до списку для завантаження з довідника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПодборВалютВыполнить</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="25">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="27">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="29">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="34">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="35"/>
+							<ChildItems>
+								<InputField name="Область" id="10">
+									<DataPath>Объект.Область</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбластьКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ОбластьРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="OnChange">ОбластьПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Индекс" id="36">
+									<DataPath>Объект.ИндексГорода</DataPath>
+									<ContextMenu name="ИндексКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ИндексРасширеннаяПодсказка" id="38"/>
+									<Events>
+										<Event name="OnChange">ИндексПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Район" id="13">
+							<DataPath>Объект.Район</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РайонКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="РайонРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">РайонПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Город" id="16">
+							<DataPath>Объект.Город</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГородКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ГородПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="НаселенныйПункт" id="19">
+							<DataPath>Объект.НаселенныйПункт</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаселенныйПунктКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="НаселенныйПунктРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">НаселенныйПунктПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="НазваниеУлицы" id="22">
+							<DataPath>Объект.НазваниеУлицы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НазваниеУлицыКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="НазваниеУлицыРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">НазваниеУлицыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="НаименованиеПолное" id="31">
+							<DataPath>Объект.НаименованиеПолное</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Представлення</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.УлицыГородов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

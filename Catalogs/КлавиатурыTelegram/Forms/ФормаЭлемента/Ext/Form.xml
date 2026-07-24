@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Состав" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Состав</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СоставКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="СоставРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СоставСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СоставСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СоставСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СоставУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СоставНомерСтроки" id="23">
+					<DataPath>Объект.Состав.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СоставНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="СоставТекст" id="26">
+					<DataPath>Объект.Состав.Текст</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="СоставТекстКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СоставТекстРасширеннаяПодсказка" id="28">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Надпись, отображаемая на кнопке ответа</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Напис, що відображається на кнопці відповіді</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="StartChoice">СоставТекстНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="СоставВозвращаемоеЗначение" id="29">
+					<DataPath>Объект.Состав.ВозвращаемоеЗначение</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставВозвращаемоеЗначениеКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СоставВозвращаемоеЗначениеРасширеннаяПодсказка" id="31">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Введите то значение, которое будет отправлено обратно после выбора пользователем варианта ответа. Это значение потом будет выводиться в отчетах. </v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Введіть то значення, яке буде відправлено назад після вибору користувачем варіанти відповіді. Це значення потім буде виводитися в звітах.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="ЗаменитьПослеОтвета" id="32">
+			<DataPath>Объект.ЗаменитьПослеОтвета</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="ЗаменитьПослеОтветаКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ЗаменитьПослеОтветаРасширеннаяПодсказка" id="34">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Если вы хотите, чтобы после нажатия на кнопку, текущая клавиатура превратилась в одну кнопку с указанным текстом. Например, "Спасибо за отзыв!".</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Якщо ви хочете, щоб після натискання на кнопку, поточна клавіатура перетворилася в одну кнопку з зазначеним текстом. Наприклад, "Спасибі за відгук!".</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КлавиатурыTelegram</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

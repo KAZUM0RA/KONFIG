@@ -1,0 +1,1463 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="РабочиеСтолы" id="1">
+			<UserVisible>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
+				<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОбщейБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыАварийноДиспечерскаяСлужба">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыГолосование">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЗапасы">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЛицевыеСчета">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыНачисления">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПаспортныйСтол">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПриборыУчета">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеСтруктурыПодчиненности">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеЭЦП">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.РаботаСПапкамиФайлов">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+				<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ЧтениеФизическихЛиц">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеЗаметок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеНапоминаний">false</xr:Value>
+			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочие столы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Робочі столи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочие столы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Робочі столи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="РабочиеСтолыРасширеннаяПодсказка" id="243"/>
+			<ChildItems>
+				<Page name="Начальный" id="3">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.АдминистраторСистемы">false</xr:Value>
+						<xr:Value name="Role.Администрирование">false</xr:Value>
+						<xr:Value name="Role.БазовыеПрава">false</xr:Value>
+						<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВзаимодействий">false</xr:Value>
+						<xr:Value name="Role.ВыполнениеОбменовДанными">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеЗаданий">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеОбменовДанными">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеОбщейБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыАварийноДиспечерскаяСлужба">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыГолосование">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЗапасы">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЛицевыеСчета">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыНачисления">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПаспортныйСтол">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПриборыУчета">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеРолейИсполнителей">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеФизическихЛиц">false</xr:Value>
+						<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+						<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+						<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+						<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+						<xr:Value name="Role.ИзменениеВыполнениеЗадач">false</xr:Value>
+						<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+						<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+						<xr:Value name="Role.ИзменениеТекущегоВнешнегоПользователя">false</xr:Value>
+						<xr:Value name="Role.ИзменениеТекущегоПользователя">false</xr:Value>
+						<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+						<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеДополнительныхОтчетовИОбработок">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеСтруктурыПодчиненности">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеЭЦП">false</xr:Value>
+						<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+						<xr:Value name="Role.ПроверкаДоступныхОбновленийКонфигурации">false</xr:Value>
+						<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+						<xr:Value name="Role.РаботаСПапкамиФайлов">false</xr:Value>
+						<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+						<xr:Value name="Role.РежимВсеФункции">false</xr:Value>
+						<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+						<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+						<xr:Value name="Role.ЧтениеБазовойНСИ">false</xr:Value>
+						<xr:Value name="Role.ЧтениеВариантовОтчетов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеВерсийОбъектов">false</xr:Value>
+						<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+						<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЗаданий">false</xr:Value>
+						<xr:Value name="Role.ЧтениеЗадач">false</xr:Value>
+						<xr:Value name="Role.ЧтениеПерсональныхДанныхФизическихЛиц">false</xr:Value>
+						<xr:Value name="Role.ЧтениеФизическихЛиц">false</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеЗаметок">false</xr:Value>
+						<xr:Value name="Role.ИспользованиеНапоминаний">false</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Початковий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начальный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Початковий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НачальныйРасширеннаяПодсказка" id="244"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="13">
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="245"/>
+							<ChildItems>
+								<LabelDecoration name="ПриНачалеРаботыСПрограммой" id="8">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рабочий стол "При начале работы с Программой"</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Робочий стіл "При початку роботи з Програмою"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПриНачалеРаботыСПрограммойКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ПриНачалеРаботыСПрограммойРасширеннаяПодсказка" id="246"/>
+								</LabelDecoration>
+								<Button name="УстановитьНачальныйРабочийСтол" id="11">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьНачальныйРабочийСтол</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Втановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьНачальныйРабочийСтолРасширеннаяПодсказка" id="247"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="28">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="248"/>
+							<ChildItems>
+								<PictureField name="Картинка1" id="70">
+									<DataPath>Картинка1</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<Zoomable>true</Zoomable>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка1КонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="Картинка1РасширеннаяПодсказка" id="249"/>
+								</PictureField>
+								<UsualGroup name="Группа15" id="139">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="250"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация5" id="30">
+											<Width>25</Width>
+											<Height>17</Height>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Интерфейс "Перед началом работы с программой"  предназначен для заполнения параметров учета и данных, необходимых для ведения учета в системе. После заполнения всех необходимых данных интерфейс становится мало полезным, и рекомендуется сменить его на более удобный.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Інтерфейс "Перед початком роботи з пррограмою" призначений для заповнення параметрів обліку та даних, необхідних для ведення обліку в системі. Після заповнення всіх необхідних даних інтерфейс стає не дуже корисним, тому рекомендуєтся його змінити на біль зручний.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="251"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа16" id="140">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#FF0000</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Width>25</Width>
+											<Height>7</Height>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="252"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация11" id="141">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация11КонтекстноеМеню" id="142"/>
+													<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="253"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ИнтерфейсРасчетчика" id="15">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЛицевыеСчета">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыНачисления">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПриборыУчета">true</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчетчик</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтерфейс розраховувача</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчетчик</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтерфейс розраховувача</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИнтерфейсРасчетчикаРасширеннаяПодсказка" id="254"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="33">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="255"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация3" id="20">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рабочий стол рассчетчика</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Робочий стіл рассчетчика</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="256"/>
+								</LabelDecoration>
+								<Button name="УстановитьРабочийСтолРасчетчика" id="35">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьРабочийСтолРасчетчика</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьРабочийСтолРасчетчикаРасширеннаяПодсказка" id="257"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="23">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="258"/>
+							<ChildItems>
+								<PictureField name="Картинка2" id="72">
+									<DataPath>Картинка2</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка2КонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="Картинка2РасширеннаяПодсказка" id="259"/>
+								</PictureField>
+								<UsualGroup name="Группа17" id="143">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="260"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация4" id="25">
+											<Width>25</Width>
+											<Height>17</Height>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>  Данный рабочий стол предназначен для рассчетчиков.
+Он предоставляет быстрый дооступ ко всем элементам подсистем "Лицевые счета", "Прибыры учета" и "Начисления и взаиморасчеты". Быстрый доступ к журналам документов и возможность их создания повысит продуктивность работы в программе.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Даний робочий стіл призначений для розраховувачів.
+Він надає швидкий доступ до усіх єлементів підсистем "Особові рахунки", "Прилади обліку", "Нарахування та взаєморозрахунки". Швидкий доступ до журналів документів й можливість їх створення збільшить продуктивністьроботи в системі.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="261"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа18" id="144">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="262"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация12" id="145">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация12КонтекстноеМеню" id="146"/>
+													<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="263"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтолДиспетчера" id="51">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыАварийноДиспечерскаяСлужба">true</xr:Value>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыЗапасы">true</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Диспетчер</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інтерфейс диспетчера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стіл диспетчера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтолДиспетчераРасширеннаяПодсказка" id="264"/>
+					<ChildItems>
+						<UsualGroup name="Группа7" id="53">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="265"/>
+							<ChildItems>
+								<LabelDecoration name="РСдиспетчера" id="55">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рабочий стол диспетчера:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Робочий стіл диспетчера :</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РСдиспетчераКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="РСдиспетчераРасширеннаяПодсказка" id="266"/>
+								</LabelDecoration>
+								<Button name="УстановитьРабочийСтолДиспетчера" id="58">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьРабочийСтолДиспетчера</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<ExtendedTooltip name="УстановитьРабочийСтолДиспетчераРасширеннаяПодсказка" id="267"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="60">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="268"/>
+							<ChildItems>
+								<PictureField name="Картинка4" id="76">
+									<DataPath>Картинка4</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка4КонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="Картинка4РасширеннаяПодсказка" id="269"/>
+								</PictureField>
+								<UsualGroup name="Группа21" id="151">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="270"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация8" id="65">
+											<Width>25</Width>
+											<Height>17</Height>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рабочий стол диспетчера позволяет оперировать заяками на проведение ремонта, а так же управлять запасами предприятия </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Робочий стіл диспетчера дозволяє оперувати заявками на проведення ремонту, а також керувати запасами підприємства.</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="271"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа22" id="152">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="272"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация14" id="153">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация14КонтекстноеМеню" id="154"/>
+													<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="273"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="УправлениеВзаимодействиями" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Взаимодействия</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Управління взаємодіями</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление взаимодействиями</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Управління взаємодіями</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="УправлениеВзаимодействиямиРасширеннаяПодсказка" id="274"/>
+					<ChildItems>
+						<UsualGroup name="Группа9" id="109">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="275"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация1" id="113">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить интерфейс управления взаимодействиями:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити інтерфейс управління взаємодіями:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="276"/>
+								</LabelDecoration>
+								<Button name="УстановитьУправлениеВзаимодействиями" id="118">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьУправлениеВзаимодействиями</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьУправлениеВзаимодействиямиРасширеннаяПодсказка" id="277"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа10" id="111">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="278"/>
+							<ChildItems>
+								<PictureField name="Картинка5" id="120">
+									<DataPath>Картинка5</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка5КонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="Картинка5РасширеннаяПодсказка" id="279"/>
+								</PictureField>
+								<UsualGroup name="Группа23" id="155">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа23РасширеннаяПодсказка" id="280"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация2" id="123">
+											<Width>25</Width>
+											<Height>17</Height>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рабочий столь "Управление взаимодействиями" позволяет Отправлять\принимать электронную почту, фиксировать\назначать телефонные звонки, встречи и прочие взаимодействия. Также дает возможность упралять заметками пользователя</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Робітник так "Управління взаємодіями" дозволяє Відправляти\приймати електронну пошту, фіксувати\призначати телефонні дзвінки, зустрічі і інші взаємодії. Також дає можливість упралять замітками користувача</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="281"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа24" id="156">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="282"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация15" id="157">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация15КонтекстноеМеню" id="158"/>
+													<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="283"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="РабочийСтолПаспортиста" id="125">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ДобавлениеИзменениеПодсистемыПаспортныйСтол">true</xr:Value>
+						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Паспортист</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Робочий стіл паспортиста</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочий стол паспортиста</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Робочий стіл паспортиста</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РабочийСтолПаспортистаРасширеннаяПодсказка" id="284"/>
+					<ChildItems>
+						<UsualGroup name="Группа11" id="128">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="285"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация6" id="129">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить рабочий стол паспортиста:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити робочий стіл паспортиста:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="286"/>
+								</LabelDecoration>
+								<Button name="УстановитьРабочийСтолПаспортиста" id="131">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьРабочийСтолПаспортиста</CommandName>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьРабочийСтолПаспортистаРасширеннаяПодсказка" id="287"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="132">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="288"/>
+							<ChildItems>
+								<PictureField name="Картинка6" id="126">
+									<DataPath>Картинка6</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка6КонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="Картинка6РасширеннаяПодсказка" id="289"/>
+								</PictureField>
+								<UsualGroup name="Группа13" id="135">
+									<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="290"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация7" id="133">
+											<Width>25</Width>
+											<Height>10</Height>
+											<VerticalStretch>true</VerticalStretch>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Рабочий стол паспортиста предоставояет быстрый доступ ко всем элементам управления паспортного стола</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Робочий стіл паспортиста предоставояет швидкий доступ до усіх елементів управління паспортного столу</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="291"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа14" id="138">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>#F1310A</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="292"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация10" id="136">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Font ref="sys:DefaultGUIFont" height="9" kind="WindowsFont"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="Декорация10КонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="293"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтарыйНачальныйИнтерфейс" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Старый начальный интерфейс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Старий початковий інтерфейс</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Старый начальный интерфейс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Старий початковий інтерфейс</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтарыйНачальныйИнтерфейсРасширеннаяПодсказка" id="294"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="39">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="295"/>
+							<ChildItems>
+								<LabelDecoration name="СтарыйВариант" id="43">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Устаревший рабочий стол:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Застарілий робочий стіл:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтарыйВариантКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="СтарыйВариантРасширеннаяПодсказка" id="296"/>
+								</LabelDecoration>
+								<Button name="УстановитьСтарыйРабочийСтол" id="46">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьСтарыйРабочийСтол</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьСтарыйРабочийСтолРасширеннаяПодсказка" id="297"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="41">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="298"/>
+							<ChildItems>
+								<PictureField name="Картинка3" id="74">
+									<DataPath>Картинка3</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<PictureSize>AutoSize</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка3КонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="Картинка3РасширеннаяПодсказка" id="299"/>
+								</PictureField>
+								<UsualGroup name="Группа19" id="147">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="300"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация9" id="68">
+											<Width>25</Width>
+											<Height>17</Height>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Устаревший вариант формы "Перед началом работы с программой". Предназначен для пошагового заполнения начальных данных.</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Застарілий варіант форми "Перед початком роботи з програмою". Призначений для поступового заповнення початкових даних. </v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация9КонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="301"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа20" id="148">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="302"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация13" id="149">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация13КонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="303"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтолСправок" id="159">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стол справок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стіл довідок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стол справок</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стіл довідок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтолСправокРасширеннаяПодсказка" id="304"/>
+					<ChildItems>
+						<UsualGroup name="Группа25" id="162">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа25РасширеннаяПодсказка" id="305"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация16" id="163">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить интефейс справочного стола:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Встановити інтефейс довідкового столу:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="306"/>
+								</LabelDecoration>
+								<Button name="УстановитьСтолСправок" id="165">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьСтолСправок</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Втановити</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УстановитьСтолСправокРасширеннаяПодсказка" id="307"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа26" id="232">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа26РасширеннаяПодсказка" id="308"/>
+							<ChildItems>
+								<PictureField name="Картинка7" id="160">
+									<DataPath>Картинка7</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Картинка7КонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="Картинка7РасширеннаяПодсказка" id="309"/>
+								</PictureField>
+								<UsualGroup name="Группа27" id="234">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа27РасширеннаяПодсказка" id="310"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация17" id="236">
+											<Width>25</Width>
+											<Height>7</Height>
+											<VerticalStretch>true</VerticalStretch>
+											<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>"Стол справок" предоставлаяет достоуп ко всем печатным формам в одном окне</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>"Стіл довідок" надає достоуп до усіх друкарських форм в одному вікні</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>"Стол справок" предоставлаяет достоуп ко всем печатным формам в одном окне</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>"Стіл довідок" надає достоуп до усіх друкарських форм в одному вікні</v8:content>
+												</v8:item>
+											</ToolTip>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="Декорация17КонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="311"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа28" id="239">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Обратите внимание!</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Зверніть увагу!</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:SpecialTextColor</TitleTextColor>
+											<TitleFont ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="312"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация18" id="241">
+													<Width>25</Width>
+													<Height>7</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Так же Вы можете дополнить рабочий стол дополнительными формами. Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид"- "Настройки рабочего стола".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Так само Ви можете доповнити робочий стіл додатковими формами. Це можна зробити з контекстного меню, що викликається натисненням правої кнопки миші по панелі розділів.
+Чи скористатися відповідним пунктом в меню "Головне меню" - "Вид" - "Налаштування робочого столу".</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация18КонтекстноеМеню" id="242"/>
+													<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="313"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УправлениеРабочимСтолом</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Картинка1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка2</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка3" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка3</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка3</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка4" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка4</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка4</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка5" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка5</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка5</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка6" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка6</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картинка6</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Картинка7" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка7</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Картінка7</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьНачальныйРабочийСтол" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить начальный рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити початковий робочий стіл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить начальный рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити початковий робочий стіл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьНачальныйРабочийСтол</Action>
+		</Command>
+		<Command name="УстановитьРабочийСтолРасчетчика" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить рабочий стол расчетчика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити робочий стіл розраховувача</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить рабочий стол расчетчика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити робочий стіл розраховувача</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьРабочийСтолРасчетчика</Action>
+		</Command>
+		<Command name="УстановитьСтарыйРабочийСтол" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить старый рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити старий робочий стіл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить старый рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити старий робочий стіл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтарыйРабочийСтол</Action>
+		</Command>
+		<Command name="УстановитьРабочийСтолДиспетчера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить рабочий стол диспетчера</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити робочий стіл диспетчера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьРабочийСтолДиспетчера</Action>
+		</Command>
+		<Command name="УстановитьУправлениеВзаимодействиями" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить управление взаимодействиями</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити управління взаємодіями</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить управление взаимодействиями</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити управління взаємодіями</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьУправлениеВзаимодействиями</Action>
+		</Command>
+		<Command name="УстановитьРабочийСтолПаспортиста" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить рабочий стол паспортиста</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити робочий стіл паспортиста</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить рабочий стол паспортиста</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити робочий стіл паспортиста</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьРабочийСтолПаспортиста</Action>
+		</Command>
+		<Command name="УстановитьСтолСправок" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить стол справок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити стіл довідок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить стол справок</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити стіл довідок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьСтолСправок</Action>
+		</Command>
+	</Commands>
+</Form>

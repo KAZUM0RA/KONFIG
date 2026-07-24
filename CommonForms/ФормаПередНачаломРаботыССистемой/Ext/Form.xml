@@ -1,0 +1,1166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Width>70</Width>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСменитьРабочийСтол" id="293">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СменитьРабочийСтол</CommandName>
+				<Picture>
+					<xr:Abs>Picture.png</xr:Abs>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаСменитьРабочийСтолРасширеннаяПодсказка" id="294"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="82">
+			<TextColor>#B38000</TextColor>
+			<Font ref="sys:DefaultGUIFont" height="18" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перед началом работы с программой</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перед початком роботи із програмою</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="83"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="295"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="4">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="296"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="62">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="297"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация3" id="58">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1. Параметры учета (константы)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>1. Параметри обліку (константи)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="298"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация4" id="60">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите значения констант: общих параметров учета.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вкажіть значення констант: загальних параметрів обліку.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="299"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация12" id="67">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация12КонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="300"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа7" id="63">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="301"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация8" id="113">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация8КонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="302"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации" id="64">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоПараметрамУчета</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизацииРасширеннаяПодсказка" id="303"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="115">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="304"/>
+			<ChildItems>
+				<UsualGroup name="Группа5" id="116">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="305"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация9" id="117">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>2. Заполните информацию об организации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>2. Заповніть інформацію про організацію</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация9КонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="306"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация10" id="119">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите тип вашей организации, название, адрес, чтобы эти данные автоматически подставлялись при создании документов.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вкажіть тип вашої організації, назва, адреса, щоб ці дані автоматично надавалися під час створення документів.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация10КонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="307"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация13" id="121">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация13КонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="308"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа8" id="123">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="309"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация11" id="124">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация11КонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="310"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации1" id="126">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоОрганизации</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации1РасширеннаяПодсказка" id="311"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа6" id="127">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="312"/>
+			<ChildItems>
+				<UsualGroup name="Группа9" id="128">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="313"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация14" id="129">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>3. Заполните услуги</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>3. Заповніть послуги</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация14КонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="314"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация15" id="131">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите перечень жилищно-коммунальных услуг, предоставляемых  организациями. </v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Укажіть перелік житлово-комунальних послуг, надаваних  організаціями. </v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация15КонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="315"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация16" id="133">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация16КонтекстноеМеню" id="134"/>
+					<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="316"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа10" id="135">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="317"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация18" id="136">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация18КонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="318"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации2" id="138">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоУслугам</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации2РасширеннаяПодсказка" id="319"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа11" id="139">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="320"/>
+			<ChildItems>
+				<UsualGroup name="Группа12" id="140">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="321"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация19" id="141">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>4. Заполните здания </v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>4. Заповніть будинки </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация19КонтекстноеМеню" id="142"/>
+							<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="322"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация20" id="143">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполните список зданий, обслуживаемых организациями.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Заповните список будинків, що обслуговуються організаціями.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация20КонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="323"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация21" id="145">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация21КонтекстноеМеню" id="146"/>
+					<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="324"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа13" id="147">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="325"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация22" id="148">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация22КонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="326"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации3" id="150">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоЗданиям</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации3РасширеннаяПодсказка" id="327"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа23" id="187">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа23РасширеннаяПодсказка" id="328"/>
+			<ChildItems>
+				<UsualGroup name="Группа24" id="188">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="329"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация35" id="189">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>5. Заполните объекты учета лицевых счетов</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>5. Заповніть об'єкти обліку особових рахунків</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация35КонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="Декорация35РасширеннаяПодсказка" id="330"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация36" id="191">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите  объекты учета, на которые заводятся лицевые счета: квартиры, офисы, парковочные места  и пр. </v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Укажіть  об'єкти обліку, на які заводяться особові рахунки: квартири, офіси, парковочные місця  та ін. </v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация36КонтекстноеМеню" id="192"/>
+							<ExtendedTooltip name="Декорация36РасширеннаяПодсказка" id="331"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация37" id="193">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация37КонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="Декорация37РасширеннаяПодсказка" id="332"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа25" id="195">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа25РасширеннаяПодсказка" id="333"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация38" id="196">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация38КонтекстноеМеню" id="197"/>
+							<ExtendedTooltip name="Декорация38РасширеннаяПодсказка" id="334"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации7" id="198">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоОбъектамУчета</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации7РасширеннаяПодсказка" id="335"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа14" id="151">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="336"/>
+			<ChildItems>
+				<UsualGroup name="Группа15" id="152">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="337"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация23" id="153">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>6. Заполните тарифы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>6. Заповніть тарифи</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация23КонтекстноеМеню" id="154"/>
+							<ExtendedTooltip name="Декорация23РасширеннаяПодсказка" id="338"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация24" id="155">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внесите утвержденные тарифы на жилищно-коммунальные услуги по каждому зданию.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Внесіть затверджені тарифи на житлово-комунальні послуги по кожному будинку.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация24КонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="Декорация24РасширеннаяПодсказка" id="339"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация25" id="157">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация25КонтекстноеМеню" id="158"/>
+					<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="340"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа16" id="159">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="341"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация26" id="160">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация26КонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="Декорация26РасширеннаяПодсказка" id="342"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации4" id="162">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоТарифам</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации4РасширеннаяПодсказка" id="343"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа26" id="199">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа26РасширеннаяПодсказка" id="344"/>
+			<ChildItems>
+				<UsualGroup name="Группа27" id="200">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа27РасширеннаяПодсказка" id="345"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация39" id="201">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>7. Заполните список физических лиц</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>7. Заповніть перелік фізичних осіб</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация39КонтекстноеМеню" id="202"/>
+							<ExtendedTooltip name="Декорация39РасширеннаяПодсказка" id="346"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация40" id="203">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Укажите список физлиц, с которыми работет организация: персонал, жильцы, владельцы офисов, арендаторы и пр.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Укажіть список физлиц, з якими работет організація: персонал, мешканці, власники офісів, орендарі та ін.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация40КонтекстноеМеню" id="204"/>
+							<ExtendedTooltip name="Декорация40РасширеннаяПодсказка" id="347"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация41" id="205">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация41КонтекстноеМеню" id="206"/>
+					<ExtendedTooltip name="Декорация41РасширеннаяПодсказка" id="348"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа28" id="207">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="349"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация42" id="208">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация42КонтекстноеМеню" id="209"/>
+							<ExtendedTooltip name="Декорация42РасширеннаяПодсказка" id="350"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации8" id="210">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоФизицескимЛицам</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации8РасширеннаяПодсказка" id="351"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа17" id="163">
+			<Height>4</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="352"/>
+			<ChildItems>
+				<UsualGroup name="Группа18" id="164">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="353"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация27" id="165">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>8. Заполните лицевые счета</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>8. Заповніть особові рахунки</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация27КонтекстноеМеню" id="166"/>
+							<ExtendedTooltip name="Декорация27РасширеннаяПодсказка" id="354"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация28" id="167">
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создайте и внесите данные по всем лицевым счетам в разрезе каждого здания.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Створіть і внесіть дані по усіх особових рахунках у розрізі кожного будинку.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация28КонтекстноеМеню" id="168"/>
+							<ExtendedTooltip name="Декорация28РасширеннаяПодсказка" id="355"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация29" id="169">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация29КонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="Декорация29РасширеннаяПодсказка" id="356"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа19" id="171">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="357"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация30" id="172">
+							<Width>7</Width>
+							<Height>2</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация30КонтекстноеМеню" id="173"/>
+							<ExtendedTooltip name="Декорация30РасширеннаяПодсказка" id="358"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации5" id="174">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ЗаполнитьИнформациюПоЛицевымСчетам</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации5РасширеннаяПодсказка" id="359"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа20" id="175">
+			<Height>5</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="360"/>
+			<ChildItems>
+				<UsualGroup name="Группа21" id="176">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="361"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация31" id="177">
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>9. Ввод начальных остатков</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>9. Введення початкових залишків</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация31КонтекстноеМеню" id="178"/>
+							<ExtendedTooltip name="Декорация31РасширеннаяПодсказка" id="362"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация32" id="179">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внесите значение входящих остатков по разделам учета, если ранее учет велся в другой учетной системе.</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Внесіть значення вхідних залишків по розділах обліку, якщо раніше облік вівся в іншій обліковій системі.</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalAlign>Top</VerticalAlign>
+							<ContextMenu name="Декорация32КонтекстноеМеню" id="180"/>
+							<ExtendedTooltip name="Декорация32РасширеннаяПодсказка" id="363"/>
+						</LabelDecoration>
+						<Button name="ЗагрузкаНачальныхОстатковИзExcel" id="211">
+							<Type>Hyperlink</Type>
+							<Width>50</Width>
+							<CommandName>Form.Command.ЗагрузкаНачальныхОстатковИзExcel</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Также можете загрузить начальные остатки из Excel</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Також можете завантажити початкові залишки з Excel</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗагрузкаНачальныхОстатковИзExcelРасширеннаяПодсказка" id="364"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="Декорация33" id="181">
+					<Width>1</Width>
+					<Height>2</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация33КонтекстноеМеню" id="182"/>
+					<ExtendedTooltip name="Декорация33РасширеннаяПодсказка" id="365"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа22" id="183">
+					<Width>9</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="366"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация34" id="184">
+							<Width>7</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<ContextMenu name="Декорация34КонтекстноеМеню" id="185"/>
+							<ExtendedTooltip name="Декорация34РасширеннаяПодсказка" id="367"/>
+						</LabelDecoration>
+						<Button name="ЗаполнитьИнформациюОбОрганизации6" id="186">
+							<Type>UsualButton</Type>
+							<Width>9</Width>
+							<CommandName>Form.Command.ВводОстатков</CommandName>
+							<ExtendedTooltip name="ЗаполнитьИнформациюОбОрганизации6РасширеннаяПодсказка" id="368"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация6" id="109">
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="110"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="369"/>
+		</LabelDecoration>
+		<UsualGroup name="Подсказка" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підказка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсказка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підказка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПодсказкаРасширеннаяПодсказка" id="370"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация7" id="111">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация7КонтекстноеМеню" id="112"/>
+					<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="371"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа4" id="104">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="372"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация5" id="107">
+							<TextColor>#B38000</TextColor>
+							<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Попробуйте другой рабочий стол!</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Спробуйте інший робочий стіл!</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация5КонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="373"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация17" id="105">
+							<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Это можно сделать из контекстного меню, вызываемого нажатием правой кнопки мыши по панели разделов.
+Или воспользоваться соответствующим пунктом в меню "Главное меню" - "Вид".</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Це можливо зробити з контекстного меню, що викликається натисканням правої кнопки миші на панелі розділів. Або скористатися відповідним пунктом у меню "Головне меню" - "Вид".</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация17КонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="374"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="80">
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="375"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ЗаполнитьИнформациюПоОрганизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію по організаціях</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоОрганизации</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоУслугам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по услугам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію з послуг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоУслугам</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоЗданиям" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по зданиям</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію по будинках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоЗданиям</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоТарифам" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по тарифам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію з тарифів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоТарифам</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоПараметрамУчета" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по параметрам учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію з параметрів обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоПараметрамУчета</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоЛицевымСчетам" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по лицевым счетам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію по особових рахунках</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоЛицевымСчетам</Action>
+		</Command>
+		<Command name="ВводОстатков" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввод остатков</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Введення залишків</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВводОстатков</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоОбъектамУчета" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по объектам учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію по об'єктах обліку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоОбъектамУчета</Action>
+		</Command>
+		<Command name="ЗаполнитьИнформациюПоФизицескимЛицам" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать &gt;</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Почати &gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить информацию по физицеским лицам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити інформацію з фiзичним особам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИнформациюПоФизицескимЛицам</Action>
+		</Command>
+		<Command name="ЗагрузкаНачальныхОстатковИзExcel" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка начальных остатков из excel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження початкових залишків з excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка начальных остатков из файла Excel</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження початкових залишків з файлу Excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузкаНачальныхОстатковИзExcel</Action>
+		</Command>
+		<Command name="СменитьРабочийСтол" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Змінити робочий стіл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Змінити робочий стіл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СменитьРабочийСтол</Action>
+		</Command>
+	</Commands>
+</Form>

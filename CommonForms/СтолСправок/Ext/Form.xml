@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСменитьРабочийСтол" id="35">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СменитьРабочийСтол</CommandName>
+				<Picture>
+					<xr:Abs>Picture.png</xr:Abs>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаСменитьРабочийСтолРасширеннаяПодсказка" id="62"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="1">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<InputField name="Организация" id="7">
+					<DataPath>Организация</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<UsualGroup name="Группа2" id="2">
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<InputField name="Здание" id="3">
+							<DataPath>Здание</DataPath>
+							<ClearButton>true</ClearButton>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Организация</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Организация</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="ЗданиеКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="ЛицевойСчет" id="5">
+							<DataPath>ЛицевойСчет</DataPath>
+							<ClearButton>true</ClearButton>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Здание</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="ЛицевойСчетКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="67"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="11">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Довідки</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<InputField name="Жилец" id="59">
+							<DataPath>Жилец</DataPath>
+							<ContextMenu name="ЖилецКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ЖилецРасширеннаяПодсказка" id="70"/>
+							<Events>
+								<Event name="StartChoice">ЖилецНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа10" id="38">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<Button name="ПечатьСправкаОПроживающих" id="13">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>25</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.ПечатьСправкаОПрописке</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Picture>
+										<xr:Ref>StdPicture.Print</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Справка о прописке</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Довідка про прописку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПечатьСправкаОПроживающихРасширеннаяПодсказка" id="72"/>
+								</Button>
+								<Button name="ПечатьСправкаОПроживающихБланк" id="41">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>6</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.БланкСправкаОПрописке</CommandName>
+									<BackColor>#FCFAEB</BackColor>
+									<BorderColor>#FCFAEB</BorderColor>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПечатьСправкаОПроживающихБланкРасширеннаяПодсказка" id="73"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа11" id="39">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<Button name="ПечатьСправкиОСостоянииСемьи" id="14">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>25</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.ПечатьСправкиОСостоянииСемьи</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Picture>
+										<xr:Ref>StdPicture.Print</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Справка о состоянии семьи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Довідка про стан сім'ї</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПечатьСправкиОСостоянииСемьиРасширеннаяПодсказка" id="75"/>
+								</Button>
+								<Button name="БланкСправкиОСоставеСемьи" id="42">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>6</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.БланкСправкиОСоставеСемьи</CommandName>
+									<BackColor>#FCFAEB</BackColor>
+									<BorderColor>#FCFAEB</BorderColor>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="БланкСправкиОСоставеСемьиРасширеннаяПодсказка" id="76"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="40">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="77"/>
+							<ChildItems>
+								<Button name="ПечатьФормаА1" id="15">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Width>25</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.ПечатьФормаА1</CommandName>
+									<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Picture>
+										<xr:Ref>StdPicture.Print</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Форма А1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Форма А1</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПечатьФормаА1РасширеннаяПодсказка" id="78"/>
+								</Button>
+								<Button name="БланкФормаА1" id="43">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>6</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.БланкФормаА1</CommandName>
+									<BackColor>#FCFAEB</BackColor>
+									<BorderColor>#FCFAEB</BorderColor>
+									<Picture>
+										<xr:Abs>Picture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="БланкФормаА1РасширеннаяПодсказка" id="79"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа17" id="52">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<UsualGroup name="Группа18" id="53">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<UsualGroup name="Группа5Регистрация" id="16">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Бланки регистрации нового жильца</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Бланки реєстрації нового мешканця</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа5 регистрация</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа5 реєстрація</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа5РегистрацияРасширеннаяПодсказка" id="82"/>
+									<ChildItems>
+										<UsualGroup name="Группа13" id="44">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="83"/>
+											<ChildItems>
+												<Button name="ПечатьТалонаОПрибыти" id="17">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Width>25</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.ПечатьТалонаОПрибыти</CommandName>
+													<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>StdPicture.Print</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Талон о прибытии</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Талон про прибуття</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПечатьТалонаОПрибытиРасширеннаяПодсказка" id="84"/>
+												</Button>
+												<Button name="БланкТалонПрибытия" id="46">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<Width>6</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.БланкТалонПрибытия</CommandName>
+													<BackColor>#FCFAEB</BackColor>
+													<BorderColor>#FCFAEB</BorderColor>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="БланкТалонПрибытияРасширеннаяПодсказка" id="85"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа14" id="45">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="86"/>
+											<ChildItems>
+												<Button name="ПечатьЗаявленияОРегистрации" id="18">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Width>25</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.ПечатьЗаявленияОРегистрации</CommandName>
+													<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>StdPicture.Print</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заявление о регистрации</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Заява про реєстрацію</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПечатьЗаявленияОРегистрацииРасширеннаяПодсказка" id="87"/>
+												</Button>
+												<Button name="БланкЗаявлениеОРегистрации" id="47">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<Width>6</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.БланкЗаявлениеОРегистрации</CommandName>
+													<BackColor>#FCFAEB</BackColor>
+													<BorderColor>#FCFAEB</BorderColor>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="БланкЗаявлениеОРегистрацииРасширеннаяПодсказка" id="88"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5СнятиеСРегистрации" id="19">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Бланки на снятие с регистрации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Бланки на зняття з реєстрації</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа5 снятие с регистрации</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Группа5 зняття з реєстрації</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="Группа5СнятиеСРегистрацииРасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<UsualGroup name="Группа15" id="48">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="90"/>
+											<ChildItems>
+												<Button name="ПечатьТалонаУбытия" id="21">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Width>35</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.ПечатьТалонаУбытия</CommandName>
+													<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>StdPicture.Print</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Талон убытия</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Талон вибуття</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПечатьТалонаУбытияРасширеннаяПодсказка" id="91"/>
+												</Button>
+												<Button name="БланкТалонаУбытия" id="50">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<Width>6</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.БланкТалонаУбытия</CommandName>
+													<BackColor>#FCFAEB</BackColor>
+													<BorderColor>#FCFAEB</BorderColor>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="БланкТалонаУбытияРасширеннаяПодсказка" id="92"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа16" id="49">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="93"/>
+											<ChildItems>
+												<Button name="ПечатьЗаявленияСнятияСРегистрации" id="20">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<Width>35</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.ПечатьЗаявленияСнятияСРегистрации</CommandName>
+													<Font ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+													<Picture>
+														<xr:Ref>StdPicture.Print</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заявление на снятие с регистрации</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Заява на зняття з реєстрації</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ПечатьЗаявленияСнятияСРегистрацииРасширеннаяПодсказка" id="94"/>
+												</Button>
+												<Button name="БланкЗаявленияНаСнятиеСРегистрации" id="51">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<Width>6</Width>
+													<Height>2</Height>
+													<CommandName>Form.Command.БланкЗаявленияНаСнятиеСРегистрации</CommandName>
+													<BackColor>#FCFAEB</BackColor>
+													<BorderColor>#FCFAEB</BorderColor>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="БланкЗаявленияНаСнятиеСРегистрацииРасширеннаяПодсказка" id="95"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа19" id="56">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация1" id="54">
+									<Width>5</Width>
+									<Height>4</Height>
+									<Picture>
+										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="97"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация2" id="57">
+									<Width>57</Width>
+									<Height>4</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для автозаполнения печатных форм необходимо заполнить все реквизиты шапки. Если необходимо распечатать незаполненный бланк - нажмите на иконку принтера с кнопкой печать необходимого бланка.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Для автозаповнення друкованих форм необхідно заповнити всі реквізити шапки. Якщо необхідно роздрукувати незаповнений бланк - натисніть на іконку принтера з кнопкою друк необхідного бланка.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="98"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="22">
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<UsualGroup name="Группа9" id="34">
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<InputField name="Период" id="9">
+							<DataPath>Период</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="101"/>
+						</InputField>
+						<UsualGroup name="Группа20" id="61">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="102"/>
+							<ChildItems>
+								<Button name="СправочникЛицевыеСчетаПечатьОтчетаПоЛицевомуСчету" id="24">
+									<Type>UsualButton</Type>
+									<Width>31</Width>
+									<Height>2</Height>
+									<CommandName>Catalog.ЛицевыеСчета.Command.ПечатьОтчетаПоЛицевомуСчету</CommandName>
+									<DataPath>ЛицевойСчет</DataPath>
+									<ExtendedTooltip name="СправочникЛицевыеСчетаПечатьОтчетаПоЛицевомуСчетуРасширеннаяПодсказка" id="103"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Квитанции" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квитанции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Квитанції</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квитанции</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Квитанції</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КвитанцииРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<UsualGroup name="Группа8" id="31">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="105"/>
+							<ChildItems>
+								<UsualGroup name="Группа7" id="30">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="106"/>
+									<ChildItems>
+										<Button name="СправочникЛицевыеСчетаПечатьСчетаНаОплату" id="27">
+											<Type>UsualButton</Type>
+											<Width>28</Width>
+											<Height>2</Height>
+											<CommandName>Catalog.ЛицевыеСчета.Command.ПечатьСчетаНаОплату</CommandName>
+											<DataPath>ЛицевойСчет</DataPath>
+											<ExtendedTooltip name="СправочникЛицевыеСчетаПечатьСчетаНаОплатуРасширеннаяПодсказка" id="107"/>
+										</Button>
+										<Button name="СправочникЛицевыеСчетаПечатьАктаОбОказанииУслуг" id="23">
+											<Type>UsualButton</Type>
+											<Width>28</Width>
+											<Height>2</Height>
+											<CommandName>Catalog.ЛицевыеСчета.Command.ПечатьАктаОбОказанииУслуг</CommandName>
+											<DataPath>ЛицевойСчет</DataPath>
+											<ExtendedTooltip name="СправочникЛицевыеСчетаПечатьАктаОбОказанииУслугРасширеннаяПодсказка" id="108"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа6" id="29">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<Button name="СправочникЛицевыеСчетаПечатьУпрощеннойКвитанцииНаОплату" id="26">
+											<Type>UsualButton</Type>
+											<Width>30</Width>
+											<Height>2</Height>
+											<CommandName>Catalog.ЛицевыеСчета.Command.ПечатьУпрощеннойКвитанцииНаОплату</CommandName>
+											<DataPath>ЛицевойСчет</DataPath>
+											<ExtendedTooltip name="СправочникЛицевыеСчетаПечатьУпрощеннойКвитанцииНаОплатуРасширеннаяПодсказка" id="110"/>
+										</Button>
+										<Button name="СправочникЛицевыеСчетаПечатьКвитанцииНаОплату" id="25">
+											<Type>UsualButton</Type>
+											<Width>30</Width>
+											<Height>2</Height>
+											<CommandName>Catalog.ЛицевыеСчета.Command.ПечатьКвитанцииНаОплату</CommandName>
+											<DataPath>ЛицевойСчет</DataPath>
+											<ExtendedTooltip name="СправочникЛицевыеСчетаПечатьКвитанцииНаОплатуРасширеннаяПодсказка" id="111"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Организация" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Здание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Здание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Будівля</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЗданияИСооружения</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЛицевойСчет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лицевой счет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Особовий рохунок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Період</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Жилец" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Жилец</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Мешканець</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьСправкиОСостоянииСемьи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать справки о состоянии семьи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк довідки про стан сім'ї</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать справки о состоянии семьи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк довідки про стан сім'ї</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьСправкиОСостоянииСемьи</Action>
+		</Command>
+		<Command name="ПечатьСправкаОПрописке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать справка о прописке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк довідка про прописку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать справка о прописке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк довідка про прописку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьСправкаОПрописке</Action>
+		</Command>
+		<Command name="ПечатьФормаА1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать форма а1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк форма а1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать форма а1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк форма а1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьФормаА1</Action>
+		</Command>
+		<Command name="ОтчетПоЛС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по ЛС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіт по ЛС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по ЛС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіт по ЛС</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПечатьТалонаОПрибыти" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать талона о прибыти</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк талона про прибуття</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать талона о прибыти</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк талона про прибуття</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПечатьЗаявленияОРегистрации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявления о регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заяви про реєстрацію</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявления о регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заяви про реєстрацію</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПечатьЗаявленияСнятияСРегистрации" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявления снятия с регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заяви зняття з реєстрації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявления снятия с регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заяви зняття з реєстрації</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПечатьТалонаУбытия" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать талона убытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк талона убування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать талона убытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк талона убування</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="СменитьРабочийСтол" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Змінити робочий стіл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сменить рабочий стол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Змінити робочий стіл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СменитьРабочийСтол</Action>
+		</Command>
+		<Command name="БланкСправкаОПрописке" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк справка о прописке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк довідка про прописку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк справка о прописке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк довідка про прописку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкСправкаОПрописке</Action>
+		</Command>
+		<Command name="БланкСправкиОСоставеСемьи" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк справки о составе семьи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк довідки про склад сім'ї</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк справки о составе семьи</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк довідки про склад сім'ї</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкСправкиОСоставеСемьи</Action>
+		</Command>
+		<Command name="БланкФормаА1" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк форма а1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк форма а1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк форма а1</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк форма а1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкФормаА1</Action>
+		</Command>
+		<Command name="БланкТалонПрибытия" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк талон прибытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк талон прибуття</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк талон прибытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк талон прибуття</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкТалонПрибытия</Action>
+		</Command>
+		<Command name="БланкЗаявлениеОРегистрации" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк заявление о регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк заяву про реєстрацію</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк заявление о регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк заяву про реєстрацію</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкЗаявлениеОРегистрации</Action>
+		</Command>
+		<Command name="БланкТалонаУбытия" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк талона убытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк талона вибуття</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк талона убытия</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк талона вибуття</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкТалонаУбытия</Action>
+		</Command>
+		<Command name="БланкЗаявленияНаСнятиеСРегистрации" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк заявления на снятие с регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк заяви на зняття з реєстрації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бланк заявления на снятие с регистрации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Бланк заяви на зняття з реєстрації</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>БланкЗаявленияНаСнятиеСРегистрации</Action>
+		</Command>
+	</Commands>
+</Form>

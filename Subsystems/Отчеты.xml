@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="8829f36e-ef5e-4f8e-b39d-cc50b6466418">
+		<Properties>
+			<Name>Отчеты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіти</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіти</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодсистемаСправочникиЧБ</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьДляКонтролеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоказателиПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоРайонах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоТелефонамАбонентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбработкаФайлаПоЛьготамИСубсидии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОплатыМВК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьОПрописанныхИПроживающих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетСписокАбонентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВзаиморасчетыСПотребителямиУслуг1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоАктамСверок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АктСверки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ФайлОтветПоСубсидии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НачисленияПоСреднему</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗадолженостьУправлениеТруда</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоУслугам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаДанныхДляКонтролеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОтветственныхВладельцах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОбщедомовымПриборамУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетРеализацияТЕ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗадолженностиНасиленияФорма_15</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗадолженностиНасиленияФорма_18</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВетринаПФУ</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>ФинансовыеОтчеты</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

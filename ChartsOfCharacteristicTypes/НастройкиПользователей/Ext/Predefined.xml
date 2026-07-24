@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.12">
+	<Item id="776a93c4-14c9-4c3f-a659-cd5b85238436">
+		<Name>НастройкиЦентраОповещенийИПечати</Name>
+		<Code>00006</Code>
+		<Description>Настройки центра оповещений и печати</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="1d3eeb24-0e81-4760-bade-52a232b289f9">
+				<Name>НастройкиРассылкиПоЭлектроннойПочте</Name>
+				<Code>00018</Code>
+				<Description>Настройки рассылки по электронной почте</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="cf0915e0-a86d-400a-900e-4b24edf0c4b8">
+						<Name>ЗапаковатьВZIP</Name>
+						<Code>00008</Code>
+						<Description>Запаковать вложения в ZIP</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="fa6c6f56-bcca-433e-b908-d349d16d0a52">
+						<Name>ФорматHTML</Name>
+						<Code>00013</Code>
+						<Description>Формат квитанции HTML</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="54cdba9a-12a6-4c97-bc5a-a0a4d719c05f">
+						<Name>ФорматMXL</Name>
+						<Code>00014</Code>
+						<Description>Формат квитанции MXL</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="015adb22-e59d-46f6-9b4b-2b1403baa580">
+						<Name>ФорматODS</Name>
+						<Code>00015</Code>
+						<Description>Формат квитанции ODS</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8aa82a8d-e42a-41c6-8de5-f1d907ef73f5">
+						<Name>ФорматPDF</Name>
+						<Code>00009</Code>
+						<Description>Формат квитанции PDF</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="dbaa3391-54d4-472f-aae4-f7bfe94e510c">
+						<Name>ФорматXLS</Name>
+						<Code>00010</Code>
+						<Description>Формат квитанции XLS</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="918be937-0ec0-4d4a-8206-b3f329efec4a">
+						<Name>ШаблонТекстаПисьма</Name>
+						<Code>00005</Code>
+						<Description>Шаблон текста письма</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.ШаблоныТекстовПисем</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="58050ea0-4dd6-4231-a9b7-bfa460c88aec">
+				<Name>НастройкиСМСРассылки</Name>
+				<Code>00012</Code>
+				<Description>Настройки СМС Рассылки</Description>
+				<Type/>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="0bfbdbae-a4b7-4505-8b78-24fe1db1c26d">
+						<Name>ПеревестиВЛатиницу</Name>
+						<Code>00016</Code>
+						<Description>Переводить кирилицу в латиницу</Description>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="46a815f3-d8c9-47ca-a8b2-8ad642e7dd3c">
+						<Name>ШаблонСМС</Name>
+						<Code>00007</Code>
+						<Description>Шаблон СМС</Description>
+						<Type>
+							<v8:Type xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d8p1:CatalogRef.ШаблоныТекстовСМС</v8:Type>
+						</Type>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a5ed43a6-38e3-44a7-b9f3-2ec8c5720a51">
+		<Name>ОсновныеЗначенияДляПодстановки</Name>
+		<Code>00001</Code>
+		<Description>Основные значения для подстановки в документы и справочники</Description>
+		<Type/>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="5f173406-6062-4875-997e-ba0e9f72afcb">
+				<Name>ОсновнаяОрганизация</Name>
+				<Code>00002</Code>
+				<Description>Основная организация</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Организации</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5c3cf0fa-a40a-4f5d-a746-eddbd3aa94e5">
+				<Name>РабочийСтол</Name>
+				<Code>00004</Code>
+				<Description>Рабочий стол</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.ВидыРабочихСтолов</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d6c4134d-bd17-4123-b71c-52598fcf17bb">
+				<Name>РежимФормированияПечатныхФорм</Name>
+				<Code>00003</Code>
+				<Description>Режим формирования печатных форм</Description>
+				<Type>
+					<v8:Type xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:EnumRef.РежимФормированияПечатныхФорм</v8:Type>
+				</Type>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="32e691be-0adb-4334-b85c-929dce949dea">
+		<Name>УпрощеннаяКвитанция</Name>
+		<Code>00011</Code>
+		<Description>Упрощенная квитанция</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

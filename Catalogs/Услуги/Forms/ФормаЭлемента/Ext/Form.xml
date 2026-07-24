@@ -1,0 +1,1174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРодитель" id="149">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРодительРасширеннаяПодсказка" id="150"/>
+			<ChildItems>
+				<InputField name="Родитель" id="25">
+					<DataPath>Объект.Parent</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<ContextMenu name="РодительКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="Организация" id="154">
+					<DataPath>Объект.Организация</DataPath>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="155"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="156"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВидУслуги" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вид услуги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група вид послуги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вид услуги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група вид послуги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВидУслугиРасширеннаяПодсказка" id="92"/>
+			<ChildItems>
+				<InputField name="ВидУслуги" id="42">
+					<DataPath>Объект.ВидУслуги</DataPath>
+					<ContextMenu name="ВидУслугиКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ВидУслугиРасширеннаяПодсказка" id="93"/>
+				</InputField>
+				<CheckBoxField name="Ресурсная" id="68">
+					<DataPath>Объект.Ресурсная</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РесурснаяКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="РесурснаяРасширеннаяПодсказка" id="94"/>
+				</CheckBoxField>
+				<CheckBoxField name="НеВключатьВРаспределение" id="53">
+					<DataPath>Объект.НеВключатьВРаспределение</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеВключатьВРаспределениеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="НеВключатьВРаспределениеРасширеннаяПодсказка" id="95"/>
+				</CheckBoxField>
+				<InputField name="КодУслугиПФУ" id="169">
+					<DataPath>Объект.КодУслугиПФУ</DataPath>
+					<ContextMenu name="КодУслугиПФУКонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="КодУслугиПФУРасширеннаяПодсказка" id="171"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКодНаименование" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група код найменування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група код найменування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="96"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="98"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КраткоеНаименование" id="49">
+			<DataPath>Объект.КраткоеНаименование</DataPath>
+			<ContextMenu name="КраткоеНаименованиеКонтекстноеМеню" id="50"/>
+			<ExtendedTooltip name="КраткоеНаименованиеРасширеннаяПодсказка" id="99"/>
+		</InputField>
+		<InputField name="ПолноеНаименование" id="27">
+			<DataPath>Объект.ПолноеНаименование</DataPath>
+			<TitleLocation>Left</TitleLocation>
+			<Height>4</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="100"/>
+		</InputField>
+		<UsualGroup name="ГруппаСпособНачисления" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа способ начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група спосіб нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа способ начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група спосіб нарахування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпособНачисленияРасширеннаяПодсказка" id="101"/>
+			<ChildItems>
+				<InputField name="СпособНачисления" id="7">
+					<DataPath>Объект.СпособНачисления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоПоказаниямПрибораУчета</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоКоличествуПриборов</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоКоличествуЖильцов</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоПлощади</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоКоличествуМашиноМест</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ФиксированноеНачисление</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоНормамПотребления</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоРасчетнымЗначениям</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.КоммисияБанка</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СпособНачисленияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СпособНачисленияРасширеннаяПодсказка" id="102"/>
+					<Events>
+						<Event name="OnChange">СпособНачисленияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЕдиницаИзмерения" id="29">
+					<DataPath>Объект.ЕдиницаИзмерения</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<CheckBoxField name="ПоВидамТарифа" id="82">
+					<DataPath>Объект.ПоВидамТарифа</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоВидамТарифаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ПоВидамТарифаРасширеннаяПодсказка" id="104"/>
+					<Events>
+						<Event name="OnChange">ПоВидамТарифаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПороговыйМетод" id="60">
+					<DataPath>Объект.ПороговыйМетод</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПороговыйМетодКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ПороговыйМетодРасширеннаяПодсказка" id="105"/>
+					<Events>
+						<Event name="OnChange">ПороговыйМетодПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="КоличествоПорогов" id="62">
+					<DataPath>Объект.КоличествоПорогов</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КоличествоПороговКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КоличествоПороговРасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<CheckBoxField name="ПУГарячаяВода" id="163">
+					<DataPath>Объект.ПУГарячаяВода</DataPath>
+					<Visible>false</Visible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПУГарячаяВодаКонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="ПУГарячаяВодаРасширеннаяПодсказка" id="165"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПУХолоднаяВода" id="160">
+					<DataPath>Объект.ПУХолоднаяВода</DataPath>
+					<Visible>false</Visible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПУХолоднаяВодаКонтекстноеМеню" id="161"/>
+					<ExtendedTooltip name="ПУХолоднаяВодаРасширеннаяПодсказка" id="162"/>
+				</CheckBoxField>
+				<InputField name="КвоКубов" id="166">
+					<DataPath>Объект.КвоКубов</DataPath>
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К-ть м3 за нормою</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>К-ть м3 за нормою</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КвоКубовКонтекстноеМеню" id="167"/>
+					<ExtendedTooltip name="КвоКубовРасширеннаяПодсказка" id="168"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="БазаРаспределенияРасчетнойУслуги" id="51">
+			<DataPath>Объект.БазаРаспределенияРасчетнойУслуги</DataPath>
+			<ContextMenu name="БазаРаспределенияРасчетнойУслугиКонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="БазаРаспределенияРасчетнойУслугиРасширеннаяПодсказка" id="107"/>
+		</InputField>
+		<UsualGroup name="ГруппаРасчетаЛьготы" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условия расчета льготы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Умови розрахунків пільги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условие расчета льготы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Умова розрахунків пільги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаРасчетаЛьготыРасширеннаяПодсказка" id="108"/>
+			<ChildItems>
+				<InputField name="ПоказаниеПрибораУчетаДляЛьготы" id="56">
+					<DataPath>Объект.ПоказаниеПрибораУчетаДляЛьготы</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>50</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<QuickChoice>true</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показание прибора учета учитываются целиком</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Свідчення приладу обліку враховуються цілком</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">0</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показание прибора учета делится на количество прописанных</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Свідчення приладу обліку ділиться на кількість прописаних</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показание прибора учета делится на количество проживающих</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Свідчення приладу обліку ділиться на кількість тих, що мешкають</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ПоказаниеПрибораУчетаДляЛьготыКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ПоказаниеПрибораУчетаДляЛьготыРасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<CheckBoxField name="РасчитыватьЭнергоемкость" id="146">
+					<DataPath>Объект.РасчитыватьЭнергоемкость</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расчитывать энергоемкость единицы доли распределения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Розраховувати енергоємність одиниці частки розподілу</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РасчитыватьЭнергоемкостьКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="РасчитыватьЭнергоемкостьРасширеннаяПодсказка" id="148"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРасчтаПоСредней" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ расчета среднемесячного потребления при снятии прибора учета на поверку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Спосіб розрахунку середньомісячного споживання при знятті приладу обліку на перевірку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расчта по средней</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група расчта по середній</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаРасчтаПоСреднейРасширеннаяПодсказка" id="110"/>
+			<ChildItems>
+				<InputField name="ВидРасчетаПоСредней" id="71">
+					<DataPath>Объект.ВидРасчетаПоСредней</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид расчета среднего значения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид розрахунку середнього значення</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ВидРасчетаПоСреднейКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ВидРасчетаПоСреднейРасширеннаяПодсказка" id="111"/>
+					<Events>
+						<Event name="OnChange">ВидРасчетаПоСреднейПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="БазаДляРасчетаПоСредней" id="73">
+					<DataPath>Объект.БазаДляРасчетаПоСредней</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество месяцев</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кількість місяців</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="БазаДляРасчетаПоСреднейКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="БазаДляРасчетаПоСреднейРасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<UsualGroup name="ГруппаДатыСезона" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа даты сезона</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група дати сезону</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа даты сезона</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група дати сезону</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДатыСезонаРасширеннаяПодсказка" id="113"/>
+					<ChildItems>
+						<InputField name="НачалоСезона" id="75">
+							<DataPath>Объект.НачалоСезона</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начало сезона</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Початок сезону</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Январь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Січень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-01-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Февраль</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Лютий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-02-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Март</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Березень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-03-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Апрель</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Квітень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-04-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Май</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Травень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-05-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Июнь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Червень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-06-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Июль</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Липень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-07-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Август</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Серпень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-08-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сентябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Вересень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-09-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Октябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Жовтень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-10-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ноябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Листопад</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-11-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Декабрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Грудень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-12-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="НачалоСезонаКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="НачалоСезонаРасширеннаяПодсказка" id="114"/>
+						</InputField>
+						<InputField name="КонецСезона" id="80">
+							<DataPath>Объект.КонецСезона</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Конец сезона</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кінець сезону</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Январь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Січень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-01-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Февраль</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Лютий</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-02-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Март</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Березень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-03-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Апрель</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Квітень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-04-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Май</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Травень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-05-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Июнь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Червень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-06-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Июль</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Липень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-07-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Август</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Серпень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-08-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сентябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Вересень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-09-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Октябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Жовтень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-10-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ноябрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Листопад</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-11-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Декабрь</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Грудень</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:dateTime">2015-12-01T00:00:00</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КонецСезонаКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="КонецСезонаРасширеннаяПодсказка" id="115"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОснованиеНормПотребления" id="32">
+			<DataPath>Объект.ОснованиеНормПотребления</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияНормПотребления.EnumValue.Площадь</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияНормПотребления.EnumValue.ОдинЧеловек</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияНормПотребления.EnumValue.НаЛицевойСчет</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xr:DesignTimeRef">Enum.ОснованияНормПотребления.EnumValue.ДополнительныйРеквизит</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ОснованиеНормПотребленияКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ОснованиеНормПотребленияРасширеннаяПодсказка" id="116"/>
+			<Events>
+				<Event name="OnChange">ОснованиеНормПотребленияПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ВидПлощади" id="9">
+			<DataPath>Объект.ВидПлощади</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидПлощадиКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ВидПлощадиРасширеннаяПодсказка" id="117"/>
+		</InputField>
+		<InputField name="ВидПотребителяУслуг" id="11">
+			<DataPath>Объект.ВидПотребителяУслуг</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидПотребителяУслугКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ВидПотребителяУслугРасширеннаяПодсказка" id="118"/>
+		</InputField>
+		<InputField name="ВидМашиноМеста" id="64">
+			<DataPath>Объект.ВидМашиноМеста</DataPath>
+			<ContextMenu name="ВидМашиноМестаКонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="ВидМашиноМестаРасширеннаяПодсказка" id="119"/>
+		</InputField>
+		<InputField name="ДополнительныйРеквизит" id="66">
+			<DataPath>Объект.ДополнительныйРеквизит</DataPath>
+			<ContextMenu name="ДополнительныйРеквизитКонтекстноеМеню" id="67"/>
+			<ExtendedTooltip name="ДополнительныйРеквизитРасширеннаяПодсказка" id="120"/>
+		</InputField>
+		<InputField name="НазначениеПлатежа" id="58">
+			<DataPath>Объект.НазначениеПлатежа</DataPath>
+			<ContextMenu name="НазначениеПлатежаКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="НазначениеПлатежаРасширеннаяПодсказка" id="121"/>
+		</InputField>
+		<Table name="СоставныеУслуги" id="17">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.СоставныеУслуги</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуги, использующие показания прибора учета основной услуги</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Послуги, які використовують показники приладу обліку основної послуги</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставныеУслугиКонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="СоставныеУслугиКоманднаяПанель" id="19"/>
+			<ExtendedTooltip name="СоставныеУслугиРасширеннаяПодсказка" id="122"/>
+			<SearchStringAddition name="СоставныеУслугиСтрокаПоиска" id="123">
+				<AdditionSource>
+					<Item>СоставныеУслуги</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставныеУслугиСтрокаПоискаКонтекстноеМеню" id="124"/>
+				<ExtendedTooltip name="СоставныеУслугиСтрокаПоискаРасширеннаяПодсказка" id="125"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставныеУслугиСостояниеПросмотра" id="126">
+				<AdditionSource>
+					<Item>СоставныеУслуги</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставныеУслугиСостояниеПросмотраКонтекстноеМеню" id="127"/>
+				<ExtendedTooltip name="СоставныеУслугиСостояниеПросмотраРасширеннаяПодсказка" id="128"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставныеУслугиУправлениеПоиском" id="129">
+				<AdditionSource>
+					<Item>СоставныеУслуги</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставныеУслугиУправлениеПоискомКонтекстноеМеню" id="130"/>
+				<ExtendedTooltip name="СоставныеУслугиУправлениеПоискомРасширеннаяПодсказка" id="131"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СоставныеУслугиНомерСтроки" id="20">
+					<DataPath>Объект.СоставныеУслуги.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставныеУслугиНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СоставныеУслугиНомерСтрокиРасширеннаяПодсказка" id="132"/>
+				</LabelField>
+				<InputField name="СоставныеУслугиУслуга" id="22">
+					<DataPath>Объект.СоставныеУслуги.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставныеУслугиУслугаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СоставныеУслугиУслугаРасширеннаяПодсказка" id="133"/>
+					<Events>
+						<Event name="OnChange">СоставныеУслугиУслугаПриИзменении</Event>
+						<Event name="ChoiceProcessing">СоставныеУслугиУслугаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="СоставныеУслугиКоэффициент" id="157">
+					<DataPath>Объект.СоставныеУслуги.Коэффициент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставныеУслугиКоэффициентКонтекстноеМеню" id="158"/>
+					<ExtendedTooltip name="СоставныеУслугиКоэффициентРасширеннаяПодсказка" id="159"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ВидыТарифов" id="84">
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ВидыТарифов</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды тарифов, используемые при начислениях по услуге</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Види тарифів, використовувані при нарахуваннях по послузі</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ВидыТарифовКонтекстноеМеню" id="85"/>
+			<AutoCommandBar name="ВидыТарифовКоманднаяПанель" id="86"/>
+			<ExtendedTooltip name="ВидыТарифовРасширеннаяПодсказка" id="134"/>
+			<SearchStringAddition name="ВидыТарифовСтрокаПоиска" id="135">
+				<AdditionSource>
+					<Item>ВидыТарифов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыТарифовСтрокаПоискаКонтекстноеМеню" id="136"/>
+				<ExtendedTooltip name="ВидыТарифовСтрокаПоискаРасширеннаяПодсказка" id="137"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ВидыТарифовСостояниеПросмотра" id="138">
+				<AdditionSource>
+					<Item>ВидыТарифов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыТарифовСостояниеПросмотраКонтекстноеМеню" id="139"/>
+				<ExtendedTooltip name="ВидыТарифовСостояниеПросмотраРасширеннаяПодсказка" id="140"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ВидыТарифовУправлениеПоиском" id="141">
+				<AdditionSource>
+					<Item>ВидыТарифов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ВидыТарифовУправлениеПоискомКонтекстноеМеню" id="142"/>
+				<ExtendedTooltip name="ВидыТарифовУправлениеПоискомРасширеннаяПодсказка" id="143"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ВидыТарифовНомерСтроки" id="87">
+					<DataPath>Объект.ВидыТарифов.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыТарифовНомерСтрокиКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ВидыТарифовНомерСтрокиРасширеннаяПодсказка" id="144"/>
+				</LabelField>
+				<InputField name="ВидыТарифовВидТарифа" id="89">
+					<DataPath>Объект.ВидыТарифов.ВидТарифа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидыТарифовВидТарифаКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ВидыТарифовВидТарифаРасширеннаяПодсказка" id="145"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Услуги</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

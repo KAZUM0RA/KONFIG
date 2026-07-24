@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление лицевыми счетами</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Управління особовими рахунками</v8:content>
+		</v8:item>
+	</Title>
+	<Width>500</Width>
+	<Height>100</Height>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаГенерацияПараметровДоступаНаСайт" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерация параметров доступа на сайт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Генерація параметрів доступу на сайт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа генерация параметров доступа на сайт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група генерація параметрів доступу на сайт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаГенерацияПараметровДоступаНаСайтРасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЭтапы" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа этапы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група етапи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа этапы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група етапи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЭтапыРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияЗаполнитьВПроцессе" id="48">
+							<Visible>false</Visible>
+							<Width>11</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация заполнить в процессе</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація заповнити в процесі</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияЗаполнитьВПроцессеКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДекорацияЗаполнитьВПроцессеРасширеннаяПодсказка" id="66"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияЗаполнитьВыполнено" id="44">
+							<Visible>false</Visible>
+							<Width>11</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация заполнить выполнено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація заповнити виконано</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияЗаполнитьВыполненоКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ДекорацияЗаполнитьВыполненоРасширеннаяПодсказка" id="67"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияСгенерироватьВПроцессе" id="52">
+							<Visible>false</Visible>
+							<Width>12</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация сгенерировать в процессе</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація згенерувати в процесі</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияСгенерироватьВПроцессеКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ДекорацияСгенерироватьВПроцессеРасширеннаяПодсказка" id="68"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияСгенерироватьВыполнено" id="46">
+							<Visible>false</Visible>
+							<Width>12</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация сгенерировать выполнено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація згенерувати виконано</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияСгенерироватьВыполненоКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ДекорацияСгенерироватьВыполненоРасширеннаяПодсказка" id="69"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияЛогиныВПроцессе" id="50">
+							<Visible>false</Visible>
+							<Width>14</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация логины в процессе</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація логіни в процесі</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияЛогиныВПроцессеКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ДекорацияЛогиныВПроцессеРасширеннаяПодсказка" id="70"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияЛогиныВыполнено" id="62">
+							<Visible>false</Visible>
+							<Width>14</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация логины выполнено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація логіни виконано</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияЛогиныВыполненоКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ДекорацияЛогиныВыполненоРасширеннаяПодсказка" id="71"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияПередачаВПроцессе" id="54">
+							<Visible>false</Visible>
+							<Width>14</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация передача в процессе</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація передача в процесі</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияПередачаВПроцессеКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ДекорацияПередачаВПроцессеРасширеннаяПодсказка" id="72"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияПередачаВыполнено" id="58">
+							<Visible>false</Visible>
+							<Width>14</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация передача выполнено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація передача виконано</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияПередачаВыполненоКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ДекорацияПередачаВыполненоРасширеннаяПодсказка" id="73"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияПамяткиВПроцессе" id="56">
+							<Visible>false</Visible>
+							<Width>16</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация памятки в процессе</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація пам'ятки в процесі</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияПамяткиВПроцессеКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ДекорацияПамяткиВПроцессеРасширеннаяПодсказка" id="74"/>
+						</PictureDecoration>
+						<PictureDecoration name="ДекорацияПамяткиВыполнено" id="60">
+							<Visible>false</Visible>
+							<Width>12</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация памятки выполнено</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Декорація пам'ятки виконано</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияПамяткиВыполненоКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ДекорацияПамяткиВыполненоРасширеннаяПодсказка" id="75"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ТаблицаЛС" id="1">
+					<Representation>List</Representation>
+					<Footer>true</Footer>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ТаблицаЛС</DataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаЛСКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="ТаблицаЛСКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Popup name="ТаблицаЛСГруппаЗаполнить" id="27">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполнить</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Заповніть</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Таблица ЛСГруппа заполнить</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Таблиця ЛСГруппа заповнити</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Representation>PictureAndText</Representation>
+								<ExtendedTooltip name="ТаблицаЛСГруппаЗаполнитьРасширеннаяПодсказка" id="76"/>
+								<ChildItems>
+									<Button name="ТаблицаЛСНайтиЛС" id="19">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаЗаполнитьЛСПодбором</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Подбором</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Підбором</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТаблицаЛСНайтиЛСРасширеннаяПодсказка" id="77"/>
+									</Button>
+									<Button name="ТаблицаЛСКнопкаВсеЛС" id="28">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КомандаЗаполнитьВсемиЛСБезПараметров</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Всеми л/с, не имеющими параметров</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Всіма л / с, що не мають параметрів</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТаблицаЛСКнопкаВсеЛСРасширеннаяПодсказка" id="78"/>
+									</Button>
+								</ChildItems>
+							</Popup>
+							<Button name="ТаблицаЛССгенерировать" id="32">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СгенерироватьПараметры</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сгенерировать</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Згенерувати</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ТаблицаЛССгенерироватьРасширеннаяПодсказка" id="79"/>
+							</Button>
+							<Button name="ТаблицаЛСКнопкаЗаписать" id="40">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаЗаписатьПараметрыДоступа</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Записать логины</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Записати логіни</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ТаблицаЛСКнопкаЗаписатьРасширеннаяПодсказка" id="80"/>
+							</Button>
+							<Button name="ТаблицаЛСПередатьПараметры" id="34">
+								<Type>CommandBarButton</Type>
+								<Enabled>false</Enabled>
+								<CommandName>Form.Command.ПередатьПараметры</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Передать на сайт</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Передати на сайт</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="ТаблицаЛСПередатьПараметрыРасширеннаяПодсказка" id="81"/>
+							</Button>
+							<Button name="КнопкаРаспечататьПамятки" id="22">
+								<Type>CommandBarButton</Type>
+								<Enabled>false</Enabled>
+								<CommandName>Form.Command.КомандаРаспечататьПамяткиДоступа</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Распечатать памятки</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>uk</v8:lang>
+										<v8:content>Роздрукувати пам'ятки</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="КнопкаРаспечататьПамяткиРасширеннаяПодсказка" id="82"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаЛСРасширеннаяПодсказка" id="83"/>
+					<SearchStringAddition name="ТаблицаЛССтрокаПоиска" id="84">
+						<AdditionSource>
+							<Item>ТаблицаЛС</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЛССтрокаПоискаКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="ТаблицаЛССтрокаПоискаРасширеннаяПодсказка" id="86"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаЛССостояниеПросмотра" id="87">
+						<AdditionSource>
+							<Item>ТаблицаЛС</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЛССостояниеПросмотраКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="ТаблицаЛССостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаЛСУправлениеПоиском" id="90">
+						<AdditionSource>
+							<Item>ТаблицаЛС</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаЛСУправлениеПоискомКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="ТаблицаЛСУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ТаблицаЛСПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ТаблицаЛСПередУдалением</Event>
+						<Event name="BeforeRowChange">ТаблицаЛСПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ТаблицаЛСЛицевойСчет" id="4">
+							<DataPath>ТаблицаЛС.ЛицевойСчет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceForm>Catalog.ЛицевыеСчета.Form.ФормаВыбораСОтбором</ChoiceForm>
+							<ContextMenu name="ТаблицаЛСЛицевойСчетКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ТаблицаЛСЛицевойСчетРасширеннаяПодсказка" id="93"/>
+							<Events>
+								<Event name="OnChange">ТаблицаЛСЛицевойСчетПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТаблицаЛСВладелец" id="6">
+							<DataPath>ТаблицаЛС.Владелец</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаЛСВладелецКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ТаблицаЛСВладелецРасширеннаяПодсказка" id="94"/>
+						</InputField>
+						<InputField name="ТаблицаЛСАдрес" id="8">
+							<DataPath>ТаблицаЛС.Адрес</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаЛСАдресКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ТаблицаЛСАдресРасширеннаяПодсказка" id="95"/>
+						</InputField>
+						<InputField name="ТаблицаЛСЛогин" id="10">
+							<DataPath>ТаблицаЛС.Логин</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаЛСЛогинКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ТаблицаЛСЛогинРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="ТаблицаЛСПароль" id="12">
+							<DataPath>ТаблицаЛС.Пароль</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаЛСПарольКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ТаблицаЛСПарольРасширеннаяПодсказка" id="97"/>
+						</InputField>
+						<CheckBoxField name="ТаблицаЛСКарточкаРаспечатана" id="30">
+							<DataPath>ТаблицаЛС.КарточкаРаспечатана</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>ВсеКарточкиРаспечатаны</FooterDataPath>
+							<FooterFont ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТаблицаЛСКарточкаРаспечатанаКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ТаблицаЛСКарточкаРаспечатанаРасширеннаяПодсказка" id="98"/>
+						</CheckBoxField>
+						<CheckBoxField name="ТаблицаЛСДанныеЗаписаны" id="41">
+							<DataPath>ТаблицаЛС.ДанныеЗаписаны</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterDataPath>ВсеПараметрыЗаписаны</FooterDataPath>
+							<FooterFont ref="sys:DefaultGUIFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТаблицаЛСДанныеЗаписаныКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ТаблицаЛСДанныеЗаписаныРасширеннаяПодсказка" id="99"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаОбновлятьПараметры" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновлять параметры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлювати параметри</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обновлять параметры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група оновлювати параметри</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбновлятьПараметрыРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<CheckBoxField name="ПолеОбновлятьПараметры" id="25">
+							<DataPath>Объект.ОбновлятьПараметрыДоступа</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПолеОбновлятьПараметрыКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПолеОбновлятьПараметрыРасширеннаяПодсказка" id="101"/>
+							<Events>
+								<Event name="OnChange">ПолеОбновлятьПараметрыПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияПояснение" id="38">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>(при установке флага созданные ранее параметры доступа будут заменены новыми)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>(При установці прапора створені раніше параметри доступу будуть замінені новими)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ДекорацияПояснениеРасширеннаяПодсказка" id="102"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="НастройкаДоступа" id="35">
+					<DataPath>Объект.НастройкаДоступа</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка доступа к сайту</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування доступу до сайту</v8:content>
+						</v8:item>
+					</Title>
+					<ChoiceButton>true</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="НастройкаДоступаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="НастройкаДоступаРасширеннаяПодсказка" id="103"/>
+					<Events>
+						<Event name="OnChange">НастройкаДоступаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CommandBar name="ГруппаКнопки" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група кнопки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Група кнопки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="104"/>
+					<ChildItems>
+						<Button name="КнопкаЗакрыть" id="23">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Close</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закрыть</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Закрити</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаЗакрытьРасширеннаяПодсказка" id="105"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнтеграцияССайтом</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаЛС" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица ЛС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Таблиця ЛЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЛицевойСчет" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицевой счет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Особовий рохунок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Владелец" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Власник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Адрес" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Адреса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Логин" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логин</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Логін</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пароль" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КарточкаРаспечатана" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карточка распечатана</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Картка роздрукована</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДанныеЗаписаны" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные записаны</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дані записані</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПДИзменены" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПДИзменены</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>ПДІзменени</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеКарточкиРаспечатаны" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсеПараметрыПереданы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все параметры переданы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Всі параметри передані</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПервоеОткрытие" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первое открытие</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перше відкриття</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсеПараметрыЗаписаны" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все параметры записаны</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Всі параметри записані</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыПодключения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры подключения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Параметри підключення</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПутьКФормеПодбора" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к форме подбора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шлях до форми підбору</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсеПараметрыСгенерированы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все параметры сгенерированы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Всі параметри згенеровані</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаполнитьЛСПодбором" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить л/с подбором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити л / с підбором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить ЛСПодбором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда заповнити ЛСПодбором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Find</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаполнитьЛСПодбором</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СгенерироватьПараметры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать параметры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Згенерувати параметри</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Згенерувати</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьПараметры</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаРаспечататьПамяткиДоступа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распечатать памятки доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Роздрукувати пам'ятки доступу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда распечатать памятки доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда роздрукувати пам'ятки доступу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаРаспечататьПамяткиДоступа</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаполнитьВсемиЛСБезПараметров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить всеми ЛСБез параметров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда заповнити усіма ЛСБез параметрів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить всеми ЛСБез параметров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда заповнити усіма ЛСБез параметрів</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЗаполнитьВсемиЛСБезПараметров</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПередатьПараметры" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать параметры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Передати параметри</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Передать параметры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Передати параметри</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПередатьПараметры</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЗаписатьПараметрыДоступа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда записать параметры доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда записати параметри доступу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда записать параметры доступа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда записати параметри доступу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗаписатьПараметрыДоступа</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

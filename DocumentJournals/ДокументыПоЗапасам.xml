@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<DocumentJournal uuid="a7e54102-88a8-4d25-941f-a0d36a218ad2">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПоЗапасам" category="Selection">
+				<xr:TypeId>f5d5ee9a-ed98-4c9e-8000-279586924a50</xr:TypeId>
+				<xr:ValueId>22809a19-1c0f-40b0-b1a8-fa7dc331ae5b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПоЗапасам" category="List">
+				<xr:TypeId>bbf1a30e-ec42-4a31-a080-6cd8fe1244f2</xr:TypeId>
+				<xr:ValueId>7cd45e15-03ea-4863-b4fb-c9e6d37df4ef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПоЗапасам" category="Manager">
+				<xr:TypeId>695a4f51-db7e-4716-b94d-ff7029a90f3c</xr:TypeId>
+				<xr:ValueId>7851bc83-1cef-4db8-9de6-2c7a232323fc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоЗапасам</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по запасам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документи по запасах</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыПоЗапасам.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеЗапасовУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеЗапасов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИнвентаризацияЗапасов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОприходованиеЗапасов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеЗапасов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйОрдерНаЗапасы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйОрдерНаЗапасы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УстановкаЦенНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратПоставщику</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="fa390ded-afaa-4381-a549-8356305e5658">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеЗапасовУслуг.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеЗапасов.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОприходованиеЗапасов.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИнвентаризацияЗапасов.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйОрдерНаЗапасы.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйОрдерНаЗапасы.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратПоставщику.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеЗапасов.Attribute.Склад</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="69b58bc9-17d3-4f10-bf4e-9b2aaddb13c4">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеЗапасовУслуг.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратПоставщику.Attribute.Контрагент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="903cd98a-9062-404b-bbe9-8b9365710b2d">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Організація</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеЗапасовУслуг.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПеремещениеЗапасов.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеЗапасов.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОприходованиеЗапасов.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИнвентаризацияЗапасов.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходныйОрдерНаЗапасы.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйОрдерНаЗапасы.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратПоставщику.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+			<Command uuid="52688bc6-42d7-4b93-aee3-b52f5b2224f3">
+				<Properties>
+					<Name>ОткрытьДокументыПоЗапасам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы По Запасам</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документи По Запасах</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

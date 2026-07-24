@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ДатаОрганизация" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата організація</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата організація</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДатаОрганизацияРасширеннаяПодсказка" id="59"/>
+		</UsualGroup>
+		<UsualGroup name="УслугаПериод" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуга период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>послуга період</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуга период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>послуга період</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="УслугаПериодРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<InputField name="Исполнитель" id="90">
+					<DataPath>Исполнитель</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Виконавець</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="92"/>
+				</InputField>
+				<InputField name="ЛицевойСчет" id="97">
+					<DataPath>ЛицевойСчет</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицевой счет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Особовий рахунок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЛицевойСчетКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ЛицевойСчетРасширеннаяПодсказка" id="99"/>
+					<Events>
+						<Event name="OnChange">ЛицевойСчетПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Услуга" id="47">
+					<DataPath>Услуга</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Услуга</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Послуга</v8:content>
+						</v8:item>
+					</Title>
+					<ChoiceParameters>
+						<app:item name="Отбор.СпособНачисления">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыНачисленияУслуг.EnumValue.ПоПоказаниямПрибораУчета</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="УслугаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="УслугаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ДатаВвода" id="67">
+					<DataPath>ДатаВвода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата ввода</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата введення</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаВводаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ДатаВводаРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ОтражениеПериодаНачисления" id="60">
+					<DataPath>ОтражениеПериодаНачисления</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период начисления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пріод нарахування</v8:content>
+						</v8:item>
+					</Title>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ContextMenu name="ОтражениеПериодаНачисленияКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ОтражениеПериодаНачисленияРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ОтражениеПериодаНачисленияПриИзменении</Event>
+						<Event name="StartChoice">ОтражениеПериодаНачисленияНачалоВыбора</Event>
+						<Event name="Tuning">ОтражениеПериодаНачисленияРегулирование</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбработкаФайла" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група обробка файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обработка файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група обробка файлу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбработкаФайлаРасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<InputField name="ПутьКФайлу" id="44">
+					<DataPath>ПутьКФайлу</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="ЗаполнитьИзФайла" id="70">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьИзФайла</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнить из файла</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заповнити з файлу</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаполнитьИзФайлаРасширеннаяПодсказка" id="71"/>
+				</Button>
+				<Button name="ЗаписатьПоказания" id="72">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаписатьПоказания</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать показания</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Записати свідчення</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьПоказанияРасширеннаяПодсказка" id="73"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ОписаниеПолей" id="102">
+			<Visible>false</Visible>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл Excel должен содержать следующие колонки: 1) Прибор учета, так как он назван в программе; 2) Вид тарифа; 3) Показание прибора</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Файл Excel повинен містити наступні колонки: 1) Прилад обліку, оскільки він названий в програмі; 2) Вид тарифу; 3) Показники приладу</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ОписаниеПолейКонтекстноеМеню" id="103"/>
+			<ExtendedTooltip name="ОписаниеПолейРасширеннаяПодсказка" id="104"/>
+		</LabelDecoration>
+		<Table name="ТаблицаПоказаний" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаПоказаний</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПоказанийКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТаблицаПоказанийКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ТаблицаПоказанийЗаполнитьПриборы" id="77">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПриборы</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заполнить приборы</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Заповнити прилади</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаПоказанийЗаполнитьПриборыРасширеннаяПодсказка" id="78"/>
+					</Button>
+					<Button name="ТаблицаПоказанийЗаполнитьПриборыСОтбором" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПриборыСОтбором</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заполнить приборы с отбором</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Заповнити прилади з відбором</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаПоказанийЗаполнитьПриборыСОтборомРасширеннаяПодсказка" id="80"/>
+					</Button>
+					<Button name="ТаблицаПоказанийЗаписатьИндивидуальныеПоказания" id="100">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Form.Command.ЗаписатьИндивидуальныеПоказания</CommandName>
+						<ExtendedTooltip name="ТаблицаПоказанийЗаписатьИндивидуальныеПоказанияРасширеннаяПодсказка" id="101"/>
+					</Button>
+					<Button name="ТаблицаПоказанийВывестиСписок" id="105">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.ТаблицаПоказаний.StandardCommand.OutputList</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ТаблицаПоказанийВывестиСписокРасширеннаяПодсказка" id="106"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаПоказанийРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТаблицаПоказанийСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТаблицаПоказаний</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоказанийСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаПоказанийСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПоказанийСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТаблицаПоказаний</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоказанийСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаПоказанийСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПоказанийУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТаблицаПоказаний</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПоказанийУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаПоказанийУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаПоказанийЛицевойСчет" id="81">
+					<DataPath>ТаблицаПоказаний.ЛицевойСчет</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийЛицевойСчетКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ТаблицаПоказанийЛицевойСчетРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийКвартира" id="87">
+					<DataPath>ТаблицаПоказаний.Квартира</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийКвартираКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ТаблицаПоказанийКвартираРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийОтветственныйВладелец" id="84">
+					<DataPath>ТаблицаПоказаний.ОтветственныйВладелец</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийОтветственныйВладелецКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ТаблицаПоказанийОтветственныйВладелецРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийПриборУчетаСтрока" id="74">
+					<DataPath>ТаблицаПоказаний.ПриборУчетаСтрока</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прибор учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Прилад обліку</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийПриборУчетаСтрокаКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ТаблицаПоказанийПриборУчетаСтрокаРасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийПриборУчета" id="26">
+					<DataPath>ТаблицаПоказаний.ПриборУчета</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийПриборУчетаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаПоказанийПриборУчетаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийВидТарифа" id="29">
+					<DataPath>ТаблицаПоказаний.ВидТарифа</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид тарифа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид тарифу</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийВидТарифаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаПоказанийВидТарифаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаПоказанийПоказаниеТекущее" id="35">
+					<DataPath>ТаблицаПоказаний.ПоказаниеТекущее</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущее показание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Поточні показники</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийПоказаниеТекущееКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаПоказанийПоказаниеТекущееРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ТаблицаПоказанийПоказаниеТекущееПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаПоказанийКоэффициент" id="38">
+					<DataPath>ТаблицаПоказаний.Коэффициент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коефіцієнт</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПоказанийКоэффициентКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаблицаПоказанийКоэффициентРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаПоказанийИзВнешнихИсточников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаблицаПоказаний" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица показаний</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Таблиця показань</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЛицевойСчет" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицевой счет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Особовий рохунок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Квартира" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квартира</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Квартира</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыЛицевыхСчетов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОтветственныйВладелец" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный владелец</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відповідальний власник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПотребителиУслуг</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПриборУчета" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прибор учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Прилад обліку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПриборыУчета</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидТарифа" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид тарифа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид тарифу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыТарифов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоказаниеПредыдущее" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показание предыдущее</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Показання попереднє</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>4</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоказаниеТекущее" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показание текущее</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Показання поточне</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>4</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Коэффициент" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коефіцієнт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеНайден" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не найден</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>НЕ знайдений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПриборУчетаСтрока" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прибор учета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Прилад обліку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПутьКФайлу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Шлях до файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Услуга" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуга</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Послуга</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Услуги</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодНачисления" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пріод нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтражениеПериодаНачисления" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отражение периода начисления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення періоду нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаВвода" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата ввода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата введення</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидОперации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид операции</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вид операції</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Исполнитель" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконавець</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.ОбменСМобильнымиУстройствами</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛицевойСчет" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лицевой счет</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Особовий рохунок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ЛицевыеСчета</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьПриборы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить приборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити прилади</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить приборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити прилади</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПриборы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПриборыСОтбором" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить приборы с отбором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити прилади з відбором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить приборы с отбором</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити прилади з відбором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПриборыСОтбором</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьИзФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из файла</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити з файлу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьПоказания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать показания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записати свідчення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать показания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записати свідчення</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьПоказания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьИндивидуальныеПоказания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать показания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записати показники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать индивидуальные показания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Записати індивідуальні показання</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИндивидуальныеПоказания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

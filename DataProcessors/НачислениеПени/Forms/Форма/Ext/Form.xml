@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОрганизиция" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организиция</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група организиция</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организиция</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група организиция</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОрганизицияРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Объект.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ДатаДокументов" id="94">
+					<DataPath>Объект.ДатаДокументов</DataPath>
+					<ContextMenu name="ДатаДокументовКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ДатаДокументовРасширеннаяПодсказка" id="96"/>
+				</InputField>
+				<InputField name="Организация" id="3">
+					<DataPath>Объект.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Здание" id="5">
+			<DataPath>Объект.Здание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗданиеКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="43">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<InputField name="ПениШтрафы" id="7">
+					<DataPath>Объект.ПениШтрафы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПениШтрафыКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПениШтрафыРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ПроцентПени" id="49">
+					<DataPath>Объект.ПроцентПени</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент пени (%)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Процент пени (%)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПроцентПениКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПроцентПениРасширеннаяПодсказка" id="59"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Таблица" id="9">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Таблица</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="ТаблицаКоманднаяПанель" id="11">
+				<ChildItems>
+					<Button name="ТаблицаЗаполнить" id="22">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ТаблицаЗаполнитьРасширеннаяПодсказка" id="60"/>
+					</Button>
+					<Button name="ТаблицаСоздатьДокументы" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьДокументы</CommandName>
+						<ExtendedTooltip name="ТаблицаСоздатьДокументыРасширеннаяПодсказка" id="61"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="62"/>
+			<SearchStringAddition name="ТаблицаСтрокаПоиска" id="63">
+				<AdditionSource>
+					<Item>Таблица</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСтрокаПоискаКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="ТаблицаСтрокаПоискаРасширеннаяПодсказка" id="65"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСостояниеПросмотра" id="66">
+				<AdditionSource>
+					<Item>Таблица</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСостояниеПросмотраКонтекстноеМеню" id="67"/>
+				<ExtendedTooltip name="ТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="68"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаУправлениеПоиском" id="69">
+				<AdditionSource>
+					<Item>Таблица</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаУправлениеПоискомКонтекстноеМеню" id="70"/>
+				<ExtendedTooltip name="ТаблицаУправлениеПоискомРасширеннаяПодсказка" id="71"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицаНомерСтроки" id="12">
+					<DataPath>Объект.Таблица.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаНомерСтрокиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ТаблицаНомерСтрокиРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+				<InputField name="ТаблицаЛицевойСчет" id="14">
+					<DataPath>Объект.Таблица.ЛицевойСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЛицевойСчетКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаЛицевойСчетРасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<LabelField name="ТаблицаЛицевойСчетОбъектЛицевогоСчета" id="91">
+					<DataPath>Объект.Таблица.ЛицевойСчет.ОбъектЛицевогоСчета</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квартира</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Квартира</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЛицевойСчетОбъектЛицевогоСчетаКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ТаблицаЛицевойСчетОбъектЛицевогоСчетаРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<InputField name="ТаблицаОтветственныйВладелец" id="16">
+					<DataPath>Объект.Таблица.ОтветственныйВладелец</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаОтветственныйВладелецКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТаблицаОтветственныйВладелецРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТаблицаМесяцНачисления" id="83">
+					<DataPath>Объект.Таблица.МесяцНачисления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаМесяцНачисленияКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТаблицаМесяцНачисленияРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<ColumnGroup name="ПериодНачисления" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период начисления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пріод нарахування</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период начисления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пріод нарахування</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<ExtendedTooltip name="ПериодНачисленияРасширеннаяПодсказка" id="87"/>
+					<ChildItems>
+						<InputField name="ТаблицаПериодС" id="77">
+							<DataPath>Объект.Таблица.ПериодС</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>С</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>З</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаПериодСКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ТаблицаПериодСРасширеннаяПодсказка" id="79"/>
+						</InputField>
+						<InputField name="ТаблицаПериодПо" id="80">
+							<DataPath>Объект.Таблица.ПериодПо</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>По</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаПериодПоКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ТаблицаПериодПоРасширеннаяПодсказка" id="82"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТаблицаКолДней" id="88">
+					<DataPath>Объект.Таблица.КолДней</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дней просрочено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Днiв прострочено</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаКолДнейКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ТаблицаКолДнейРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="ТаблицаСуммаЗадолженности" id="18">
+					<DataPath>Объект.Таблица.СуммаЗадолженности</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Таблица.TotalСуммаЗадолженности</FooterDataPath>
+					<ContextMenu name="ТаблицаСуммаЗадолженностиКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ТаблицаСуммаЗадолженностиРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ТаблицаПеня" id="20">
+					<DataPath>Объект.Таблица.Пеня</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Объект.Таблица.TotalПеня</FooterDataPath>
+					<ContextMenu name="ТаблицаПеняКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаПеняРасширеннаяПодсказка" id="76"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НачислениеПени</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьДокументы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити документи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

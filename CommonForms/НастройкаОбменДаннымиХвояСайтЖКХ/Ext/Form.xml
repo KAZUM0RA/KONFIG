@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка работы с  ХВОЯ: Сайт ЖКХ</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Налаштування роботи з ХВОЯ; сайт ЖКГ</v8:content>
+		</v8:item>
+	</Title>
+	<Group>Horizontal</Group>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьЗакрыть" id="15">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьЗакрыть</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать и закрыть</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Записати і закрити</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаЗаписатьЗакрытьРасширеннаяПодсказка" id="16"/>
+			</Button>
+			<Button name="ЗаказатьПодключение" id="17">
+				<Type>CommandBarHyperlink</Type>
+				<CommandName>Form.Command.ЗаказатьПодключение</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сделать заказ сайта сейчас</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Зробити замовлення сайту зараз</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗаказатьПодключениеРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОрганизации" id="59">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОрганизацииРасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<Table name="ТаблицаОрганизации" id="63">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>ТаблицаОрганизации</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаОрганизацииКонтекстноеМеню" id="64"/>
+					<AutoCommandBar name="ТаблицаОрганизацииКоманднаяПанель" id="65">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаОрганизацииРасширеннаяПодсказка" id="66"/>
+					<SearchStringAddition name="ТаблицаОрганизацииСтрокаПоиска" id="67">
+						<AdditionSource>
+							<Item>ТаблицаОрганизации</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаОрганизацииСтрокаПоискаКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="ТаблицаОрганизацииСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаОрганизацииСостояниеПросмотра" id="70">
+						<AdditionSource>
+							<Item>ТаблицаОрганизации</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаОрганизацииСостояниеПросмотраКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ТаблицаОрганизацииСостояниеПросмотраРасширеннаяПодсказка" id="72"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаОрганизацииУправлениеПоиском" id="73">
+						<AdditionSource>
+							<Item>ТаблицаОрганизации</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаОрганизацииУправлениеПоискомКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="ТаблицаОрганизацииУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateRow">ТаблицаОрганизацииПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ТаблицаОрганизацииОрганизация" id="76">
+							<DataPath>ТаблицаОрганизации.Организация</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управляющие организации</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Керуючі організації</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаОрганизацииОрганизацияКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ТаблицаОрганизацииОрганизацияРасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="61">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="24">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="49">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка истории начиная с месяца</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Вивантаження історії починаючи з місяця</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<InputField name="ОтображениеПериода" id="21">
+									<DataPath>ОтображениеПериода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Месяц</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Місяць</v8:content>
+										</v8:item>
+									</Title>
+									<Width>15</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<SpinButton>true</SpinButton>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ОтображениеПериодаКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ОтображениеПериодаРасширеннаяПодсказка" id="23"/>
+									<Events>
+										<Event name="OnChange">ОтображениеПериодаПриИзменении</Event>
+										<Event name="StartChoice">ОтображениеПериодаНачалоВыбора</Event>
+										<Event name="Tuning">ОтображениеПериодаРегулирование</Event>
+										<Event name="Clearing">ОтображениеПериодаОчистка</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="Декорация1" id="26">
+									<Width>50</Width>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="28"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="47">
+					<Group>Horizontal</Group>
+					<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<LabelField name="Организация" id="79">
+							<DataPath>Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="81"/>
+						</LabelField>
+						<InputField name="КоличесвоЛицевыхСчетовВПакете" id="54">
+							<DataPath>КоличесвоЛицевыхСчетовВПакете</DataPath>
+							<Width>10</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="КоличесвоЛицевыхСчетовВПакетеКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="КоличесвоЛицевыхСчетовВПакетеРасширеннаяПодсказка" id="56"/>
+							<Events>
+								<Event name="OnChange">КоличесвоЛицевыхСчетовВПакетеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<LabelDecoration name="Декорация3" id="44">
+							<Width>30</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Font italic="true" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить при больших объемах данных
+</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Встановити при великих об'ємах даних</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="46"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="АдресСайта" id="41">
+					<DataPath>АдресСайта</DataPath>
+					<ContextMenu name="АдресСайтаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="АдресСайтаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">АдресСайтаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФТПСервер" id="4">
+					<DataPath>ФТПСервер</DataPath>
+					<ContextMenu name="ФТПСерверКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ФТПСерверРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">ФТПСерверПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФТПЛогин" id="1">
+					<DataPath>ФТПЛогин</DataPath>
+					<ContextMenu name="ФТПЛогинКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ФТПЛогинРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ФТПЛогинПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФТППароль" id="7">
+					<DataPath>ФТППароль</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ФТППарольКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ФТППарольРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ФТППарольПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ФТПУдаленныйКаталог" id="32">
+					<DataPath>ФТПУдаленныйКаталог</DataPath>
+					<ContextMenu name="ФТПУдаленныйКаталогКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ФТПУдаленныйКаталогРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ФТПУдаленныйКаталогПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ФТППассивныйРежим" id="10">
+					<DataPath>ФТППассивныйРежим</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФТППассивныйРежимКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ФТППассивныйРежимРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ФТППассивныйРежимПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Button name="КомандаПроверитьПодключениеФТП" id="13">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.КомандаПроверитьПодключениеФТП</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить подключение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Перевірити підключення</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаПроверитьПодключениеФТПРасширеннаяПодсказка" id="14"/>
+				</Button>
+				<Button name="ОткрытьРасписаниеРегламентногоЗадания" id="19">
+					<Type>Hyperlink</Type>
+					<Visible>false</Visible>
+					<CommandName>Form.Command.ОткрытьРасписаниеРегламентногоЗадания</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Розклад</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьРасписаниеРегламентногоЗаданияРасширеннаяПодсказка" id="20"/>
+				</Button>
+				<LabelDecoration name="Декорация2" id="38">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вся настройка сайта производится на стороне хостинга.
+
+В учетной системе нужно правильно заполнить реквизиты доступа  и проверить подключение.
+
+Как правило,  дата начала выгрузки должна оставаться пустой:  система настроена на правильный выбор периода выгрузки.  Однако, после проведения корректировок, сопровождающихся ОТКРЫТИЕМ месяцев -  тогда нужно указать системе самый  ранний месяц, который пришлось открывать.  
+
+Помните, что проведение стандартных процедур перерасчета НЕ ТРЕБУЕТ изменения даты выгрузки, так как открывать закрытые периоды не приходится!</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вся настройка сайту проводиться на стороні хостингу.
+
+В обліковій системі потрібно правильно заповнити реквізити доступу і протестувати своє з'єднання.
+
+Як правило, дата початку вивантаження повинна залишатися порожньою: система налаштована на правильний вибір періоду вивантаження. Однак, після проведення коригувань, що супроводжуються ВІДКРИТТЯМ місяців - тоді потрібно вказати системі найраніший місяць, який довелося відкривати.
+
+Пам'ятайте, що проведення стандартних процедур перерахунку НЕ ПОТРЕБУЄ зміни дати вивантаження, так як відкривати закриті періоди не доводиться!</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="40"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ФТПСервер" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ФТППароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ФТПЛогин" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обліковий запис</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ФТППассивныйРежим" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пассивный режим</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пасивний режим</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаНачалаВыгрузкиНаСайт" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала выгрузки на сайт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата початку вивантаження на сайт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображениеПериода" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение периода</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відображення періоду нарахування</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Організація</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ФТПУдаленныйКаталог" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаленный каталог</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Віддалений каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСайта" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сайта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Адреса сайту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияСайта" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия сайта</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Версія сайту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВерсияСайтаЖКХ</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличесвоЛицевыхСчетовВПакете" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество лицевых счетов в пакете</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість особових рахунків в пакеті</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаНастройки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Организация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АдресСайта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес сайта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФТПСервер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФТПСервер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФТПЛогин" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФТПЛогин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФТППароль" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФТППароль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФТППассивныйРежим" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФТППассивный режим</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФТПУдаленныйКаталог" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФТПУдаленный каталог</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаНачалаВыгрузкиНаСайт" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала выгрузки на сайт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличесвоЛицевыхСчетовВПакете" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количесво лицевых счетов в пакете</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОрганизации" id="13">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Организация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПроверитьПодключениеФТП" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проверить подключение ФТП</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Команда перевірити підключення ФТП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.УстановитьПризнакРассмотреноДляВзамодействия</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПроверитьПодключениеФТП</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаписатьЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать закрыть</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>записати закрити</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьЗакрыть</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаказатьПодключение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказать подключение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замовити підключення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказать подключение</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замовити підключення</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОтправитьEmail</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаказатьПодключение</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьРасписаниеРегламентногоЗадания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание регламентного задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити розклад регламентного завдання</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание регламентного задания</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відкрити розклад регламентного завдання</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SetTime</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеРегламентногоЗаданияВыполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

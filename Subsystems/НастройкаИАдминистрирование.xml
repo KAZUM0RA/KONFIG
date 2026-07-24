@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Subsystem uuid="f3d82190-2fe3-47e6-8070-dae154f3051d">
+		<Properties>
+			<Name>НастройкаИАдминистрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка и администрирование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування й адміністрування</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.НастройкиМикро</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатыЗапретаИзменения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РезервноеКопированиеИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаНачалаОтопительногоСезона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РезервноеКопированиеИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбновлениеКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаРегистров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьНастройкуПараметровУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПолтаваИРЦ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаПараметровУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПолнотекстовыйПоискВДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЖурналРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаОстатковИзФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УдалениеПомеченныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Файлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиВерсионированияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПерсональныеНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АктивныеПользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеОтчетыИОбработки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьОбменыДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьВыгрузкуНаСайт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РегламентныеИФоновыеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводНачальныхОстатковПоЛС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНапоминанияПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныТекстовСМС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТехПоддержкаПанельНавигации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияОСМД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПечатьКвитанций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьПодключаемоеОборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводПоказанийПриборов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаПоказанийДляТеплосеть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановкаТарифаИзФайлаXLSX</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаОкончанияОтопительногоСезона</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АвтоматическоеЗакрытиеЛицевыхСчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаАБанк</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПриватБанкИРЦ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗаменаУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПерерасчетПоливов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НазначениеУслуг</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

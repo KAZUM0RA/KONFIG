@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="КодКОАТУУ" id="16">
+			<DataPath>Объект.КодКОАТУУ</DataPath>
+			<ContextMenu name="КодКОАТУУКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КодКОАТУУРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="ГруппаДиапазонЛС" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диапазон ЛС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Діапазон ОР</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа диапазон ЛС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДиапазонЛСРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="НачЛС" id="1">
+					<DataPath>Объект.НачЛС</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачЛСКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НачЛСРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="КонЛС" id="4">
+					<DataPath>Объект.КонЛС</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КонЛСКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="КонЛСРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="12">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="ДатаЗакрытия" id="7">
+					<DataPath>Объект.ДатаЗакрытия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаЗакрытияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаЗакрытияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<Button name="ЗакрытьЛС" id="14">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗакрытьЛС</CommandName>
+					<ExtendedTooltip name="ЗакрытьЛСРасширеннаяПодсказка" id="15"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АвтоматическоеЗакрытиеЛицевыхСчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗакрытьЛС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть ЛС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Закрити ОР</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть ЛС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьЛС</Action>
+		</Command>
+	</Commands>
+</Form>

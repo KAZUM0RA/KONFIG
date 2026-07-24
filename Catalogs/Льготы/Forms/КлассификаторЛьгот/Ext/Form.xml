@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКнопкаОК" id="17">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаОКРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="ФормаКнопкаОтмена" id="18">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ФормаКнопкаОтменаРасширеннаяПодсказка" id="42"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДеревоКлассификатораЛьгот" id="19">
+			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоКлассификатораЛьгот</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ContextMenu name="ДеревоКлассификатораЛьготКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ДеревоКлассификатораЛьготКоманднаяПанель" id="21">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоКлассификатораЛьготРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="ДеревоКлассификатораЛьготСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>ДеревоКлассификатораЛьгот</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКлассификатораЛьготСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ДеревоКлассификатораЛьготСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоКлассификатораЛьготСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>ДеревоКлассификатораЛьгот</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКлассификатораЛьготСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ДеревоКлассификатораЛьготСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоКлассификатораЛьготУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>ДеревоКлассификатораЛьгот</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоКлассификатораЛьготУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ДеревоКлассификатораЛьготУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ДеревоКлассификатораЛьготГруппа1" id="38">
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготГруппа1РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<CheckBoxField name="ДеревоКлассификатораЛьготВыбран" id="39">
+							<DataPath>ДеревоКлассификатораЛьгот.Выбран</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоКлассификатораЛьготВыбранКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ДеревоКлассификатораЛьготВыбранРасширеннаяПодсказка" id="54"/>
+							<Events>
+								<Event name="OnChange">ДеревоКлассификатораЛьготВыбранПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ДеревоКлассификатораЛьготНаименование" id="22">
+							<DataPath>ДеревоКлассификатораЛьгот.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДеревоКлассификатораЛьготНаименованиеКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ДеревоКлассификатораЛьготНаименованиеРасширеннаяПодсказка" id="55"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ДеревоКлассификатораЛьготКод" id="26">
+					<DataPath>ДеревоКлассификатораЛьгот.Код</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКлассификатораЛьготКодКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготКодРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="ДеревоКлассификатораЛьготПроцентЛьготы" id="28">
+					<DataPath>ДеревоКлассификатораЛьгот.ПроцентЛьготы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКлассификатораЛьготПроцентЛьготыКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготПроцентЛьготыРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ДеревоКлассификатораЛьготКодЕДАРП" id="30">
+					<DataPath>ДеревоКлассификатораЛьгот.КодЕДАРП</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКлассификатораЛьготКодЕДАРПКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготКодЕДАРПРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ДеревоКлассификатораЛьготКодГИОЦ" id="32">
+					<DataPath>ДеревоКлассификатораЛьгот.КодГИОЦ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоКлассификатораЛьготКодГИОЦКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготКодГИОЦРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="ДеревоКлассификатораЛьготИнформация" id="34">
+					<DataPath>ДеревоКлассификатораЛьгот.Информация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДеревоКлассификатораЛьготИнформацияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготИнформацияРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ДеревоКлассификатораЛьготЗаконодательныйАкт" id="36">
+					<DataPath>ДеревоКлассификатораЛьгот.ЗаконодательныйАкт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДеревоКлассификатораЛьготЗаконодательныйАктКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ДеревоКлассификатораЛьготЗаконодательныйАктРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДеревоКлассификатораЛьгот" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево классификатора льгот</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дерево класифікатора пільг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Найменування</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВидУслуги" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид услуги</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид послуги</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыУслуг</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Код" id="3">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПроцентЛьготы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент льготы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відсоток пільги</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодЕДАРП" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код ЕДАРП</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Код ЕДАРП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодГИОЦ" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код ГИОЦ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Код ГІОЦ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Информация" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Інформація</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаконодательныйАкт" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Законодательный акт</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Законодавчий акт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выбран" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Обраний</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скасування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скасування</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+		</Command>
+	</Commands>
+</Form>
